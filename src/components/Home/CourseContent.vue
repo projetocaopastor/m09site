@@ -82,7 +82,7 @@ const contents = ref(
 <template>
     <v-container class="d-flex flex-column align-center justify-center bg-grey-darken-4 pa-12" fluid>
         <span class="text-h4 mb-8">
-            Explore o que você vai <span class="text-blue-lighten-1">aprender</span> aqui
+            Explore o que você vai <span class="text-yellow-darken-3">aprender</span> aqui
         </span>
         <v-row>
             <v-col v-for="content, index in contents" :key="index">
@@ -102,7 +102,7 @@ const contents = ref(
 
                             <v-dialog max-width="500">
                                 <template v-slot:activator="{ props: activatorProps }">
-                                    <v-btn v-bind="activatorProps"  class="mt-4" color="blue-darken-4" text="Ler mais"
+                                    <v-btn v-bind="activatorProps"  class="mt-4" color="yellow-darken-3" text="Ler mais"
                                         ></v-btn>
                                 </template>
 

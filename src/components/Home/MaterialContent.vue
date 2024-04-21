@@ -28,12 +28,12 @@ const items = [
     <section style="margin-bottom: 64px; margin-top: 24px">
         <v-row justify="center">
             <v-col cols="12" class="d-flex justify-center">
-                <span class="text-h4 text-red-lighten-1 mt-4">
+                <span class="text-h4 text-red-darken-1 mt-4">
                     Aqui você aprende:
                 </span>
             </v-col>
             <v-col cols="12" md="4" class="px-8" v-for="(item, index) in items" :key="index">
-                <v-card class="mx-auto d-flex px-2 py-6 content-card rounded-lg" max-width="450" :prepend-icon="'text-success text-h4 mdi-' + item.icon">
+                <v-card class="mx-auto d-flex px-2 py-6 content-card rounded-lg" max-width="450" :prepend-icon="'text-yellow-darken-3 text-h4 mdi-' + item.icon">
                     <v-card-text class="d-flex align-center font-weight-bold pa-0 text-h6">
                         {{ item.text }}
                     </v-card-text>

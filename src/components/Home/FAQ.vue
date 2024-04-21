@@ -107,7 +107,7 @@ const tabs = ref(
         <v-col cols="12" md="5">
             <v-container class="py-0">
                 <v-card>
-                    <v-tabs v-model="tab" grow slider-color="red-lighten-1" color="red-lighten-1">
+                    <v-tabs v-model="tab" grow slider-color="yellow-darken-2" color="yellow-darken-2">
                         <v-tab v-for="tab, index in tabs" :key="index" :value="tab[index]" :prepend-icon="tab.icon">
                             {{ tab.tabTitle }}
                         </v-tab>

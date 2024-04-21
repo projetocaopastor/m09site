@@ -77,7 +77,7 @@ function goToInstagram () {
         </v-col>
 
         <v-col cols="12" md="3" class="d-flex flex-column justify-center">
-          <div class="text-h5 font-weight-light mb-2">
+          <div class="text-h5 font-weight-medium text-yellow-darken-4 mb-2">
             Sobre nós
           </div>
           <div class="mb-4">

@@ -5,7 +5,7 @@
                 <v-col md="7" cols="11">
                     <img src="@/assets/images/projeto-cao-pastor.png" height="90">
                     <div class="mt-3" style="font-size: 20pt;">
-                        <span class="text-grey-darken-4 font-weight-bold">Conteúdo completo</span> sobre mentalidade e
+                        <span class="text-yellow-darken-1 font-weight-bold">Conteúdo completo</span> sobre mentalidade e
                         segurança, mesmo que hoje você não saiba nada sobre o assunto.
                     </div>
                     <v-btn block class="mt-9" href="https://apoia.se/matilha09" target="_blank">
