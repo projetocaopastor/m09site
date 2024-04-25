@@ -7,6 +7,7 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    Buy: typeof import('./src/components/Home/Buy.vue')['default']
     Cards: typeof import('./src/components/Home/Cards.vue')['default']
     CourseContent: typeof import('./src/components/Home/CourseContent.vue')['default']
     Depositions: typeof import('./src/components/Home/Depositions.vue')['default']
@@ -17,5 +18,6 @@ declare module 'vue' {
     Phrase1: typeof import('./src/components/Home/Phrase1.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SaleSection: typeof import('./src/components/Home/SaleSection.vue')['default']
   }
 }
