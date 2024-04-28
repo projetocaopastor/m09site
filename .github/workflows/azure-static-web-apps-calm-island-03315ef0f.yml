@@ -29,8 +29,10 @@ jobs:
           app_location: "/" # App source code path
           api_location: "" # Api source code path - optional
           output_location: "dist" # Built app content directory - optional
-      - name: Copy .htaccess
-        run: cp .htaccess dist/.htaccess # assuming .htaccess is in the root directory
+      - name: Change permissions on dist directory
+        run: chmod -R 777 dist
+      - name: Copy .htaccess to dist directory
+        run: cp .htaccess dist/.htaccess
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
