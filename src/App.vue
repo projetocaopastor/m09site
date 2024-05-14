@@ -8,7 +8,7 @@ import AppFooter from './layouts/AppFooter.vue';
 <template>
   <v-app>
 
-    <!-- <AppHeader /> -->
+    <AppHeader />
 
     <v-main>
       <router-view />
