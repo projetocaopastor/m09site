@@ -80,14 +80,60 @@ const contents = ref(
 </script>
 
 <template>
-    <v-container class="d-flex flex-column align-center justify-center bg-grey-darken-4 pa-12" fluid>
-        <span class="text-h4 mb-8">
+    <v-container class="d-flex flex-column align-center justify-center bg-grey-darken-4 pa-md-12 px-4 py-8" fluid>
+        <span class="text-h4 text-md-start text-center mb-8">
             Explore o que você vai <span class="text-yellow-darken-3">aprender</span> aqui
         </span>
-        <v-row>
+        <v-row class="d-md-none d-flex">
+            <v-col v-for="content, index in contents" :key="index" cols="6">
+                <v-container fluid class="pa-0">
+                    <v-card class="mx-auto text-center pa-2 content-card" height="180" variant="tonal">
+
+                        <div class="d-flex flex-wrap justify-center align-stretch" style="height: 100%;">
+                            <div class="d-flex flex-column align-center">
+                                <span>
+                                    {{ content.title }}
+                                </span>
+                                
+                                <v-icon :icon="content.icon" size="60"></v-icon>
+                                
+                                <span class="text-caption d-flex align-center" style="height: 40px;">
+                                    {{ content.text }}
+                                </span>
+                            </div>
+                                
+                            <v-dialog max-width="500">
+                                <template v-slot:activator="{ props: activatorProps }">
+                                    <v-btn v-bind="activatorProps" class="" color="yellow-darken-3"
+                                        text="Ler mais"></v-btn>
+                                </template>
+
+                                <template v-slot:default="{ isActive }">
+                                    <v-card :title="content.title">
+                                        <v-card-text>
+                                            {{ content.description }}
+                                        </v-card-text>
+
+                                        <v-card-actions>
+                                            <v-spacer></v-spacer>
+                                            <v-btn text="Fechar" @click="isActive.value = false"
+                                                variant="outlined"></v-btn>
+                                        </v-card-actions>
+                                    </v-card>
+                                </template>
+                            </v-dialog>
+
+                        </div>
+
+                    </v-card>
+                </v-container>
+            </v-col>
+        </v-row>
+
+        <v-row class="d-md-flex d-none">
             <v-col v-for="content, index in contents" :key="index">
-                <v-container>
-                    <v-card class="mx-auto text-center py-8 px-12 bg-grey-lighten-2 content-card" width="330">
+                <v-container  class="pa-0" fluid>
+                    <v-card class="mx-auto text-center py-8 px-12 content-card" width="330" variant="tonal">
 
                         <div class="d-flex flex-column align-center ga-2">
                             <span>
@@ -102,8 +148,8 @@ const contents = ref(
 
                             <v-dialog max-width="500">
                                 <template v-slot:activator="{ props: activatorProps }">
-                                    <v-btn v-bind="activatorProps"  class="mt-4" color="yellow-darken-3" text="Ler mais"
-                                        ></v-btn>
+                                    <v-btn v-bind="activatorProps" class="mt-4" color="yellow-darken-3"
+                                        text="Ler mais"></v-btn>
                                 </template>
 
                                 <template v-slot:default="{ isActive }">
@@ -114,7 +160,8 @@ const contents = ref(
 
                                         <v-card-actions>
                                             <v-spacer></v-spacer>
-                                            <v-btn text="Fechar" @click="isActive.value = false" variant="outlined"></v-btn>
+                                            <v-btn text="Fechar" @click="isActive.value = false"
+                                                variant="outlined"></v-btn>
                                         </v-card-actions>
                                     </v-card>
                                 </template>
@@ -131,6 +178,6 @@ const contents = ref(
 
 <style scoped>
 .content-card {
-    border: 1px solid #0000ff90;
+    border: 1px solid #ff000080;
 }
 </style>

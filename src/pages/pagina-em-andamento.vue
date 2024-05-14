@@ -4,6 +4,7 @@
       <Phrase1 />
       <MaterialContent />
       <CourseContent />
+      <SaleSection />
       <Depositions />
       <FAQ /> -->
     </div>
@@ -16,6 +17,7 @@
   import MaterialContent from '../components/Home/MaterialContent.vue';
   import FAQ from '../components/Home/FAQ.vue';
   import CourseContent from '../components/Home/CourseContent.vue';
+import SaleSection from '../components/Home/SaleSection.vue';
   
   </script>
   
