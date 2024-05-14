@@ -1,12 +1,12 @@
 <template>
     <div>
-      <!-- <Introduction />
+      <Introduction />
       <Phrase1 />
       <MaterialContent />
       <CourseContent />
       <SaleSection />
       <Depositions />
-      <FAQ /> -->
+      <FAQ />
     </div>
   </template>
   
