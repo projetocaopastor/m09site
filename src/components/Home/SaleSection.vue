@@ -1,18 +1,83 @@
 <template>
     <v-container class="mb-3 d-flex justify-center align-center py-16 sale-content" fluid>
         <div class="sale-card">
-            opa
+            <div class="package-icon-content">
+                <v-icon icon="mdi-package-variant-closed" size="80" color="yellow-darken-3" />
+            </div>
+            <div>
+                Turma Master
+            </div>
+            <div class="package-discount text-center">
+                20% de desconto
+            </div>
+            <div class="text-center d-flex align-center ga-1 pt-2">
+                De
+                <div class="position-relative">
+                    <span class="text-h5 line-through text-yellow-darken-3">R$ 1200,00</span>
+                </div>
+                por
+            </div>
+            <div class="text-center">
+                <div class="d-flex align-center ga-1">
+                    12x
+                    <span class="text-h4 text-red">R$ 79,90</span>
+                </div>
+                à vista R$ 1430,40
+            </div>
         </div>
     </v-container>
 </template>
 
 <style>
-.sale-card {
-    width: 330px;
-    height: 400px;
-    border: 1px solid red;
-    z-index: 1;
+.line-through::after {
+    content: "";
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid #a8adb2;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
 }
+
+.sale-card {
+    width: 360px;
+    height: 540px;
+    position: relative;
+    /* Adicione esta linha */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sale-card::before {
+    z-index: -2;
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background-color: #012640;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%);
+}
+
+.sale-card::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #021017;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%);
+}
+
 
 .sale-content {
     background-image: url("/src/assets/soldier.jpg");
@@ -27,5 +92,17 @@
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
+}
+
+.package-icon-content {
+    border: 1px solid #015592;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #012640;
+}
+
+.package-discount {
+    background-color: rgba(255, 0, 0, 1);
+    padding: 4px 16px;
 }
 </style>

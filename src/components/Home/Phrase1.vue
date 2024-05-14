@@ -2,7 +2,7 @@
     <v-row class="bg-phrase1">
         <v-col class="py-12 elevation-24">
             <span class="text-md-h5 text-red phrase-1">
-                Você só faz o que você treina.
+                Você só faz o que treina.
             </span>
         </v-col>
     </v-row>
@@ -23,6 +23,7 @@
     background: #ff000010;
     border-radius: 18px;
     animation: phrase-1-shadow-blink 2s linear infinite alternate;
+    z-index: 1;
 }
 
 @keyframes phrase-1-shadow-blink {
