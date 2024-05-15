@@ -1,7 +1,7 @@
 <template>
   <div>
     <Introduction />
-    <Phrase1 />
+    <!-- <Phrase1 /> -->
     <MaterialContent />
     <CourseContent />
     <SaleSection />
