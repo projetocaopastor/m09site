@@ -28,8 +28,8 @@ const items = [
     <section style="margin-bottom: 64px; margin-top: 24px">
         <v-row justify="center">
             <v-col cols="12" class="d-flex justify-center">
-                <span class="text-h4 text-red-darken-1 mt-4">
-                    Aqui você aprende:
+                <span class="text-h4 text-grey-lighten-3 mt-4">
+                    Ao final do curso você saberá:
                 </span>
             </v-col>
             <v-col cols="12" md="4" class="px-8" v-for="(item, index) in items" :key="index">

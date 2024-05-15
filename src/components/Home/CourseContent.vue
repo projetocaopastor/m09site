@@ -133,10 +133,10 @@ const contents = ref(
 
         <v-row class="d-md-flex d-none">
             <v-col v-for="content, index in contents" :key="index">
-                <v-card class="mx-auto text-center py-8 px-12 content-card" width="330" variant="tonal">
+                <v-card class="mx-auto text-center py-8 px-12 content-card" width="300" variant="tonal">
 
                     <div class="d-flex flex-column align-center ga-2">
-                        <span>
+                        <span :class="content.title == 'MÓDULO EXTRA' ? 'text-yellow-darken-3 font-weight-bold' : ''">
                             {{ content.title }}
                         </span>
 
@@ -148,19 +148,22 @@ const contents = ref(
 
                         <v-dialog max-width="500">
                             <template v-slot:activator="{ props: activatorProps }">
-                                <v-btn v-bind="activatorProps" class="mt-4" color="yellow-darken-3"
-                                    text="Ler mais"></v-btn>
+                                <v-btn v-bind="activatorProps" class="" color="yellow-darken-3" text="Ler mais"></v-btn>
                             </template>
 
                             <template v-slot:default="{ isActive }">
-                                <v-card :title="content.title">
+                                <v-card>
+                                    <v-card-title class="text-yellow-darken-3">
+                                        {{ content.title }}
+                                    </v-card-title>
+
                                     <v-card-text>
                                         {{ content.description }}
                                     </v-card-text>
 
                                     <v-card-actions>
                                         <v-spacer></v-spacer>
-                                        <v-btn text="Fechar" @click="isActive.value = false" variant="outlined"></v-btn>
+                                        <v-btn text="Fechar" @click="isActive.value = false" variant="outlined" color="yellow-darken-3"></v-btn>
                                     </v-card-actions>
                                 </v-card>
                             </template>

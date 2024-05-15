@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar :elevation="2" scroll-behavior="hide">
+    <v-app-bar :elevation="2" scroll-behavior="hide" scroll-threshold="1">
         <template v-slot:prepend>
             <img src="@/assets/logo-matilha.jpg" height="40" style="border-radius: 50%;">
         </template>

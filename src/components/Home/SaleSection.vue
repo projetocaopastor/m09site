@@ -24,10 +24,29 @@
                 </div>
                 à vista R$ 1430,40
             </div>
+            <div>
+                <div class="d-flex ga-1">
+                    <v-icon icon="mdi-check" color="yellow-darken-3" />
+                    Grupo exclusivo para alunos
+                </div>
+                <div class="d-flex ga-1">
+                    <v-icon icon="mdi-check" color="yellow-darken-3" />
+                    Garantia de 7 dias
+                </div>
+                <div class="d-flex ga-1">
+                    <v-icon icon="mdi-check" color="yellow-darken-3" />
+                    Assista pelo celular e computador
+                </div>
+                <div class="d-flex ga-1">
+                    <v-icon icon="mdi-check" color="yellow-darken-3" />
+                    Acesso por 1 ano
+                </div>
+            </div>
             <a class="sale-btn" href="http://www.google.com" target="_blank">
                 <span>
                     MATRICULE-SE
                 </span>
+                <v-icon icon="mdi-arrow-right-thin-circle-outline" class="bottom-icon"/>
             </a>
         </div>
     </v-container>
@@ -48,7 +67,7 @@
 
 .sale-card {
     width: 360px;
-    height: 540px;
+    height: 600px;
     position: relative;
     /* Adicione esta linha */
     z-index: 1;
@@ -88,7 +107,7 @@
 .sale-content {
     background-image: url("/src/assets/soldier.jpg");
     background-position-y: 12%;
-    height: 600px;
+    height: 800px;
     position: relative;
 }
 
@@ -110,9 +129,11 @@
 .package-discount {
     background-color: rgba(255, 0, 0, 1);
     padding: 4px 16px;
+    border-radius: 1px;
 }
 
 .sale-btn {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,6 +146,12 @@
     font-weight: 500;
     font-size: 1.3rem;
     box-shadow: 0 0 5px 1px #F57F17;
-    margin-top: 40px;
+    margin-top: 20px;
 }
+
+.bottom-icon {
+    position: absolute;
+    right: 20px;
+}
+
 </style>
