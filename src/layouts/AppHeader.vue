@@ -10,11 +10,11 @@
         </v-app-bar-title>
 
         <template v-slot:append>
-            <v-btn icon="mdi-instagram" href="https://www.instagram.com/matilhacaopastor/" target="_blank"></v-btn>
+            <v-btn icon="mdi-instagram" href="https://www.instagram.com/caveiracadar09/" target="_blank"></v-btn>
             
-            <v-btn icon="mdi-youtube" href="https://www.youtube.com/@ProjetoMatilhaCaoPastor" target="_blank"></v-btn>
+            <v-btn icon="mdi-youtube" href="https://www.youtube.com/c/ProjetoMatilhaC%C3%A3oPastor" target="_blank"></v-btn>
             
-            <v-btn href="https://apoia.se/matilha09" target="_blank">APOIE O PROJETO</v-btn>
+            <!-- <v-btn href="https://apoia.se/matilha09" target="_blank">APOIE O PROJETO</v-btn> -->
         </template>
     </v-app-bar>
 </template>

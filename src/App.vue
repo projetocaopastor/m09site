@@ -1,8 +1,9 @@
 <script lang="ts" setup>
 import AppHeader from './layouts/AppHeader.vue';
 import AppFooter from './layouts/AppFooter.vue';
+import BottomNavigation from './layouts/BottomNavigation.vue';
 
-  //
+//
 </script>
 
 <template>
@@ -16,9 +17,9 @@ import AppFooter from './layouts/AppFooter.vue';
 
     <AppFooter />
 
+    <BottomNavigation />
+
   </v-app>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

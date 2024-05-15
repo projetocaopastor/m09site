@@ -5,20 +5,12 @@ import LogoMatilha from '@/assets/logo-matilha.jpg'
 const email = "projetomatilhacaopastor@gmail.com"
 // const router = useRouter()
 
-function mailTo () {
-  window.open(`mailto:${email}?subject=Solicitação de orçamento`)
+function mailTo() {
+  window.open(`mailto:${email}?subject=Olá, gostaria de saber mais sobre o seu curso.`)
 }
 
-function goToHome () {
-//   router.push("/")
-}
-
-function goToLinkedin () {
-  window.open("https://www.linkedin.com/in/ares-engenharia-12385328b/")
-}
-
-function goToInstagram () {
-  window.open("https://www.instagram.com/aresprojetos")
+function goToHome() {
+  //   router.push("/")
 }
 
 </script>
@@ -32,7 +24,7 @@ function goToInstagram () {
           <div>
             <v-img :src="LogoMatilha" :width="200" class="align-end mb-4" />
           </div>
-          
+
           <!-- <div class="mb-2">
             <router-link to="/orcamento">Solicite um orçamento</router-link> | 
             <router-link to="/sobre-nos">Sobre nós</router-link> | 
@@ -48,11 +40,11 @@ function goToInstagram () {
         <v-col cols="12" md="3" class="d-flex flex-column justify-center align-md-start align-center">
 
           <div class="mb-6">
-            <v-btn variant="text" href="https://www.instagram.com/matilhacaopastor/" target="_blank">
+            <v-btn variant="text" href="https://www.instagram.com/caveiracadar09/" target="_blank">
               <v-icon icon="mdi-instagram" class="mr-1" />
               <span class="text-lowercase pb-1">
-                  @matilhacaopastor
-                </span>
+                @caveiracadar09
+              </span>
             </v-btn>
           </div>
 
@@ -81,7 +73,8 @@ function goToInstagram () {
             Sobre nós
           </div>
           <div class="mb-4">
-            Projeto, que versa sobre a construção de conduta, começou de forma despretensiosa e de pouco em pouco reunimos um bando de loucos que alimentam os mesmos anseios.
+            O projeto, que trata da construção de conduta, teve um início despretensioso. Aos poucos, conseguimos reunir
+            um grupo de pessoas dedicadas que compartilham os mesmos anseios.
           </div>
           <div class="mx-md-0 mx-auto">
 
@@ -92,7 +85,7 @@ function goToInstagram () {
             <!-- <v-btn @click="goToInstagram()" class="ml-2">
               <v-icon icon="mdi-instagram" color="#E1306C" />
             </v-btn> -->
-            
+
           </div>
         </v-col>
 

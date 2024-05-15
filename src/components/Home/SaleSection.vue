@@ -24,6 +24,11 @@
                 </div>
                 à vista R$ 1430,40
             </div>
+            <a class="sale-btn" href="http://www.google.com" target="_blank">
+                <span>
+                    MATRICULE-SE
+                </span>
+            </a>
         </div>
     </v-container>
 </template>
@@ -52,6 +57,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 8px;
+    padding: 24px;
 }
 
 .sale-card::before {
@@ -104,5 +110,21 @@
 .package-discount {
     background-color: rgba(255, 0, 0, 1);
     padding: 4px 16px;
+}
+
+.sale-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #F57F17;
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.3rem;
+    box-shadow: 0 0 5px 1px #F57F17;
+    margin-top: 40px;
 }
 </style>
