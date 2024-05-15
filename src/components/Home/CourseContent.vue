@@ -91,7 +91,7 @@ const contents = ref(
 
                     <div class="d-flex flex-wrap justify-center align-stretch" style="height: 100%;">
                         <div class="d-flex flex-column align-center">
-                            <span :class="content.title == 'MÓDULO EXTRA' ? 'text-yellow-darken-3' : ''">
+                            <span :class="content.title == 'MÓDULO EXTRA' ? 'text-yellow-darken-3 font-weight-bold' : ''">
                                 {{ content.title }}
                             </span>
 
