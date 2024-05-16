@@ -48,6 +48,9 @@
                 </span>
                 <v-icon icon="mdi-arrow-right-thin-circle-outline" class="bottom-icon"/>
             </a>
+            <div class="mt-2">
+                <v-icon icon="mdi-lock" /> Ambiente 100% seguro
+            </div>
         </div>
     </v-container>
 </template>
