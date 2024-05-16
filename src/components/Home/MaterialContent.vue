@@ -34,7 +34,7 @@ const items = [
             </v-col>
             <v-col cols="12" md="4" class="px-8" v-for="(item, index) in items" :key="index">
                 <v-card class="mx-auto d-flex px-2 py-6 content-card rounded-lg" max-width="450" :prepend-icon="'text-yellow-darken-3 text-h4 mdi-' + item.icon">
-                    <v-card-text class="d-flex align-center font-weight-bold pa-0 text-h6">
+                    <v-card-text class="d-flex align-center font-weight-medium pa-0 text-h6">
                         {{ item.text }}
                     </v-card-text>
                 </v-card>

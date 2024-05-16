@@ -44,6 +44,7 @@ img:hover {
     <section class="introduction-section">
         <div class="intro-bg-image-container">
             <img src="@/assets/cadar-aula1.png" class="intro-bg-image">
+            <div src="@/assets/cadar-aula1.png" class="intro-bg-image-mobile"></div>
         </div>
         <div class="introduction-bg overflow-hidden align-center" justify="center">
             <div class="d-flex justify-center pa-0">
@@ -72,8 +73,13 @@ img:hover {
 
 
 <style scoped>
+.intro-bg-image-container {
+    position: relative;
+}
+
 .intro-description-text {
     width: 600px;
+    z-index: 1;
 }
 
 .introduction-section {
@@ -115,14 +121,35 @@ hr {
     box-sizing: border-box;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 600px) {
     .intro-description-text {
         width: 100%;
         padding: 12px;
     }
 
-    .introduction-bg { 
+    .introduction-bg {
         gap: 4px;
+    }
+
+    .intro-bg-image {
+        display: none;
+    }
+
+    .introduction-section {
+        background-image: url("@/assets/cadar-aula1.png");
+        background-position-x: 60%;
+        background-size: auto 500px;
+    }
+
+    .introduction-section::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: calc(100% + 1px);
+        width: 100%;
+        background: rgba(0,0,0, 0.85);
+        z-index: 0;
     }
 }
 </style>
