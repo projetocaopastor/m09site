@@ -28,7 +28,7 @@ const items = [
     <section style="margin-bottom: 64px; margin-top: 24px">
         <v-row justify="center">
             <v-col cols="12" class="d-flex justify-center">
-                <span class="text-h4 text-grey-lighten-3 mt-4">
+                <span class="text-h4 text-grey-lighten-3 mt-4 text-center">
                     Ao final do curso você saberá:
                 </span>
             </v-col>

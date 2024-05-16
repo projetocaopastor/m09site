@@ -27,10 +27,10 @@ const isHovering = ref(false);
                 </div>
 
                 <v-spacer class="d-md-block d-none" />
-
+<!-- 
                 <div class="d-md-block d-none">
                     <v-btn height="50" class="px-8" variant="outlined">Veja mais depoimentos</v-btn>
-                </div>
+                </div> -->
             </v-container>
         </v-col>
 
@@ -59,11 +59,11 @@ const isHovering = ref(false);
 
         </v-col>
 
-        <v-col class="d-md-none">
+        <!-- <v-col class="d-md-none">
             <v-container>
                 <v-btn block height="50" variant="outlined">Veja mais depoimentos</v-btn>
             </v-container>
-        </v-col>
+        </v-col> -->
     </v-row>
 </template>
 

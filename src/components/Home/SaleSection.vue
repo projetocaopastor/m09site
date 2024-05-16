@@ -8,7 +8,7 @@
                 Turma Master
             </div>
             <div class="package-discount text-center">
-                20% de desconto
+                20% de desconto <br>por tempo limitado
             </div>
             <div class="text-center d-flex align-center ga-1 pt-2">
                 De
@@ -130,6 +130,7 @@
     background-color: rgba(255, 0, 0, 1);
     padding: 4px 16px;
     border-radius: 1px;
+    font-size: 0.8rem;
 }
 
 .sale-btn {

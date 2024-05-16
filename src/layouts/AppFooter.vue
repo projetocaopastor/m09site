@@ -16,7 +16,7 @@ function goToHome() {
 </script>
 
 <template>
-  <div>
+  <div class="footer">
     <v-footer class="bg-white">
       <v-row justify="space-evenly" class="my-4 flex-md-row flex-column-reverse">
 
@@ -39,7 +39,7 @@ function goToHome() {
 
         <v-col cols="12" md="3" class="d-flex flex-column justify-center align-md-start align-center">
 
-          <div class="mb-6">
+          <div class="mb-3 mb-md-6">
             <v-btn variant="text" href="https://www.instagram.com/caveiracadar09/" target="_blank">
               <v-icon icon="mdi-instagram" class="mr-1" />
               <span class="text-lowercase pb-1">
@@ -48,7 +48,7 @@ function goToHome() {
             </v-btn>
           </div>
 
-          <div class="mb-6">
+          <div class="mb-3 mb-md-6">
             <v-btn variant="text" @click="mailTo()">
               <v-icon icon="mdi-email" class="mr-1" />
               <span class="text-lowercase">
@@ -72,7 +72,7 @@ function goToHome() {
           <div class="text-h5 font-weight-medium text-yellow-darken-4 mb-2">
             Sobre nós
           </div>
-          <div class="mb-4">
+          <div class="mb-md-4">
             O projeto, que trata da construção de conduta, teve um início despretensioso. Aos poucos, conseguimos reunir
             um grupo de pessoas dedicadas que compartilham os mesmos anseios.
           </div>
@@ -93,3 +93,9 @@ function goToHome() {
     </v-footer>
   </div>
 </template>
+
+<style>
+.footer {
+  margin-bottom: 61.6px;
+}
+</style>
