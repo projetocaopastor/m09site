@@ -51,7 +51,7 @@ img:hover {
                 <img src="@/assets/LogoCoPastorCompacta.png" class="instructor-img" height="150">
             </div>
             <hr>
-            <div>
+            <div class="intro-main-text">
                 <v-layout class="d-flex justify-center text-center flex-column">
                     <span>
                         APRENDA A PROTEGER VOCÊ E SUA FAMÍLIA,
@@ -122,9 +122,13 @@ hr {
 }
 
 @media (max-width: 600px) {
+    .intro-main-text {
+        padding: 0 16px;
+    }
+
     .intro-description-text {
         width: 100%;
-        padding: 12px;
+        padding: 16px;
     }
 
     .introduction-bg {
