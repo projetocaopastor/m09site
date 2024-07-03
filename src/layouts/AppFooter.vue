@@ -74,7 +74,7 @@ function goToHome() {
           </div>
           <div class="mb-md-4">
             O projeto, que trata da construção de conduta, teve um início despretensioso. Aos poucos, conseguimos reunir
-            um grupo de pessoas dedicadas que compartilham os mesmos anseios.
+            um grupo de pessoas dedicadas que compartilham os mesmos anseios em relação à mentalidade e segurança.
           </div>
           <div class="mx-md-0 mx-auto">
 
