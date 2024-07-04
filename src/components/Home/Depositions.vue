@@ -7,42 +7,42 @@ const depositions = [
   {
     name: "Ludmilla Milito",
     instagram: "ludmillamilito",
-    image: "src/assets/depositions-avatar/ludmillamilito.jpg",
+    image: "https://raw.githubusercontent.com/rafawildfire42/rafawildfire42/main/6.jpg",
     deposition:
       "Sempre digo que o curso mudou a minha vida e de várias outras pessoas para quem procuro passar o que aprendi! Conteúdo absurdo, criado por quem vive e entende o assunto!",
   },
   {
     name: "Eduardo Toledo",
     instagram: "edutoledoradical",
-    image: "src/assets/depositions-avatar/edutoledoradical.jpg",
+    image: "https://raw.githubusercontent.com/rafawildfire42/rafawildfire42/main/5.jpg",
     deposition:
       "Curso sem mimi direto ao ponto , realidade atual não tem faculdade escolinha para isso ,a experiência é absurda .esse curso vai abrir seus olhos ( civil militar qualquer pessoa)",
   },
   {
     name: "Nado",
     instagram: "donahh",
-    image: "src/assets/depositions-avatar/donahh.jpg",
+    image: "https://raw.githubusercontent.com/rafawildfire42/rafawildfire42/main/4.jpg",
     deposition:
       "Sou aluno da primeira turma ( ALFA) trabalho na área de segurança privada a 14 anos, e sempre busquei cursos da área para me manter atualizado. Posso garantir pra vocês que dificilmente um curso vai entregar tanto conteúdo e conhecimento...",
   },
   {
     name: "Alexandre Moreira",
     instagram: "xandi_xms",
-    image: "src/assets/depositions-avatar/xandi_xms.jpg",
+    image: "https://raw.githubusercontent.com/rafawildfire42/rafawildfire42/main/3.jpg",
     deposition:
       "Fala pessoal, falar do Curso Cão pastor e uma honra, tive ensinamentos que raramente vimos por aí, é um curso completo, trata de uma peculiar preparação mental, fisica, psicóloga, técnica...",
   },
   {
     name: "Gisele Vianna",
     instagram: "makegivianna",
-    image: "src/assets/depositions-avatar/makegivianna.jpg",
+    image: "https://raw.githubusercontent.com/rafawildfire42/rafawildfire42/main/2.jpg",
     deposition:
       "Fui aluna da 1ª turma, um curso para vida e qualquer cidadão civil ou militar. No mesmo aprendemos sobre criminalidade, defesa pessoal, proteção residencial, aph( primeiros socorros), dentre outros muitos módulos disponíveis. São mais de 140 aulas!!!",
   },
   {
     name: "Ana Paula",
     instagram: "aanapaulagarcia",
-    image: "src/assets/depositions-avatar/aanapaulagarcia.jpg",
+    image: "https://raw.githubusercontent.com/rafawildfire42/rafawildfire42/main/1.jpg",
     deposition:
       "Sou aluna da penúltima turma e o que fiz foi um investimento. Apesar de ser da PPERJ, a maioria das coisas se aplica a mim como cidadã, como mulher, as questões de proteção residencial, legítima defesa, se “posturar” frente a um possível criminoso…",
   },
