@@ -10,6 +10,7 @@ declare module 'vue' {
     Buy: typeof import('./src/components/Home/Buy.vue')['default']
     Cards: typeof import('./src/components/Home/Cards.vue')['default']
     CourseContent: typeof import('./src/components/Home/CourseContent.vue')['default']
+    CourseContentExpansion: typeof import('./src/components/Home/CourseContentExpansion.vue')['default']
     Depositions: typeof import('./src/components/Home/Depositions.vue')['default']
     FAQ: typeof import('./src/components/Home/FAQ.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
