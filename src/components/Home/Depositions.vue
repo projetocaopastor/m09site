@@ -112,12 +112,12 @@ const depositions = [
                     </div>
                   </div>
                 </v-col>
-                <v-col cols="12" class="py-0" style="height: 150px;">
+                <v-col cols="12" class="py-0" style="height: 150px">
                   <span class="text-grey-lighten-5">
                     {{ deposition.deposition }}
                   </span>
                 </v-col>
-                <v-col cols="12" style="height: 40px;">
+                <v-col cols="12" style="height: 40px">
                   <a
                     class="text-yellow-darken-3 text-decoration-underline"
                     href="https://www.instagram.com/p/C8pB5jzMnqf/"
@@ -135,7 +135,11 @@ const depositions = [
 
     <v-col class="d-md-none">
       <v-container>
-        <v-btn block height="50" variant="outlined"
+        <v-btn
+          block
+          height="50"
+          variant="outlined"
+          href="https://www.instagram.com/p/C8pB5jzMnqf/"
           >Veja mais depoimentos</v-btn
         >
       </v-container>

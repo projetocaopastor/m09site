@@ -65,7 +65,7 @@ const cards = ref<Card[]>([
 </script>
 
 <template>
-  <v-container class="py-16" fluid>
+  <v-container class="pb-16 pt-12" fluid>
     <v-row justify="center">
       <v-col cols="12" md="3" v-for="(card, index) in cards" :key="index">
         <div class="w-100 d-flex justify-center">
@@ -88,7 +88,7 @@ const cards = ref<Card[]>([
             <div class="text-center d-flex align-center ga-1 pt-2">
               De
               <div class="position-relative">
-                <span class="text-h5 line-through text-yellow-darken-3">{{
+                <span class="text-h5 line-through text-red">{{
                   card.originalPrice
                 }}</span>
               </div>
@@ -97,7 +97,7 @@ const cards = ref<Card[]>([
             <div class="text-center">
               <div class="d-flex align-center ga-1">
                 12x
-                <span class="text-h4 text-red">{{
+                <span class="text-h4 text-yellow-darken-3">{{
                   card.installmentPrice
                 }}</span>
               </div>
@@ -151,7 +151,7 @@ const cards = ref<Card[]>([
 
 .sale-card {
   width: 360px;
-  height: 600px;
+  height: 640px;
   position: relative;
   z-index: 1;
   display: flex;
@@ -225,6 +225,7 @@ const cards = ref<Card[]>([
 }
 
 .package-discount {
+  font-weight: 500;
   background-color: rgba(0, 255, 0, 0.6);
   padding: 4px 16px;
   border-radius: 2px;

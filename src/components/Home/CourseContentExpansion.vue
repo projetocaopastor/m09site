@@ -127,11 +127,18 @@ const contents = ref([
       },
     ],
     contents: [
-      { "Aula 01": "Postura Defensiva" },
-      { "Aula 02": "Comportamento em Situação de Risco" },
-      { "Aula 03": "Movimentação Segura" },
-      { "Aula 04": "Identificação de Ameaças" },
-      { Material: "Conduta Defensiva - Resumo.pdf" },
+      { "Aula 01": "Introdução a Conduta Defensiva" },
+      { "Aula 02": "Conceitos" },
+      { "Aula 03": "Consciência Situacional" },
+      { "Aula 04": "Sistema de Cores e Ciclo OODA" },
+      { "Aula 05": "Capacidade de Adaptação" },
+      { "Aula 06": "Teoria da Carga Cognitiva - Live do casamento" },
+      { "Aula 07": "Conclusão e Estudos de Caso" },
+      { "Aula 08": "Estudo de Casos: Portarias" },
+      { Material: "Consciência Situacional (Conduta Defensiva) - Resumo.pdf" },
+      { Material: "Código de Cores - Resumo.pdf" },
+      { Material: "Capacidade de Adaptação - Conduta Defensiva - Resumo.pdf" },
+      { Material: "Teoria da Carga Cognitiva - Conduta Defensiva.pdf" },
     ],
   },
   {
@@ -148,9 +155,10 @@ const contents = ref([
     ],
     contents: [
       { "Aula 01": "Introdução à Mentalidade de Combate" },
-      { "Aula 02": "Estudo de Caso: Reação em Crises" },
-      { "Aula 03": "Princípios da Mentalidade de Combate" },
-      { Material: "Mentalidade de Combate - Resumo.pdf" },
+      { "Aula 02": "Mentalidade de combate" },
+      { "Aula 03": "O ato de Matar!" },
+      { "Aula 04": "A verdadeira Mentalidade de Combate" },
+      { Material: "Escolhi Reagir - Mentalidade do Combate.pdf" },
     ],
   },
   {
@@ -166,10 +174,16 @@ const contents = ref([
       },
     ],
     contents: [
-      { "Aula 01": "Primeiros Socorros: Introdução" },
-      { "Aula 02": "Controle de Sangramentos" },
-      { "Aula 03": "Atendimento em Situações de Emergência" },
-      { Material: "APH - Resumo.pdf" },
+      { "Aula 01": "Introdução" },
+      { "Aula 02": "Mal Súbito - Parte 1" },
+      { "Aula 03": "Mal Súbito - Parte 2" },
+      { "Aula 04": "Sangramento - Parte 1" },
+      { "Aula 05": "Sangramento - Parte 2" },
+      { "Aula 06": "Acidente automobilístico" },
+      { "Aula 07": "Acidentes domésticos" },
+      { "Aula 08": "Montagem de Kit" },
+      { Material: "APH - Aula 1.pdf" },
+      { Material: "APH - Aula 2.pdf" },
     ],
   },
   {
@@ -189,10 +203,13 @@ const contents = ref([
       },
     ],
     contents: [
-      { "Aula 01": "Técnicas Básicas de Defesa Pessoal" },
-      { "Aula 02": "Situações Comuns de Ameaça" },
-      { "Aula 03": "Desenvolvendo Confiança para Reagir" },
-      { Material: "Defesa Pessoal - Resumo.pdf" },
+      { "Aula 01": "Introdução" },
+      { "Aula 02": "" },
+      { "Aula 03": "" },
+      { "Aula 04": "" },
+      { "Aula 05": "" },
+      { "Aula 06": "" },
+      { "Aula 07": "" },
     ],
   },
   {
@@ -208,32 +225,32 @@ const contents = ref([
       },
     ],
     contents: [
-      { "Aula 01": "Fundamentos do Armamento" },
-      { "Aula 02": "Prática de Tiro: Introdução" },
-      { "Aula 03": "Treinamento de Baixo Custo" },
-      { "Aula 04": "Visada" },
-      { "Aula 05": "Respiração" },
-      { "Aula 06": "Dedo no Gatilho" },
-      { "Aula 07": "Anamnese" },
-      { "Aula 08": "Considerações Finais" },
-      { "Aula 09": "Introdução Balística" },
-      { "Aula 10": "Balística" },
-      { "Aula 11": "Calibres, Modelos e Mitos" },
-      { "Aula 12": "Balística e Mitos" },
-      { "Aula 13": "Boas-Vindas ao Módulo - Prática de Tiro" },
-      { "Aula 14": "Explicação passo a passo do módulo" },
-      { "Aula 15": "Tiro Estático - 7 Metros - Precisão e Fundamento" },
-      { "Aula 16": "Tiro Estático - 10 Metros - Precisão e Fundamento" },
-      { "Aula 17": "Tiro Estático - 15 Metros" },
-      { "Aula 18": "Tiro Estático - 25 Metros - Fundamentos aplicados" },
-      { "Aula 19": "Drill Estático - Posição 3" },
-      { "Aula 19.1": "Drill Tiro Institutivo - Resenha" },
-      { "Aula 20": "Tiro com Recarga" },
-      { "Aula 21": "Drill Alvo de Cores" },
+      { "Aula 01": "Introdução e Fundamentos de Tiro" },
+      { "Aula 02": "Empunhadura" },
+      { "Aula 03": "Visada" },
+      { "Aula 04": "Respiração" },
+      { "Aula 05": "Dedo no Gatilho" },
+      { "Aula 06": "Anamnese" },
+      { "Aula 07": "Considerações Finais" },
+      { "Aula 08": "Introdução Balística" },
+      { "Aula 09": "Balística" },
+      { "Aula 10": "Calibres, Modelos e Mitos" },
+      { "Aula 11": "Balística e Mitos" },
+      { "Aula 12": "Boas-Vindas ao Módulo - Prática de Tiro" },
+      { "Aula 13": "Explicação passo a passo do módulo" },
+      { "Aula 14": "Tiro Estático - 7 Metros - Precisão e Fundamento" },
+      { "Aula 15": "Tiro Estático - 10 Metros - Precisão e Fundamento" },
+      { "Aula 16": "Tiro Estático - 15 Metros" },
+      { "Aula 17": "Tiro Estático - 25 Metros - Fundamentos aplicados" },
+      { "Aula 18": "Drill Estático - Posição 3" },
+      { "Aula 19": "Drill Tiro Institivo" },
+      { "Aula 19.1": "Resenha do Tiro Institivo" },
+      { "Aula 20": "Tiro com recarga" },
+      { "Aula 21": "Drill alvo de cores" },
       { "Aula 22": "Tiro de Entrevista" },
-      { "Aula 23": "Drill de Tiro em Movimento" },
-      { "Aula 24": "Tiro e Sai do X" },
-      { "Aula 25": "Técnicas: Double Tap, Moçambique, Ziper" },
+      { "Aula 23": "Drill de tiro em movimento" },
+      { "Aula 24": "Tiro e sai do X" },
+      { "Aula 25": "Técnicas: Double Tap - Moçambique - Ziper" },
       { "Aula 26": "Home Defense - Tiro Amarrado" },
     ],
   },
@@ -268,6 +285,89 @@ const contents = ref([
       { "Aula 16": "Combate pelo Carona" },
     ],
   },
+  {
+    title: "MÓDULO 11",
+    text: "Anatomia do Combate",
+    icon: "mdi-skull",
+    description: "SEM DESCRIÇÃO A FAZER!",
+    professors: [
+      {
+        name: "Prof. Maj. Cadar",
+        img: "https://i.imgur.com/andanotherimage.jpeg",
+      },
+    ],
+    contents: [
+      { "Módulo 1 | 1": "Apresentação - Anatomia do Combate" },
+      { "M1 | 2": "Por que existe o Combate?" },
+      { "Módulo 2 | 1": "Regras do Jogo" },
+      { "M2 | 2": "Responsabilidades" },
+      { "M2 | 3": "Sistema Persecutório" },
+      { "M2 | 4": "Legislação, Regras do Jogo" },
+      { "Módulo 3 | 1": "Rituais do Conflito (Introdução)" },
+      { "M3 | 2": "Rituais de um Conflito (PT1)" },
+      { "M3 | 3": "Rituais de Um Conflito (PT2)" },
+      { "M3 | 4": "Rituais de Um Conflito (Final)" },
+      { "Módulo 4 | 1": "Processo que Gera Efeitos" },
+      { "M4 | 2": "Batimentos Cardíacos" },
+      { "M4 | 3": "Efeitos Fisiologia - Introdução" },
+      { "M4 | 4": "Efeitos Fisiologia – Continuação" },
+      { "Módulo 5 | 1": "Condicionamento e Controle Físico" },
+      { "M5 | 2": "Condicionamento e Controle Fisiológico" },
+      { "M5 | 3": "Ferramentas" },
+      { "M5 | 4": "Ensaios Mentais" },
+      { "Módulo 6 | 1": "Morte em Combate" },
+      { "M6 | 2": "Mortes em Combate" },
+      { "M6 | 3": "Onde Ficam Veias e Artérias" },
+    ],
+  },
+  {
+    title: "MÓDULO EXTRA",
+    text: "Legítima Defesa: Teoria e Prática",
+    icon: "mdi-shield-account-variant-outline",
+    description: "Aprenda legítima defesa com a percepção de quem atua aplicando o tema na prática. Uma aula que vai desde a teoria até a aplicação, com estudos de caso e ponderações de quem não só estudou o direito, mas o aplica. Uma aula para o aluno dominar o único remédio jurídico que protege uma reação, para que nosso aluno tenha confiança ao utilizá-la, sabendo os riscos e requisitos necessários.",
+    professors: [
+      {
+        name: "Prof. Delegado William Oliveira",
+        img: "https://i.imgur.com/andanotherimage.jpeg",
+      },
+    ],
+    contents: [
+      { "Aula 01": "Introdução" },
+      { "Aula 02": "Art 25 - Descrição e Explicação" },
+      { "Aula 03": "Art 25 - Dissecando o Conceito" },
+      { "Aula 04": "Direito Próprio ou Alheio" },
+      { "Aula 05": "Meios Necessários" },
+      { "Aula 06": "Ônus da Prova - É de Quem Alega" },
+      {
+        "Aula 07": "Legítima Defesa na Prática | Exemplificações e Explicações",
+      },
+      { "Aula 08": "Tirando Dúvidas #1" },
+      { "Aula 09": "Tirando Dúvidas #2" },
+      { "Aula 10": "Tirando Dúvidas #3" },
+    ],
+  },
+  {
+    title: "MÓDULO EXTRA",
+    text: "Neurociência: Identificação de Ameaças",
+    icon: "mdi-robber",
+    description: "Aprenda com este excelente instrutor como se antecipar às crises e desenvolver o raciocínio necessário, além de dezenas de estudos de caso comentados pelo instrutor.",
+    professors: [
+      {
+        name: "Prof. Pol. Penal Santos",
+        img: "https://i.imgur.com/andanotherimage.jpeg",
+      },
+    ],
+    contents: [
+      { "Aula 1": "Consciência Situacional - Primeira Aula" },
+      { "Aula 2": "Consciência Situacional - Segunda Aula" },
+      { "Aula 3": "Consciência Situacional - Terceira Aula" },
+      { "Aula 4": "Indicadores Comportamentais Parte 1" },
+      { "Aula 5": "Indicadores Comportamentais Parte 2" },
+      { "Aula 6": "Indicadores Comportamentais Parte 3" },
+      { "Aula 7": "Indicadores Comportamentais Parte 4" },
+      { "Aula 8": "Identificação de Ameaças" },
+    ],
+  },
 ]);
 </script>
 
@@ -294,7 +394,7 @@ const contents = ref([
                 class="text-uppercase"
                 style="font-size: 1.2rem; font-weight: 400"
               >
-                <v-icon :icon="module.icon" class="mr-1"></v-icon>
+                <v-icon :icon="module.icon" class="mr-1" :color="module.title.includes('EXTRA') ? 'yellow-darken-4' : 'yellow-darken-3'"></v-icon>
                 {{ module.title }} - {{ module.text }}
               </span>
             </template>
@@ -316,7 +416,7 @@ const contents = ref([
                     >
                       <v-avatar size="45px">
                         <!-- <v-img alt="Avatar" :src="professor.img"></v-img> -->
-                         <v-icon icon="mdi-account" />
+                        <v-icon icon="mdi-account" />
                       </v-avatar>
                       <span>{{ professor.name }}</span>
                     </div>
