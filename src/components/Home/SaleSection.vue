@@ -8,19 +8,19 @@
                 Turma Master
             </div>
             <div class="package-discount text-center">
-                20% de desconto <br>por tempo limitado
+                20% de desconto por tempo limitado
             </div>
             <div class="text-center d-flex align-center ga-1 pt-2">
                 De
                 <div class="position-relative">
-                    <span class="text-h5 line-through text-yellow-darken-3">R$ 1200,00</span>
+                    <span class="text-h5 line-through text-red">R$ 1200,00</span>
                 </div>
                 por
             </div>
             <div class="text-center">
                 <div class="d-flex align-center ga-1">
                     12x
-                    <span class="text-h4 text-red">R$ 79,90</span>
+                    <span class="text-h4 text-yellow-darken-3">R$ 79,90</span>
                 </div>
                 à vista R$ 1430,40
             </div>
@@ -45,6 +45,10 @@
                     <v-icon icon="mdi-check" color="yellow-darken-3" />
                     Acesso por 1 ano
                 </div>
+                <div class="d-flex ga-1 mt-4">
+                    <v-icon icon="mdi-star" color="yellow-darken-3" />
+                    Acesso a todos os módulos
+                </div>
             </div>
             <a class="sale-btn" href="http://www.google.com" target="_blank">
                 <span>
@@ -59,7 +63,7 @@
     </v-container>
 </template>
 
-<style>
+<style scoped>
 .line-through::after {
     content: "";
     top: 0;
@@ -74,7 +78,7 @@
 
 .sale-card {
     width: 360px;
-    height: 600px;
+    height: 630px;
     position: relative;
     /* Adicione esta linha */
     z-index: 1;
@@ -94,7 +98,7 @@
     left: -1px;
     width: calc(100% + 2px);
     height: calc(100% + 2px);
-    background-color: #012640;
+    background-color: #004c83;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%);
 }
 
@@ -106,7 +110,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #021017;
+    background-color: #041924;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%);
 }
 
@@ -134,9 +138,10 @@
 }
 
 .package-discount {
-    background-color: rgba(255, 0, 0, 1);
+    font-weight: 500;
+    background-color: rgba(0, 255, 0, 0.6);
     padding: 4px 16px;
-    border-radius: 1px;
+    border-radius: 2px;
     font-size: 0.8rem;
 }
 

@@ -278,7 +278,7 @@ const contents = ref([
   >
     <v-row justify="center">
       <v-col cols="10">
-        <div style="width: 100%" class="d-flex justify-center">
+        <div style="width: 100%" class="d-flex justify-center mt-4 mb-2">
           <span class="text-h4">
             Explore o que você vai
             <span class="text-yellow-darken-3">aprender</span> aqui
@@ -287,7 +287,7 @@ const contents = ref([
       </v-col>
 
       <v-col cols="12" md="7">
-        <v-expansion-panels>
+        <v-expansion-panels class="mb-6 mt-2">
           <v-expansion-panel v-for="module in contents" :key="module.title">
             <template #title>
               <span
@@ -315,7 +315,8 @@ const contents = ref([
                       :index="index"
                     >
                       <v-avatar size="45px">
-                        <v-img alt="Avatar" :src="professor.img"></v-img>
+                        <!-- <v-img alt="Avatar" :src="professor.img"></v-img> -->
+                         <v-icon icon="mdi-account" />
                       </v-avatar>
                       <span>{{ professor.name }}</span>
                     </div>
