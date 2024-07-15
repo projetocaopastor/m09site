@@ -27,7 +27,7 @@ const contents = ref([
   },
   {
     title: "MÓDULO 2",
-    text: "Estudo do Crime",
+    text: "Negação",
     icon: "mdi-account-search-outline",
     description:
       "Neste módulo, ensinamos a compreender o crime. Com base em nossa experiência, você aprenderá sobre a mente do criminoso e os fatores que envolvem esse fenômeno. A abordagem é direta, oferecendo uma visão prática de quem pisou no terreno, filtrando a teoria e derrubando mitos sem rodeios.",
@@ -96,7 +96,7 @@ const contents = ref([
       '"Informação é poder". Aprender a protegê-la representa uma vantagem. O curso aborda como se proteger das vulnerabilidades dos sistemas de comunicação tão integrados e expostos, com exemplos práticos e ferramentas úteis.',
     professors: [
       {
-        name: "Prof. Oliveira",
+        name: "Prof. Maj. Cadar",
         img: "https://i.imgur.com/andanotherimage.jpeg",
       },
     ],
@@ -122,7 +122,7 @@ const contents = ref([
       "Melhore sua postura defensiva, aprendendo a se movimentar e se posicionar de maneira a não se tornar uma presa em situações de risco.",
     professors: [
       {
-        name: "Prof. Cap. Alvarez",
+        name: "Prof. Cap. Prujansky",
         img: "https://i.imgur.com/bP3ymZT.jpeg",
       },
     ],
@@ -143,13 +143,13 @@ const contents = ref([
   },
   {
     title: "MÓDULO 6",
-    text: "Mentalidade de Combate",
+    text: "Escolhi reagir",
     icon: "mdi-fencing",
     description:
       "Baseado em estudos, apresentamos conhecimentos para agir adequadamente em momentos de crise.",
     professors: [
       {
-        name: "Prof. Cap. Prujansky",
+        name: "Prof. Cap. Alvarez",
         img: "https://i.imgur.com/yetanotherimage.jpeg",
       },
     ],
@@ -169,7 +169,7 @@ const contents = ref([
       "Um guia de primeiros socorros que ensina a realizar atendimentos iniciais em situações de emergência, incluindo técnicas para estancar sangramentos, que representam 80% das mortes. Trouxemos um paramédico do BOPE com vasta experiência em crises reais para ensinar essas técnicas.",
     professors: [
       {
-        name: "Prof. Pol. Penal Santos",
+        name: "Prof. Oliveira",
         img: "https://i.imgur.com/yetanotherimage.jpeg",
       },
     ],
