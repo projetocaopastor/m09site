@@ -20,10 +20,8 @@ const cards = ref<Card[]>([
     installmentPrice: "R$ 79,90",
     fullPrice: "R$ 1430,40",
     benefits: [
-      "Grupo exclusivo para alunos",
       "Garantia de 7 dias",
       "Assista pelo celular e computador",
-      "Acesso a todos os módulos",
       "Acesso por 1 ano",
     ],
     extraBenefit: "Acesso aos módulos x, y e z.",
@@ -36,10 +34,8 @@ const cards = ref<Card[]>([
     installmentPrice: "R$ 99,90",
     fullPrice: "R$ 1700,40",
     benefits: [
-      "Grupo exclusivo para alunos",
       "Garantia de 7 dias",
       "Assista pelo celular e computador",
-      "Acesso a todos os módulos",
       "Acesso por 1 ano",
     ],
     extraBenefit: "Acesso aos módulos x, y e z.",
@@ -52,10 +48,8 @@ const cards = ref<Card[]>([
     installmentPrice: "R$ 69,90",
     fullPrice: "R$ 1200,40",
     benefits: [
-      "Grupo exclusivo para alunos",
       "Garantia de 7 dias",
       "Assista pelo celular e computador",
-      "Acesso a todos os módulos",
       "Acesso por 1 ano",
     ],
     extraBenefit: "Acesso aos módulos x, y e z.",
@@ -65,11 +59,22 @@ const cards = ref<Card[]>([
 </script>
 
 <template>
-  <v-container class="pb-16 pt-12" fluid>
+  <v-container class="pb-16 pt-8" fluid>
     <v-row justify="center">
+      <v-col cols="12">
+        <div class="d-flex justify-center mb-2">
+          <span class="text-h4 text-md-start text-center">
+            Adquira os 
+            <span class="text-yellow-darken-3">
+              módulos 
+            </span>
+            separadamente em pacotes
+          </span>
+        </div>
+      </v-col>
       <v-col cols="12" md="3" v-for="(card, index) in cards" :key="index">
-        <div class="w-100 d-flex justify-center">
-          <div class="sale-card">
+        <div class="d-flex justify-center">
+          <div class="sale-card" :class="`sale-card-${index + 1}`">
             <div class="package-icon-content">
               <v-badge :content="index + 1" color="yellow-darken-1">
                 <v-icon
@@ -79,7 +84,7 @@ const cards = ref<Card[]>([
                 />
               </v-badge>
             </div>
-            <div>
+            <div class="text-h6 font-weight-medium">
               {{ card.title }}
             </div>
             <div class="package-discount text-center">
@@ -112,7 +117,8 @@ const cards = ref<Card[]>([
                 <v-icon icon="mdi-check" color="yellow-darken-3" />
                 {{ benefit }}
               </div>
-              <div class="d-flex ga-1 mt-4">
+              <hr class="my-3">
+              <div class="d-flex ga-1">
                 <v-icon icon="mdi-package" color="yellow-darken-3" />
                 <span>
                   {{ card.extraBenefit }}
@@ -189,7 +195,6 @@ const cards = ref<Card[]>([
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #062c3f;
   clip-path: polygon(
     0 0,
     100% 0,
@@ -199,15 +204,17 @@ const cards = ref<Card[]>([
   );
 }
 
-/* .sale-content {
-    background-image: url("/src/assets/soldier.jpg");
-    background-position-y: 12%;
-    height: 800px;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-} */
+.sale-card-3::after {
+  background-color: #002b4f; /* Azul Escuro 1 */
+}
+
+.sale-card-2::after {
+  background-color: #00355f; /* Azul Escuro 2 */
+}
+
+.sale-card-1::after {
+  background-color: #004070; /* Azul Escuro 3 */
+}
 
 .sale-content::after {
   content: "";
