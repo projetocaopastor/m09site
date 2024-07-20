@@ -264,20 +264,20 @@ const cards = ref<Card[]>([
   );
 }
 
-.sale-card-4::after {
-  background-color: #002b4f; /* Azul Escuro 1 */
-}
-
-.sale-card-3::after {
-  background-color: #0a2f4d; /* Azul Escuro 1 */
+.sale-card-1::after {
+  background-color: #001a33;
 }
 
 .sale-card-2::after {
-  background-color: #00355f; /* Azul Escuro 2 */
+  background-color: #002b4f;
 }
 
-.sale-card-1::after {
-  background-color: #004070; /* Azul Escuro 3 */
+.sale-card-3::after {
+  background-color: #00355f;
+}
+
+.sale-card-4::after {
+  background-color: #004070;
 }
 
 .sale-content::after {
@@ -301,23 +301,6 @@ const cards = ref<Card[]>([
   padding: 4px 16px;
   border-radius: 2px;
   font-size: 0.8rem;
-}
-
-.sale-btn {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-  background-color: #f57f17;
-  border-radius: 2px;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  font-size: 1.3rem;
-  box-shadow: 0 0 5px 1px #f57f17;
-  margin-top: 20px;
 }
 
 .bottom-icon {

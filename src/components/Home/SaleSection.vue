@@ -145,23 +145,6 @@
     font-size: 0.8rem;
 }
 
-.sale-btn {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    background-color: #F57F17;
-    border-radius: 2px;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    font-size: 1.3rem;
-    box-shadow: 0 0 5px 1px #F57F17;
-    margin-top: 20px;
-}
-
 .bottom-icon {
     position: absolute;
     right: 20px;

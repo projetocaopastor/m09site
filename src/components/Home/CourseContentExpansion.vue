@@ -416,7 +416,7 @@ const contents = ref([
                     >
                       <v-avatar size="45px">
                         <!-- <v-img alt="Avatar" :src="professor.img"></v-img> -->
-                        <v-icon icon="mdi-account" />
+                        <v-icon icon="mdi-human-male-board" :color="`red-lighten-${(index * 2) + 1}`" />
                       </v-avatar>
                       <span>{{ professor.name }}</span>
                     </div>
