@@ -17,7 +17,6 @@
         <v-btn
           href="https://www.instagram.com/caveiracadar09/"
           target="_blank"
-          class="px-0"
         >
           <div class="d-flex ga-2 align-center">
             <v-icon
@@ -43,8 +42,6 @@
         <v-btn
           href="https://www.youtube.com/c/ProjetoMatilhaC%C3%A3oPastor"
           target="_blank"
-          size="x-large"
-          class="px-4"
         >
           <div class="d-flex ga-2 align-center">
             <v-icon

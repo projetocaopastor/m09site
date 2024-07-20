@@ -10,50 +10,81 @@ interface Card {
   benefits: string[];
   extraBenefit: string;
   link: string;
+  description: string;
+  icon: string;
 }
 
 const cards = ref<Card[]>([
   {
-    title: "Pacote 1",
+    title: "Pacote 1 - Anatomia do combate",
+    icon: "mdi-skull-crossbones",
+    discount: "10% de desconto por tempo limitado",
+    originalPrice: "R$ 700,00",
+    installmentPrice: "R$ 69,90",
+    fullPrice: "R$ 599,00",
+    benefits: [
+      "Garantia de 7 dias",
+      "Assista pelo celular e computador",
+      "Acesso por 1 ano",
+    ],
+    extraBenefit: "Acesso aos módulos Mentalidade e Anatomia do Combate.",
+    link: "http://www.google.com",
+    description:
+      "Como se comportar em uma crise? Como não se desesperar? Como treinar para ser funcional em um conflito. Entenda os impactos legais que uma crise pode gerar, nesse curso, ensino para o aluno sobre legalidades, riscos, analise risco bem como a fisiologia impacta no combatente. Bem como ensinamos o aluno formas de inocular o estresse. Um conhecimento imprescindível para quem trabalha em condição de crise ou deseja trabalhar. Um operador não deveria ficar sem esses conhecimentos. <br><br> <strong>Módulos:</strong> Mentalidade e Anatomia do Combate.",
+  },
+  {
+    title: "Pacote 2 - Conduta Inteligente",
+    icon: "mdi-eye-check",
     discount: "20% de desconto por tempo limitado",
     originalPrice: "R$ 1200,00",
     installmentPrice: "R$ 79,90",
-    fullPrice: "R$ 1430,40",
+    fullPrice: "R$ 499,00",
     benefits: [
       "Garantia de 7 dias",
       "Assista pelo celular e computador",
       "Acesso por 1 ano",
     ],
-    extraBenefit: "Acesso aos módulos x, y e z.",
+    extraBenefit:
+      "Acesso aos módulos Negação - Criminologia, Conduta Defensiva, Escolhi Reagir (Mentalidade em momentos de crise) e Legítima Defesa.",
     link: "http://www.google.com",
+    description:
+      "Desenvolva uma mentalidade de segurança proativa com o curso 'Conduta Inteligente'. Através de instruções especializadas, você aprenderá a melhorar sua percepção de risco e a se antecipar a crises de segurança, como assaltos. Explore a criminologia, analise os riscos e compreenda a legislação de legítima defesa para agir de forma preventiva em todas as situações. Busque no Google por palavras-chave como segurança, proteção e caveira para encontrar nosso produto e garantir sua tranquilidade. <br><br> <strong>Módulos:</strong> Negação - Criminologia, Conduta Defensiva, Escolhi Reagir (Mentalidade em momentos de crise) e Legítima Defesa.",
   },
   {
-    title: "Pacote 2",
+    title: "Pacote 3 - Cão de Caça",
+    icon: "mdi-paw",
     discount: "15% de desconto por tempo limitado",
     originalPrice: "R$ 1500,00",
     installmentPrice: "R$ 99,90",
-    fullPrice: "R$ 1700,40",
+    fullPrice: "R$ 999,00",
     benefits: [
       "Garantia de 7 dias",
       "Assista pelo celular e computador",
       "Acesso por 1 ano",
     ],
-    extraBenefit: "Acesso aos módulos x, y e z.",
+    extraBenefit:
+      "Acesso aos módulos APH, Defesa Pessoal, Instrução de Tiro, Conduta Armada, Anatomia do Combate e Legítima Defesa.",
     link: "http://www.google.com",
+    description:
+      "Torne-se um OPERADOR com o curso 'Cão de Caça'. Aprenda técnicas avançadas DE DEFESA, atendimento pré-hospitalar, e o uso de armas de fogo com segurança e precisão. Desenvolva habilidades para enfrentar situações de risco e garantir a proteção ativa de sua vida e das pessoas ao seu redor.  <br><br> <strong>Módulos:</strong> APH, Defesa Pessoal, Instrução de Tiro, Conduta Armada, Anatomia do Combate e Legítima Defesa.",
   },
   {
-    title: "Pacote 3",
+    title: "Pacote 4 - Cão de Guarda",
+    icon: "mdi-security",
     discount: "10% de desconto por tempo limitado",
     originalPrice: "R$ 1000,00",
     installmentPrice: "R$ 69,90",
-    fullPrice: "R$ 1200,40",
+    fullPrice: "R$ 799,00",
     benefits: [
       "Garantia de 7 dias",
       "Assista pelo celular e computador",
       "Acesso por 1 ano",
     ],
-    extraBenefit: "Acesso aos módulos x, y e z.",
+    extraBenefit:
+      "Acesso aos módulos Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.",
     link: "http://www.google.com",
+    description:
+      "Descubra como proteger você e sua família com o curso 'Cão de Guarda'. Aprenda a desenvolver uma mentalidade de segurança, proteger sua residência e informações pessoais, e adotar uma conduta defensiva eficaz. Ideal para quem busca uma abordagem preventiva e segura para proteger o que mais importa.<br><br> <strong>Módulos:</strong> Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.",
   },
 ]);
 </script>
@@ -64,10 +95,8 @@ const cards = ref<Card[]>([
       <v-col cols="12">
         <div class="d-flex justify-center mb-2">
           <span class="text-h4 text-md-start text-center">
-            Adquira os 
-            <span class="text-yellow-darken-3">
-              módulos 
-            </span>
+            Adquira os
+            <span class="text-yellow-darken-3"> módulos </span>
             separadamente em pacotes
           </span>
         </div>
@@ -76,17 +105,48 @@ const cards = ref<Card[]>([
         <div class="d-flex justify-center">
           <div class="sale-card" :class="`sale-card-${index + 1}`">
             <div class="package-icon-content">
-              <v-badge :content="index + 1" color="yellow-darken-1">
-                <v-icon
-                  icon="mdi-package-variant-closed"
-                  size="80"
-                  color="yellow-darken-3"
-                />
-              </v-badge>
+              <!-- <v-badge hide content="" color="yellow-darken-1">
+              </v-badge> -->
+              <v-icon :icon="card.icon" size="80" color="yellow-darken-3" />
             </div>
             <div class="text-h6 font-weight-medium">
               {{ card.title }}
             </div>
+
+            <div>
+              <v-dialog max-width="500">
+                <template v-slot:activator="{ props: activatorProps }">
+                  <v-btn
+                    v-bind="activatorProps"
+                    color="yellow-darken-3"
+                    text="Saiba mais"
+                    variant="outlined"
+                  ></v-btn>
+                </template>
+
+                <template v-slot:default="{ isActive }">
+                  <v-card>
+                    <v-card-title class="text-yellow-darken-3 pb-0">
+                      {{ card.title }}
+                    </v-card-title>
+
+                    <v-card-text v-html="card.description"> </v-card-text>
+
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+
+                      <v-btn
+                        text="Fechar"
+                        color="yellow-darken-3"
+                        variant="outlined"
+                        @click="isActive.value = false"
+                      ></v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </template>
+              </v-dialog>
+            </div>
+
             <div class="package-discount text-center">
               {{ card.discount }}
             </div>
@@ -117,13 +177,13 @@ const cards = ref<Card[]>([
                 <v-icon icon="mdi-check" color="yellow-darken-3" />
                 {{ benefit }}
               </div>
-              <hr class="my-3">
+              <!-- <hr class="my-3" />
               <div class="d-flex ga-1">
                 <v-icon icon="mdi-package" color="yellow-darken-3" />
                 <span>
                   {{ card.extraBenefit }}
                 </span>
-              </div>
+              </div> -->
             </div>
             <a class="sale-btn" :href="card.link" target="_blank">
               <span> MATRICULE-SE </span>
@@ -204,8 +264,12 @@ const cards = ref<Card[]>([
   );
 }
 
-.sale-card-3::after {
+.sale-card-4::after {
   background-color: #002b4f; /* Azul Escuro 1 */
+}
+
+.sale-card-3::after {
+  background-color: #0a2f4d; /* Azul Escuro 1 */
 }
 
 .sale-card-2::after {
