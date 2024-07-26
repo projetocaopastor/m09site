@@ -2,7 +2,7 @@
     <div class="bottom-navigation bg-grey-darken-4">
         <a class="sale-btn sale-btn-bottom" href="http://www.google.com" target="_blank">
             <span>
-                MATRICULE-SE
+                MATRICULE-SE NA TURMA MASTER
             </span>
             <v-icon icon="mdi-arrow-right-thin-circle-outline" class="bottom-icon"/>
         </a>

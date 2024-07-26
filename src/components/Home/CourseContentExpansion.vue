@@ -289,7 +289,8 @@ const contents = ref([
     title: "MÓDULO 11",
     text: "Anatomia do Combate",
     icon: "mdi-skull",
-    description: "SEM DESCRIÇÃO A FAZER!",
+    description:
+      "Como se comportar em uma crise? Como não se desesperar? Como treinar para ser funcional em um conflito? Entenda os impactos legais que uma crise pode gerar.  Neste curso ensino para o aluno sobre legalidades, riscos, analise de risco bem como a fisiologia impacta no combatente. Bem como ensinamos  formas de inocular o estresse. Um conhecimento imprescindível para quem trabalha em condição de crise ou deseja trabalhar. Um operador não deveria ficar sem esses conhecimentos.",
     professors: [
       {
         name: "Prof. Maj. Cadar",
@@ -324,7 +325,8 @@ const contents = ref([
     title: "MÓDULO EXTRA",
     text: "Legítima Defesa: Teoria e Prática",
     icon: "mdi-shield-account-variant-outline",
-    description: "Aprenda legítima defesa com a percepção de quem atua aplicando o tema na prática. Uma aula que vai desde a teoria até a aplicação, com estudos de caso e ponderações de quem não só estudou o direito, mas o aplica. Uma aula para o aluno dominar o único remédio jurídico que protege uma reação, para que nosso aluno tenha confiança ao utilizá-la, sabendo os riscos e requisitos necessários.",
+    description:
+      "Aprenda legítima defesa com a percepção de quem atua aplicando o tema na prática. Uma aula que vai desde a teoria até a aplicação, com estudos de caso e ponderações de quem não só estudou o direito, mas o aplica. Uma aula para o aluno dominar o único remédio jurídico que protege uma reação, para que nosso aluno tenha confiança ao utilizá-la, sabendo os riscos e requisitos necessários.",
     professors: [
       {
         name: "Prof. Delegado William Oliveira",
@@ -350,7 +352,8 @@ const contents = ref([
     title: "MÓDULO EXTRA",
     text: "Neurociência: Identificação de Ameaças",
     icon: "mdi-robber",
-    description: "Aprenda com este excelente instrutor como se antecipar às crises e desenvolver o raciocínio necessário, além de dezenas de estudos de caso comentados pelo instrutor.",
+    description:
+      "Aprenda com este excelente instrutor como se antecipar às crises e desenvolver o raciocínio necessário, além de dezenas de estudos de caso comentados pelo instrutor.",
     professors: [
       {
         name: "Prof. Pol. Penal Santos",
@@ -394,7 +397,15 @@ const contents = ref([
                 class="text-uppercase"
                 style="font-size: 1.2rem; font-weight: 400"
               >
-                <v-icon :icon="module.icon" class="mr-1" :color="module.title.includes('EXTRA') ? 'yellow-darken-4' : 'yellow-darken-3'"></v-icon>
+                <v-icon
+                  :icon="module.icon"
+                  class="mr-1"
+                  :color="
+                    module.title.includes('EXTRA')
+                      ? 'yellow-darken-4'
+                      : 'yellow-darken-3'
+                  "
+                ></v-icon>
                 {{ module.title }} - {{ module.text }}
               </span>
             </template>
@@ -416,7 +427,10 @@ const contents = ref([
                     >
                       <v-avatar size="45px">
                         <!-- <v-img alt="Avatar" :src="professor.img"></v-img> -->
-                        <v-icon icon="mdi-human-male-board" :color="`red-lighten-${(index * 2) + 1}`" />
+                        <v-icon
+                          icon="mdi-human-male-board"
+                          :color="`red-lighten-${index * 2 + 1}`"
+                        />
                       </v-avatar>
                       <span>{{ professor.name }}</span>
                     </div>
