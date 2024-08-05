@@ -12,6 +12,7 @@ interface Card {
   link: string;
   description: string;
   icon: string;
+  redirect: string;
 }
 
 const cards = ref<Card[]>([
@@ -29,6 +30,7 @@ const cards = ref<Card[]>([
     ],
     extraBenefit: "Acesso aos módulos Mentalidade e Anatomia do Combate.",
     link: "https://pay.hotmart.com/G93958528U",
+    redirect: "src/assets/pdfs/ANATOMIA DO COMBATE PDF completo sem preço.pdf",
     description: `Como se comportar em uma crise? Como não se desesperar? Como treinar para ser funcional em um conflito. Entenda os impactos legais que uma crise pode gerar, nesse curso, ensino para o aluno sobre legalidades, riscos, analise risco bem como a fisiologia impacta no combatente. Bem como ensinamos o aluno formas de inocular o estresse. Um conhecimento imprescindível para quem trabalha em condição de crise ou deseja trabalhar. Um operador não deveria ficar sem esses conhecimentos. <br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Mentalidade e Anatomia do Combate.`,
   },
   {
@@ -46,6 +48,7 @@ const cards = ref<Card[]>([
     extraBenefit:
       "Acesso aos módulos Negação - Criminologia, Conduta Defensiva, Escolhi Reagir (Mentalidade em momentos de crise) e Legítima Defesa.",
     link: "https://pay.hotmart.com/H94599252R",
+    redirect: "src/assets/pdfs/CONDUTA INTELIGENTE PDF completo sem preço.pdf",
     description: `Desenvolva uma mentalidade de segurança proativa com o curso 'Conduta Inteligente'. Através de instruções especializadas, você aprenderá a melhorar sua percepção de risco e a se antecipar a crises de segurança, como assaltos. Explore a criminologia, analise os riscos e compreenda a legislação de legítima defesa para agir de forma preventiva em todas as situações. Busque no Google por palavras-chave como segurança, proteção e caveira para encontrar nosso produto e garantir sua tranquilidade. <br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Negação - Criminologia, Conduta Defensiva, Escolhi Reagir (Mentalidade em momentos de crise) e Legítima Defesa.`,
   },
   {
@@ -63,6 +66,7 @@ const cards = ref<Card[]>([
     extraBenefit:
       "Acesso aos módulos APH, Defesa Pessoal, Instrução de Tiro, Conduta Armada, Anatomia do Combate e Legítima Defesa.",
     link: "https://pay.hotmart.com/W93957364R",
+    redirect: "src/assets/pdfs/OPERADOR DE CRISE PDF completo sem preço.pdf",
     description: `Torne-se um OPERADOR com o curso 'Operador de Crise'. Aprenda técnicas avançadas DE DEFESA, atendimento pré-hospitalar, e o uso de armas de fogo com segurança e precisão. Desenvolva habilidades para enfrentar situações de risco e garantir a proteção ativa de sua vida e das pessoas ao seu redor.  <br><br> <strong class="text-yellow-darken-3">Módulos:</strong> APH, Defesa Pessoal, Instrução de Tiro, Conduta Armada, Anatomia do Combate e Legítima Defesa.`,
   },
   {
@@ -80,6 +84,7 @@ const cards = ref<Card[]>([
     extraBenefit:
       "Acesso aos módulos Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.",
     link: "https://pay.hotmart.com/A93763899V",
+    redirect: "src/assets/pdfs/DEFESA PASSIVA - CÃO DE GUARDA PDF completo sem preço.pdf",
     description: `Descubra como proteger você e sua família com o curso 'Conduta Defensiva'. Aprenda a desenvolver uma mentalidade de segurança, proteger sua residência e informações pessoais, e adotar uma conduta defensiva eficaz. Ideal para quem busca uma abordagem preventiva e segura para proteger o que mais importa.<br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.`,
   },
   {
@@ -97,6 +102,7 @@ const cards = ref<Card[]>([
     extraBenefit:
       "Acesso aos módulos Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.",
     link: "https://pay.hotmart.com/X94711258W",
+    redirect: "src/assets/pdfs/CRIMINOLOGIA PDF completo sem preço.pdf",
     description: `Um curso voltado para você entender como o crime realmente funciona. Pois ele dá gradativamente o tema, nossos instrutores também tratam o assunto com a expertise de quem testou as teorias no campo pratico. Esse conteúdo é indicado para todos aqueles que querem e precisam entender como funciona o crime, bem como a tomada de decisão de um criminoso.<br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Negação - Criminologia e Mentalidade.`,
   },
 ]);
@@ -127,7 +133,15 @@ const cards = ref<Card[]>([
             </div>
 
             <div>
-              <v-dialog max-width="500">
+              <v-btn
+                color="yellow-darken-3"
+                text="Saiba mais"
+                variant="outlined"
+                class="mb-1"
+                target="_blank"
+                :href="card.redirect"
+              ></v-btn>
+              <!-- <v-dialog max-width="500">
                 <template v-slot:activator="{ props: activatorProps }">
                   <v-btn
                     v-bind="activatorProps"
@@ -158,7 +172,7 @@ const cards = ref<Card[]>([
                     </v-card-actions>
                   </v-card>
                 </template>
-              </v-dialog>
+              </v-dialog> -->
             </div>
             <!-- 
             <div class="package-discount text-center">

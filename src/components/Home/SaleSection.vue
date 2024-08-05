@@ -7,6 +7,16 @@
             <div class="text-h6 font-weight-medium">
                 Turma Master
             </div>
+            <div>
+              <v-btn
+                color="yellow-darken-3"
+                text="Saiba mais"
+                variant="outlined"
+                class="mb-1"
+                target="_blank"
+                href="src/assets/pdfs/CÃO PASTOR 2.O PDF completo sem preço.pdf"
+              ></v-btn>
+            </div>
             <!-- <div class="package-discount text-center">
                 20% de desconto por tempo limitado
             </div> -->
