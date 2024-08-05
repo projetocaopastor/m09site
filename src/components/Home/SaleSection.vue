@@ -7,22 +7,22 @@
             <div class="text-h6 font-weight-medium">
                 Turma Master
             </div>
-            <div class="package-discount text-center">
+            <!-- <div class="package-discount text-center">
                 20% de desconto por tempo limitado
-            </div>
+            </div> -->
             <div class="text-center d-flex align-center ga-1 pt-2">
                 De
                 <div class="position-relative">
-                    <span class="text-h5 line-through text-red">R$ 1200,00</span>
+                    <span class="text-h5 line-through text-red">R$ 2399,00</span>
                 </div>
                 por
             </div>
             <div class="text-center">
                 <div class="d-flex align-center ga-1">
                     12x
-                    <span class="text-h4 text-yellow-darken-3">R$ 79,90</span>
+                    <span class="text-h4 text-yellow-darken-3">R$ 189,53</span>
                 </div>
-                à vista R$ 1430,40
+                à vista R$ 1899,00
             </div>
             <div>
                 <div class="d-flex ga-1">
