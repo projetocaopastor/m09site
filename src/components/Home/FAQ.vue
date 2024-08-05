@@ -22,11 +22,11 @@ const tabs = ref([
       },
       {
         title: "Tem certificado?",
-        text: "Qualquer coisa só pra ter o texto!!#@!#@!3232131321",
+        text: "É possível gerar o certificado pela hotmart.",
       },
       {
-        title: "O Treinamento possui alguma comunidade?",
-        text: "Qualquer coisa só pra ter o texto!!#@!#@!3232131321",
+        title: "O curso possui alguma comunidade?",
+        text: "Sim! Temos um grupo de no whatsapp com alunos do Brasil inteiro e acesso aos instrutores.",
       },
       {
         title: "Posso ler e assistir no celular? É possível baixar o conteúdo?",
@@ -40,28 +40,24 @@ const tabs = ref([
     questions: [
       {
         title: "Onde tiro minhas dúvidas?",
-        text: "Qualquer coisa só pra ter o texto!!#@!#@!3232131321",
+        text: "Pode ser no nosso grupo de WhatsApp ou è só mandar um e mail para projetomatilhacaopasto@gmail.com",
       },
       {
         title:
           "Não estou achando o e-mail com os dados de acesso o que eu faço?",
-        text: "Qualquer coisa só pra ter o texto!!#@!#@!3232131321",
+        text: "Verifique na caixa de spam e lixo eletrônico.",
       },
       {
         title: "Quanto tempo tenho de garantia?",
         text: "O risco é nosso. Garantia irrestrita de 7 dias.",
       },
       {
-        title: "Emite alguma nota fiscal?",
-        text: "Qualquer coisa só pra ter o texto!!#@!#@!3232131321",
-      },
-      {
         title: "Comprei duas vezes, o que faço?",
-        text: "Qualquer coisa só pra ter o texto!!#@!#@!3232131321",
+        text: "É só pedir o reembolso de uma das compras e mandar um e-mail para a gente ou direct no @caveiracadar09.",
       },
       {
         title: "Posso compartilhar o meu acesso?",
-        text: "Qualquer coisa só pra ter o texto!!#@!#@!3232131321",
+        text: "Não, o acesso é pessoal.",
       },
     ],
   },
@@ -76,16 +72,11 @@ const tabs = ref([
       {
         title:
           "Posso comprar através do pagamento recorrente, sem comprometer o limite do meu cartão?",
-        text: "Infelizmente, não.",
-      },
-      {
-        title:
-          "Posso comprar através do pagamento recorrente, sem comprometer o limite do meu cartão?",
-        text: "Infelizmente, não.",
+        text: "Não, não é possível ",
       },
       {
         title: "Qual é o investimento para entrar no Projeto Cão Pastor?",
-        text: "O valor do treinamento é de 12x sem juros de R$ 274,75. Pagamento à vista possui R$ 300 de desconto, saindo por R$ 2.997,00.",
+        text: "Fizemos diversos pacotes para se adequar a necessidade e possibilidade do aluno.",
       },
       {
         title:
@@ -98,7 +89,7 @@ const tabs = ref([
       },
       {
         title: "Moro em outro País, posso comprar o curso parcelado?",
-        text: "O parcelamento está disponível apenas para compras feitas no Brasil. ",
+        text: "O parcelamento está disponível apenas para compras feitas no Brasil.",
       },
     ],
   },

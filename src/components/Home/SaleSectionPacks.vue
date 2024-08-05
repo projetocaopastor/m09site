@@ -19,8 +19,8 @@ const cards = ref<Card[]>([
     title: "Pacote 1 - Anatomia do combate",
     icon: "mdi-skull-crossbones",
     discount: "10% de desconto por tempo limitado",
-    originalPrice: "R$ 700,00",
-    installmentPrice: "R$ 69,90",
+    originalPrice: "R$ 799,00",
+    installmentPrice: "R$ 59,78",
     fullPrice: "R$ 599,00",
     benefits: [
       "Garantia de 7 dias",
@@ -28,7 +28,7 @@ const cards = ref<Card[]>([
       "Acesso por 1 ano",
     ],
     extraBenefit: "Acesso aos módulos Mentalidade e Anatomia do Combate.",
-    link: "http://www.google.com",
+    link: "https://pay.hotmart.com/G93958528U",
     description:
       `Como se comportar em uma crise? Como não se desesperar? Como treinar para ser funcional em um conflito. Entenda os impactos legais que uma crise pode gerar, nesse curso, ensino para o aluno sobre legalidades, riscos, analise risco bem como a fisiologia impacta no combatente. Bem como ensinamos o aluno formas de inocular o estresse. Um conhecimento imprescindível para quem trabalha em condição de crise ou deseja trabalhar. Um operador não deveria ficar sem esses conhecimentos. <br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Mentalidade e Anatomia do Combate.`,
   },
@@ -36,8 +36,8 @@ const cards = ref<Card[]>([
     title: "Pacote 2 - Conduta Inteligente",
     icon: "mdi-eye-check",
     discount: "20% de desconto por tempo limitado",
-    originalPrice: "R$ 1200,00",
-    installmentPrice: "R$ 79,90",
+    originalPrice: "R$ 699,00",
+    installmentPrice: "R$ 49,80",
     fullPrice: "R$ 499,00",
     benefits: [
       "Garantia de 7 dias",
@@ -46,16 +46,16 @@ const cards = ref<Card[]>([
     ],
     extraBenefit:
       "Acesso aos módulos Negação - Criminologia, Conduta Defensiva, Escolhi Reagir (Mentalidade em momentos de crise) e Legítima Defesa.",
-    link: "http://www.google.com",
+    link: "https://pay.hotmart.com/H94599252R",
     description:
       `Desenvolva uma mentalidade de segurança proativa com o curso 'Conduta Inteligente'. Através de instruções especializadas, você aprenderá a melhorar sua percepção de risco e a se antecipar a crises de segurança, como assaltos. Explore a criminologia, analise os riscos e compreenda a legislação de legítima defesa para agir de forma preventiva em todas as situações. Busque no Google por palavras-chave como segurança, proteção e caveira para encontrar nosso produto e garantir sua tranquilidade. <br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Negação - Criminologia, Conduta Defensiva, Escolhi Reagir (Mentalidade em momentos de crise) e Legítima Defesa.`,
   },
   {
-    title: "Pacote 3 - Cão de Caça",
+    title: "Pacote 3 - Operador de crise",
     icon: "mdi-paw",
     discount: "15% de desconto por tempo limitado",
-    originalPrice: "R$ 1500,00",
-    installmentPrice: "R$ 99,90",
+    originalPrice: "R$ 1299,00",
+    installmentPrice: "R$ 99,70",
     fullPrice: "R$ 999,00",
     benefits: [
       "Garantia de 7 dias",
@@ -64,16 +64,16 @@ const cards = ref<Card[]>([
     ],
     extraBenefit:
       "Acesso aos módulos APH, Defesa Pessoal, Instrução de Tiro, Conduta Armada, Anatomia do Combate e Legítima Defesa.",
-    link: "http://www.google.com",
+    link: "https://pay.hotmart.com/W93957364R",
     description:
-      `Torne-se um OPERADOR com o curso 'Cão de Caça'. Aprenda técnicas avançadas DE DEFESA, atendimento pré-hospitalar, e o uso de armas de fogo com segurança e precisão. Desenvolva habilidades para enfrentar situações de risco e garantir a proteção ativa de sua vida e das pessoas ao seu redor.  <br><br> <strong class="text-yellow-darken-3">Módulos:</strong> APH, Defesa Pessoal, Instrução de Tiro, Conduta Armada, Anatomia do Combate e Legítima Defesa.`,
+      `Torne-se um OPERADOR com o curso 'Operador de Crise'. Aprenda técnicas avançadas DE DEFESA, atendimento pré-hospitalar, e o uso de armas de fogo com segurança e precisão. Desenvolva habilidades para enfrentar situações de risco e garantir a proteção ativa de sua vida e das pessoas ao seu redor.  <br><br> <strong class="text-yellow-darken-3">Módulos:</strong> APH, Defesa Pessoal, Instrução de Tiro, Conduta Armada, Anatomia do Combate e Legítima Defesa.`,
   },
   {
-    title: "Pacote 4 - Cão de Guarda",
+    title: "Pacote 4 - Conduta Defensiva",
     icon: "mdi-security",
     discount: "10% de desconto por tempo limitado",
-    originalPrice: "R$ 1000,00",
-    installmentPrice: "R$ 69,90",
+    originalPrice: "R$ 1099,00",
+    installmentPrice: "R$ 79,74",
     fullPrice: "R$ 799,00",
     benefits: [
       "Garantia de 7 dias",
@@ -82,7 +82,25 @@ const cards = ref<Card[]>([
     ],
     extraBenefit:
       "Acesso aos módulos Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.",
-    link: "http://www.google.com",
+    link: "https://pay.hotmart.com/A93763899V",
+    description:
+      `Descubra como proteger você e sua família com o curso 'Conduta Defensiva'. Aprenda a desenvolver uma mentalidade de segurança, proteger sua residência e informações pessoais, e adotar uma conduta defensiva eficaz. Ideal para quem busca uma abordagem preventiva e segura para proteger o que mais importa.<br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.`,
+  },
+  {
+    title: "Pacote 5 - Criminologia",
+    icon: "mdi-security",
+    discount: "10% de desconto por tempo limitado",
+    originalPrice: "R$ 249,00",
+    installmentPrice: "R$ 13,97",
+    fullPrice: "R$ 140,00",
+    benefits: [
+      "Garantia de 7 dias",
+      "Assista pelo celular e computador",
+      "Acesso por 1 ano",
+    ],
+    extraBenefit:
+      "Acesso aos módulos Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.",
+    link: "https://pay.hotmart.com/X94711258W",
     description:
       `Descubra como proteger você e sua família com o curso 'Cão de Guarda'. Aprenda a desenvolver uma mentalidade de segurança, proteger sua residência e informações pessoais, e adotar uma conduta defensiva eficaz. Ideal para quem busca uma abordagem preventiva e segura para proteger o que mais importa.<br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.`,
   },
@@ -109,7 +127,7 @@ const cards = ref<Card[]>([
               </v-badge> -->
               <v-icon :icon="card.icon" size="80" color="yellow-darken-3" />
             </div>
-            <div class="text-h6 font-weight-medium">
+            <div class="text-h6 font-weight-medium text-center">
               {{ card.title }}
             </div>
 
@@ -147,10 +165,10 @@ const cards = ref<Card[]>([
                 </template>
               </v-dialog>
             </div>
-
+<!-- 
             <div class="package-discount text-center">
               {{ card.discount }}
-            </div>
+            </div> -->
             <div class="text-center d-flex align-center ga-1">
               De
               <div class="position-relative">
@@ -167,7 +185,10 @@ const cards = ref<Card[]>([
                   card.installmentPrice
                 }}</span>
               </div>
-              à vista {{ card.fullPrice }}
+              à vista 
+              <span class="text-yellow-darken-2 font-weight-bold">
+                {{ card.fullPrice }}
+              </span>
             </div>
             <div>
               <div

@@ -51,7 +51,7 @@
                     Acesso a todos os módulos
                 </div>
             </div>
-            <a class="sale-btn" href="http://www.google.com" target="_blank">
+            <a class="sale-btn" href="https://pay.hotmart.com/I77956669P" target="_blank">
                 <span>
                     MATRICULE-SE
                 </span>
