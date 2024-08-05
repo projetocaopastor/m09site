@@ -89,7 +89,7 @@
 
 .sale-card {
     width: 360px;
-    height: 630px;
+    height: 690px;
     position: relative;
     z-index: 1;
     display: flex;
