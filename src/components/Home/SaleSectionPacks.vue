@@ -50,7 +50,7 @@ const cards = ref<Card[]>([
   },
   {
     title: "Pacote 3 - Operador de crise",
-    icon: "mdi-paw",
+    icon: "mdi-target-account",
     discount: "15% de desconto por tempo limitado",
     originalPrice: "R$ 1299,00",
     installmentPrice: "R$ 99,70",
