@@ -14,7 +14,7 @@
                 variant="outlined"
                 class="mb-1"
                 target="_blank"
-                href="src/assets/caopastor20.pdf"
+                href="https://projetocaopastor.github.io/cursocaopastor.pdf"
               ></v-btn>
             </div>
             <!-- <div class="package-discount text-center">
