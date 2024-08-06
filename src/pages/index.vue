@@ -1,23 +1,26 @@
 <template>
-  <section class="first-page">
-    <v-icon icon="mdi-progress-wrench" size="330" class="text-grey-darken-3"></v-icon>
-    <span class="text-black text-h4 font-weight-light">Página em construção... </span>
-  </section>
+  <div>
+    <Introduction />
+    <!-- <Phrase1 /> -->
+    <MaterialContent />
+    <!-- <CourseContent /> -->
+    <CourseContentExpansion />
+    <SaleSection />
+    <SaleSectionPacks />
+    <Depositions />
+    <FAQ />
+  </div>
 </template>
 
-<style scoped>
-.first-page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #CDCDCD;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 12px;
-}
-</style>
+<script lang="ts" setup>
+import Depositions from '../components/Home/Depositions.vue';
+import Introduction from '../components/Home/Introduction.vue';
+import Phrase1 from '../components/Home/Phrase1.vue';
+import MaterialContent from '../components/Home/MaterialContent.vue';
+import FAQ from '../components/Home/FAQ.vue';
+import CourseContent from '../components/Home/CourseContent.vue';
+import SaleSection from '../components/Home/SaleSection.vue';
+import CourseContentExpansion from '../components/Home/CourseContentExpansion.vue';
+import SaleSectionPacks from '../components/Home/SaleSectionPacks.vue';
+
+</script>
