@@ -74,8 +74,8 @@ const cards = ref<Card[]>([
     icon: "mdi-security",
     discount: "10% de desconto por tempo limitado",
     originalPrice: "R$ 1099,00",
-    installmentPrice: "R$ 79,74",
-    fullPrice: "R$ 799,00",
+    installmentPrice: "R$ 79,54",
+    fullPrice: "R$ 797,00",
     benefits: [
       "Garantia de 7 dias",
       "Assista pelo celular e computador",
@@ -83,7 +83,7 @@ const cards = ref<Card[]>([
     ],
     extraBenefit:
       "Acesso aos módulos Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.",
-    link: "https://pay.hotmart.com/A93763899V",
+    link: "https://pay.hotmart.com/V94796189N?off=41hagyaa",
     redirect: "https://projetocaopastor.github.io/defesapassiva.pdf",
     description: `Descubra como proteger você e sua família com o curso 'Conduta Defensiva'. Aprenda a desenvolver uma mentalidade de segurança, proteger sua residência e informações pessoais, e adotar uma conduta defensiva eficaz. Ideal para quem busca uma abordagem preventiva e segura para proteger o que mais importa.<br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.`,
   },
