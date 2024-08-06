@@ -70,7 +70,7 @@ const cards = ref<Card[]>([
     description: `Torne-se um OPERADOR com o curso 'Operador de Crise'. Aprenda técnicas avançadas DE DEFESA, atendimento pré-hospitalar, e o uso de armas de fogo com segurança e precisão. Desenvolva habilidades para enfrentar situações de risco e garantir a proteção ativa de sua vida e das pessoas ao seu redor.  <br><br> <strong class="text-yellow-darken-3">Módulos:</strong> APH, Defesa Pessoal, Instrução de Tiro, Conduta Armada, Anatomia do Combate e Legítima Defesa.`,
   },
   {
-    title: "Pacote 4 - Conduta Defensiva",
+    title: "Pacote 4 - Protetor",
     icon: "mdi-security",
     discount: "10% de desconto por tempo limitado",
     originalPrice: "R$ 1099,00",

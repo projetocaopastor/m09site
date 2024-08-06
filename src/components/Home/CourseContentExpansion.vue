@@ -116,7 +116,7 @@ const contents = ref([
   },
   {
     title: "MÓDULO 5",
-    text: "Conduta Defensiva",
+    text: "Protetor",
     icon: "mdi-security",
     description:
       "Melhore sua postura defensiva, aprendendo a se movimentar e se posicionar de maneira a não se tornar uma presa em situações de risco.",
