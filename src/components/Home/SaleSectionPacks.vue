@@ -84,7 +84,7 @@ const cards = ref<Card[]>([
     extraBenefit:
       "Acesso aos módulos Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.",
     link: "https://pay.hotmart.com/V94796189N?off=41hagyaa",
-    redirect: "https://projetocaopastor.github.io/defesapassiva.pdf",
+    redirect: "https://projetocaopastor.github.io/protetor.pdf",
     description: `Descubra como proteger você e sua família com o curso 'Conduta Defensiva'. Aprenda a desenvolver uma mentalidade de segurança, proteger sua residência e informações pessoais, e adotar uma conduta defensiva eficaz. Ideal para quem busca uma abordagem preventiva e segura para proteger o que mais importa.<br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.`,
   },
   {
