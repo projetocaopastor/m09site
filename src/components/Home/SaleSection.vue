@@ -14,7 +14,7 @@
                 variant="outlined"
                 class="mb-1"
                 target="_blank"
-                href="src/assets/pdfs/CÃO PASTOR 2.O PDF completo sem preço.pdf"
+                href="src/assets/pdfs/caopastor20.pdf"
               ></v-btn>
             </div>
             <!-- <div class="package-discount text-center">
