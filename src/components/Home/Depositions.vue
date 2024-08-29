@@ -51,7 +51,7 @@ const depositions = [
 
 <template>
   <v-row justify="center" class="bg-grey-lighten-4 py-md-12 py-2">
-    <v-col md="8" cols="12">
+    <v-col cols="12">
       <v-container class="d-flex ga-md-12 ga-6 align-center px-md-10">
         <span class="text-h5 text-md-h4">Depoimentos</span>
 
@@ -89,10 +89,10 @@ const depositions = [
       </v-container>
     </v-col>
 
-    <v-col md="8" cols="12">
+    <v-col cols="12">
       <v-container grow>
         <v-row no-gutters>
-          <v-col v-for="deposition in depositions" :key="n" cols="12" sm="4">
+          <v-col v-for="deposition in depositions" :key="n" cols="12" md="6" lg="4">
             <div class="sale-card">
               <v-row>
                 <v-col style="height: 60px">
