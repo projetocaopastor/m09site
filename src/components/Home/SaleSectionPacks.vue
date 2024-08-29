@@ -120,7 +120,7 @@ const cards = ref<Card[]>([
           </span>
         </div>
       </v-col>
-      <v-col cols="12" md="3" v-for="(card, index) in cards" :key="index">
+      <v-col cols="12" lg="4" md="6" v-for="(card, index) in cards" :key="index">
         <div class="d-flex justify-center">
           <div class="sale-card" :class="`sale-card-${index + 1}`">
             <div class="package-icon-content">
