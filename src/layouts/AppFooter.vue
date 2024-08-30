@@ -40,7 +40,7 @@ function goToHome() {
         <v-col cols="12" md="3" class="d-flex flex-column justify-center align-md-start align-center">
 
           <div class="mb-3 mb-md-6">
-            <v-btn variant="text" href="https://www.instagram.com/caveiracadar09/" target="_blank">
+            <v-btn variant="text" href="https://www.instagram.com/caveiracadar09/" target="_blank" id="youtube-footer-btn">
               <v-icon icon="mdi-instagram" class="mr-1" />
               <span class="text-lowercase pb-1">
                 @caveiracadar09
@@ -49,7 +49,7 @@ function goToHome() {
           </div>
 
           <div class="mb-3 mb-md-6">
-            <v-btn variant="text" @click="mailTo()">
+            <v-btn variant="text" @click="mailTo()" id="email-header-btn">
               <v-icon icon="mdi-email" class="mr-1" />
               <span class="text-lowercase">
                 {{ email }}

@@ -83,6 +83,7 @@ const depositions = [
             variant="outlined"
             href="https://www.instagram.com/p/C8pB5jzMnqf/"
             target="_blank"
+            id="ver-mais-depoimentos-btn"
             >Veja mais depoimentos</v-btn
           >
         </div>
@@ -92,7 +93,7 @@ const depositions = [
     <v-col cols="12">
       <v-container grow>
         <v-row no-gutters>
-          <v-col v-for="deposition in depositions" :key="n" cols="12" md="6" lg="4">
+          <v-col v-for="deposition, index in depositions" :key="index" cols="12" md="6" lg="4">
             <div class="sale-card">
               <v-row>
                 <v-col style="height: 60px">
@@ -122,6 +123,7 @@ const depositions = [
                     class="text-yellow-darken-3 text-decoration-underline"
                     href="https://www.instagram.com/p/C8pB5jzMnqf/"
                     target="_blank"
+                    id="ver-mais-depoimentos-card-anchor"
                   >
                     Ver depoimentos completos no instagram
                   </a>
@@ -140,6 +142,7 @@ const depositions = [
           height="50"
           variant="outlined"
           href="https://www.instagram.com/p/C8pB5jzMnqf/"
+          id="ver-mais-depoimentos-btn"
           >Veja mais depoimentos</v-btn
         >
       </v-container>

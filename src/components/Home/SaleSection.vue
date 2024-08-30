@@ -15,6 +15,7 @@
                 class="mb-1"
                 target="_blank"
                 href="https://projetocaopastor.github.io/cursocaopastor.pdf"
+                id="curso-cao-pastor-saiba-mais-btn"
               ></v-btn>
             </div>
             <!-- <div class="package-discount text-center">

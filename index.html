@@ -41,6 +41,7 @@
     <script>
       function trackButtonClicks() {
         document.querySelectorAll('button').forEach(button => {
+          console.log("clicou")
           button.addEventListener('click', () => {
             const buttonId = button.id || 'unknown_btn';
             gtag('event', 'button_click', {
@@ -52,6 +53,20 @@
         });
       }
       window.addEventListener('load', trackButtonClicks);
+
+      function trackExpansionPanelClicks() {
+        document.querySelectorAll('.v-expansion-panel').forEach(expansioNPanelElement => {
+          expansioNPanelElement.addEventListener('click', () => {
+            const expansionPanelId = expansioNPanelElement.id || 'unknown_expansion_panel';
+            gtag('event', 'expansion_panel_click', {
+              event_category: 'User Interaction',
+              event_label: expansionPanelId,
+              value: 1
+            });
+          });
+        });
+      }
+      window.addEventListener('load', trackExpansionPanelClicks);
 
       function trackAnchorClicks() {
         document.querySelectorAll('a.sale-btn').forEach(anchor => {

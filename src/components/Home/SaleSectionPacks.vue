@@ -18,7 +18,7 @@ interface Card {
 
 const cards = ref<Card[]>([
   {
-    id: "curso-anatomia-do-combate-anchor",
+    id: "curso-anatomia-do-combate",
     title: "Pacote 1 - Anatomia do combate",
     icon: "mdi-skull-crossbones",
     discount: "10% de desconto por tempo limitado",
@@ -36,7 +36,7 @@ const cards = ref<Card[]>([
     description: `Como se comportar em uma crise? Como não se desesperar? Como treinar para ser funcional em um conflito. Entenda os impactos legais que uma crise pode gerar, nesse curso, ensino para o aluno sobre legalidades, riscos, analise risco bem como a fisiologia impacta no combatente. Bem como ensinamos o aluno formas de inocular o estresse. Um conhecimento imprescindível para quem trabalha em condição de crise ou deseja trabalhar. Um operador não deveria ficar sem esses conhecimentos. <br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Mentalidade e Anatomia do Combate.`,
   },
   {
-    id: "curso-conduta-inteligente-anchor",
+    id: "curso-conduta-inteligente",
     title: "Pacote 2 - Conduta Inteligente",
     icon: "mdi-eye-check",
     discount: "20% de desconto por tempo limitado",
@@ -55,7 +55,7 @@ const cards = ref<Card[]>([
     description: `Desenvolva uma mentalidade de segurança proativa com o curso 'Conduta Inteligente'. Através de instruções especializadas, você aprenderá a melhorar sua percepção de risco e a se antecipar a crises de segurança, como assaltos. Explore a criminologia, analise os riscos e compreenda a legislação de legítima defesa para agir de forma preventiva em todas as situações. Busque no Google por palavras-chave como segurança, proteção e caveira para encontrar nosso produto e garantir sua tranquilidade. <br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Negação - Criminologia, Conduta Defensiva, Escolhi Reagir (Mentalidade em momentos de crise) e Legítima Defesa.`,
   },
   {
-    id: "curso-operador-de-crise-anchor",
+    id: "curso-operador-de-crise",
     title: "Pacote 3 - Operador de crise",
     icon: "mdi-target-account",
     discount: "15% de desconto por tempo limitado",
@@ -74,7 +74,7 @@ const cards = ref<Card[]>([
     description: `Torne-se um OPERADOR com o curso 'Operador de Crise'. Aprenda técnicas avançadas DE DEFESA, atendimento pré-hospitalar, e o uso de armas de fogo com segurança e precisão. Desenvolva habilidades para enfrentar situações de risco e garantir a proteção ativa de sua vida e das pessoas ao seu redor.  <br><br> <strong class="text-yellow-darken-3">Módulos:</strong> APH, Defesa Pessoal, Instrução de Tiro, Conduta Armada, Anatomia do Combate e Legítima Defesa.`,
   },
   {
-    id: "curso-protetor-anchor",
+    id: "curso-protetor",
     title: "Pacote 4 - Protetor",
     icon: "mdi-security",
     discount: "10% de desconto por tempo limitado",
@@ -93,7 +93,7 @@ const cards = ref<Card[]>([
     description: `Descubra como proteger você e sua família com o curso 'Conduta Defensiva'. Aprenda a desenvolver uma mentalidade de segurança, proteger sua residência e informações pessoais, e adotar uma conduta defensiva eficaz. Ideal para quem busca uma abordagem preventiva e segura para proteger o que mais importa.<br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.`,
   },
   {
-    id: "curso-criminologia-anchor",
+    id: "curso-criminologia",
     title: "Pacote 5 - Criminologia",
     icon: "mdi-security",
     discount: "10% de desconto por tempo limitado",
@@ -146,6 +146,7 @@ const cards = ref<Card[]>([
                 class="mb-1"
                 target="_blank"
                 :href="card.redirect"
+                :id="`${card.id}-saiba-mais-btn`"
               ></v-btn>
               <!-- <v-dialog max-width="500">
                 <template v-slot:activator="{ props: activatorProps }">
@@ -222,7 +223,7 @@ const cards = ref<Card[]>([
                 </span>
               </div> -->
             </div>
-            <a class="sale-btn" :href="card.link" target="_blank" :id="card.id">
+            <a class="sale-btn" :href="card.link" target="_blank" :id="`${card.id}-anchor`">
               <span> MATRICULE-SE </span>
               <v-icon
                 icon="mdi-arrow-right-thin-circle-outline"
