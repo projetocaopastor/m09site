@@ -3,7 +3,7 @@ import { ref } from "vue";
 
 const contents = ref([
   {
-    id: 'modulo-mentalidade',
+    id: "modulo-mentalidade",
     title: "MÓDULO 1",
     text: "Mentalidade",
     icon: "mdi-brain",
@@ -27,7 +27,7 @@ const contents = ref([
     ],
   },
   {
-    id: 'modulo-negacao',
+    id: "modulo-negacao",
     title: "MÓDULO 2",
     text: "Negação",
     icon: "mdi-account-search-outline",
@@ -58,7 +58,7 @@ const contents = ref([
     ],
   },
   {
-    id: 'modulo-protecao-residencial',
+    id: "modulo-protecao-residencial",
     title: "MÓDULO 3",
     text: "Proteção Residencial",
     icon: "mdi-shield-home-outline",
@@ -92,7 +92,7 @@ const contents = ref([
     ],
   },
   {
-    id: 'modulo-protecao-da-informacao',
+    id: "modulo-protecao-da-informacao",
     title: "MÓDULO 4",
     text: "Proteção da Informação",
     icon: "mdi-shield-lock-outline",
@@ -119,7 +119,7 @@ const contents = ref([
     ],
   },
   {
-    id: 'modulo-protetor',
+    id: "modulo-protetor",
     title: "MÓDULO 5",
     text: "Protetor",
     icon: "mdi-security",
@@ -147,7 +147,7 @@ const contents = ref([
     ],
   },
   {
-    id: 'modulo-escolhi-reagir',
+    id: "modulo-escolhi-reagir",
     title: "MÓDULO 6",
     text: "Escolhi reagir",
     icon: "mdi-fencing",
@@ -168,7 +168,7 @@ const contents = ref([
     ],
   },
   {
-    id: 'modulo-aph',
+    id: "modulo-aph",
     title: "MÓDULO 7",
     text: "APH",
     icon: "mdi-medical-bag",
@@ -194,7 +194,7 @@ const contents = ref([
     ],
   },
   {
-    id: 'modulo-defesa-pessoal',
+    id: "modulo-defesa-pessoal",
     title: "MÓDULO 8",
     text: "Defesa Pessoal",
     icon: "mdi-shield-account-outline",
@@ -221,7 +221,7 @@ const contents = ref([
     ],
   },
   {
-    id: 'modulo-instrucao-armamento-e-tiro',
+    id: "modulo-instrucao-armamento-e-tiro",
     title: "MÓDULO 9",
     text: "Instrução de Armamento e Tiro",
     icon: "mdi-pistol",
@@ -264,7 +264,7 @@ const contents = ref([
     ],
   },
   {
-    id: 'modulo-conduta-armada',
+    id: "modulo-conduta-armada",
     title: "MÓDULO 10",
     text: "Conduta Armada",
     icon: "mdi-account-arrow-right-outline",
@@ -296,7 +296,7 @@ const contents = ref([
     ],
   },
   {
-    id: 'modulo-anatomia-do-combate',
+    id: "modulo-anatomia-do-combate",
     title: "MÓDULO 11",
     text: "Anatomia do Combate",
     icon: "mdi-skull",
@@ -333,7 +333,7 @@ const contents = ref([
     ],
   },
   {
-    id: 'modulo-extra-legitima-defesa',
+    id: "modulo-extra-legitima-defesa",
     title: "MÓDULO EXTRA",
     text: "Legítima Defesa: Teoria e Prática",
     icon: "mdi-shield-account-variant-outline",
@@ -361,7 +361,7 @@ const contents = ref([
     ],
   },
   {
-    id: 'modulo-extra-neurociencia',
+    id: "modulo-extra-neurociencia",
     title: "MÓDULO EXTRA",
     text: "Neurociência: Identificação de Ameaças",
     icon: "mdi-robber",
@@ -385,6 +385,16 @@ const contents = ref([
     ],
   },
 ]);
+
+const handleGoogleAnalyticsPanelEvent = (panelStatus, expansionPanelId) => {
+  if (panelStatus.value) {
+    gtag("event", "expansion_panel_click", {
+      event_category: "User Interaction",
+      event_label: `${expansionPanelId}-panel`,
+      value: 1,
+    });
+  }
+};
 </script>
 
 <template>
@@ -404,7 +414,12 @@ const contents = ref([
 
       <v-col cols="12" md="7">
         <v-expansion-panels class="mb-6 mt-2">
-          <v-expansion-panel v-for="module in contents" :key="module.title" :id="module.id">
+          <v-expansion-panel
+            v-for="module in contents"
+            :key="module.title"
+            :id="module.id"
+            @group:selected="handleGoogleAnalyticsPanelEvent($event, module.id)"
+          >
             <template #title>
               <span
                 class="text-uppercase"
