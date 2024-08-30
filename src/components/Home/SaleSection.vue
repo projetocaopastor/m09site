@@ -61,11 +61,11 @@
                     Acesso a todos os módulos
                 </div>
             </div>
-            <a class="sale-btn" href="https://pay.hotmart.com/I77956669P" target="_blank">
+            <a class="sale-btn" href="https://pay.hotmart.com/I77956669P" target="_blank" @click="registerEvent" id="curso-cao-pastor-anchor">
                 <span>
                     MATRICULE-SE
                 </span>
-                <v-icon icon="mdi-arrow-right-thin-circle-outline" class="bottom-icon"/>
+                <v-icon icon="mdi-arrow-right-thin-circle-outline" />
             </a>
             <div class="mt-2">
                 <v-icon icon="mdi-lock" /> Ambiente 100% seguro

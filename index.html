@@ -38,6 +38,35 @@
 <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script>
+      function trackButtonClicks() {
+        document.querySelectorAll('button').forEach(button => {
+          button.addEventListener('click', () => {
+            const buttonId = button.id || 'unknown_btn';
+            gtag('event', 'button_click', {
+              event_category: 'User Interaction',
+              event_label: buttonId,
+              value: 1
+            });
+          });
+        });
+      }
+      window.addEventListener('load', trackButtonClicks);
+
+      function trackAnchorClicks() {
+        document.querySelectorAll('a.sale-btn').forEach(anchor => {
+          anchor.addEventListener('click', () => {
+            const anchorId = anchor.id || 'unknown_anchor';
+            gtag('event', 'link_click', {
+              event_category: 'User Interaction',
+              event_label: anchorId,
+              value: 1
+            });
+          });
+        });
+      }
+      window.addEventListener('load', trackAnchorClicks);
+    </script>
 </body>
 
 </html>

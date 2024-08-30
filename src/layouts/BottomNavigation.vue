@@ -1,6 +1,6 @@
 <template>
     <div class="bottom-navigation bg-grey-darken-4">
-        <a class="sale-btn sale-btn-bottom" href="https://pay.hotmart.com/I77956669P" target="_blank">
+        <a class="sale-btn sale-btn-bottom" href="https://pay.hotmart.com/I77956669P" target="_blank" id="curso-cao-pastor-anchor">
             <span>
                 MATRICULE-SE
             </span>
