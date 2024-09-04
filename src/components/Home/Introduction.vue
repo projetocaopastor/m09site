@@ -103,9 +103,15 @@ export default {
     </v-col>
 
     <v-col cols="12" md="6" class="my-4 py-4 alert-courses">
-      <h1 class="text-h4 text-center">
-        Adquira cursos a partir de
-        <span class="text-yellow-darken-3">R$ 13,97</span> por mês.
+      <h1 class="text-h text-center">
+        Treinamentos a partir de
+        <span
+          class="text-yellow-darken-3 font-weight-black"
+          style="background-color: #f9a82515; border-radius: 9px; padding: 4px"
+        >
+          R$ 13,97
+        </span>
+        por mês.
       </h1>
     </v-col>
 
