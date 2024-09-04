@@ -7,7 +7,7 @@ import BottomNavigation from './layouts/BottomNavigation.vue';
 </script>
 
 <template>
-  <v-app>
+  <v-app id="app">
 
     <AppHeader />
 
@@ -17,7 +17,7 @@ import BottomNavigation from './layouts/BottomNavigation.vue';
 
     <AppFooter />
 
-    <BottomNavigation />
+    <!-- <BottomNavigation /> -->
 
   </v-app>
 </template>

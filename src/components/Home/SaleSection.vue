@@ -1,5 +1,5 @@
 <template>
-    <v-container class="mb-3 d-flex justify-center align-center py-16 sale-content" fluid>
+    <v-container class="mb-3 d-flex justify-center align-center py-16 sale-content" id="main-course" fluid>
         <div class="sale-card">
             <div class="package-icon-content">
                 <v-icon icon="mdi-package-variant-closed" size="80" color="yellow-darken-3" />

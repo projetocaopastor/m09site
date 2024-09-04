@@ -18,8 +18,27 @@ interface Card {
 
 const cards = ref<Card[]>([
   {
+    id: "curso-criminologia",
+    title: "Pacote 1 - Criminologia",
+    icon: "mdi-security",
+    discount: "10% de desconto por tempo limitado",
+    originalPrice: "R$ 249,00",
+    installmentPrice: "R$ 13,97",
+    fullPrice: "R$ 140,00",
+    benefits: [
+      "Garantia de 7 dias",
+      "Assista pelo celular e computador",
+      "Acesso por 1 ano",
+    ],
+    extraBenefit:
+      "Acesso aos módulos Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.",
+    link: "https://pay.hotmart.com/X94711258W",
+    redirect: "https://projetocaopastor.github.io/criminologia.pdf",
+    description: `Um curso voltado para você entender como o crime realmente funciona. Pois ele dá gradativamente o tema, nossos instrutores também tratam o assunto com a expertise de quem testou as teorias no campo pratico. Esse conteúdo é indicado para todos aqueles que querem e precisam entender como funciona o crime, bem como a tomada de decisão de um criminoso.<br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Negação - Criminologia e Mentalidade.`,
+  },
+  {
     id: "curso-anatomia-do-combate",
-    title: "Pacote 1 - Anatomia do combate",
+    title: "Pacote 2 - Anatomia do combate",
     icon: "mdi-skull-crossbones",
     discount: "10% de desconto por tempo limitado",
     originalPrice: "R$ 799,00",
@@ -37,7 +56,7 @@ const cards = ref<Card[]>([
   },
   {
     id: "curso-conduta-inteligente",
-    title: "Pacote 2 - Conduta Inteligente",
+    title: "Pacote 3 - Conduta Inteligente",
     icon: "mdi-eye-check",
     discount: "20% de desconto por tempo limitado",
     originalPrice: "R$ 699,00",
@@ -56,7 +75,7 @@ const cards = ref<Card[]>([
   },
   {
     id: "curso-operador-de-crise",
-    title: "Pacote 3 - Operador de crise",
+    title: "Pacote 4 - Operador de crise",
     icon: "mdi-target-account",
     discount: "15% de desconto por tempo limitado",
     originalPrice: "R$ 1299,00",
@@ -75,7 +94,7 @@ const cards = ref<Card[]>([
   },
   {
     id: "curso-protetor",
-    title: "Pacote 4 - Protetor",
+    title: "Pacote 5 - Protetor",
     icon: "mdi-security",
     discount: "10% de desconto por tempo limitado",
     originalPrice: "R$ 1099,00",
@@ -92,30 +111,11 @@ const cards = ref<Card[]>([
     redirect: "https://projetocaopastor.github.io/protetor.pdf",
     description: `Descubra como proteger você e sua família com o curso 'Conduta Defensiva'. Aprenda a desenvolver uma mentalidade de segurança, proteger sua residência e informações pessoais, e adotar uma conduta defensiva eficaz. Ideal para quem busca uma abordagem preventiva e segura para proteger o que mais importa.<br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.`,
   },
-  {
-    id: "curso-criminologia",
-    title: "Pacote 5 - Criminologia",
-    icon: "mdi-security",
-    discount: "10% de desconto por tempo limitado",
-    originalPrice: "R$ 249,00",
-    installmentPrice: "R$ 13,97",
-    fullPrice: "R$ 140,00",
-    benefits: [
-      "Garantia de 7 dias",
-      "Assista pelo celular e computador",
-      "Acesso por 1 ano",
-    ],
-    extraBenefit:
-      "Acesso aos módulos Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.",
-    link: "https://pay.hotmart.com/X94711258W",
-    redirect: "https://projetocaopastor.github.io/criminologia.pdf",
-    description: `Um curso voltado para você entender como o crime realmente funciona. Pois ele dá gradativamente o tema, nossos instrutores também tratam o assunto com a expertise de quem testou as teorias no campo pratico. Esse conteúdo é indicado para todos aqueles que querem e precisam entender como funciona o crime, bem como a tomada de decisão de um criminoso.<br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Negação - Criminologia e Mentalidade.`,
-  },
 ]);
 </script>
 
 <template>
-  <v-container class="pb-16 pt-8" fluid>
+  <v-container class="pb-16 pt-8" fluid id="packs">
     <v-row justify="center">
       <v-col cols="12">
         <div class="d-flex justify-center mb-2">
