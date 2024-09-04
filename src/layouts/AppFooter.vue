@@ -94,8 +94,3 @@ function goToHome() {
   </div>
 </template>
 
-<style>
-.footer {
-  margin-bottom: 61.6px;
-}
-</style>
