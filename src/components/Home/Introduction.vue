@@ -48,6 +48,20 @@ export default {
         </div>
         <div class="container">
           <label
+            class="d-flex justify-space-between text-uppercase font-weight-bold"
+          >
+            <div>I</div>
+            <div>N</div>
+            <div>S</div>
+            <div>T</div>
+            <div>I</div>
+            <div>T</div>
+            <div>U</div>
+            <div>T</div>
+            <div>O</div>
+          </label>
+
+          <label
             class="d-flex justify-space-between text-uppercase font-weight-black"
           >
             <div>C</div>
@@ -60,18 +74,6 @@ export default {
             <div>t</div>
             <div>o</div>
             <div>r</div>
-          </label>
-
-          <label
-            class="d-flex justify-space-between text-uppercase font-weight-bold"
-          >
-            <div>p</div>
-            <div>r</div>
-            <div>o</div>
-            <div>j</div>
-            <div>e</div>
-            <div>t</div>
-            <div>o</div>
           </label>
         </div>
       </section>
