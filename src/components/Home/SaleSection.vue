@@ -50,10 +50,6 @@
                 </div>
                 <div class="d-flex ga-1">
                     <v-icon icon="mdi-check" color="yellow-darken-3" />
-                    Acesso a todos os módulos
-                </div>
-                <div class="d-flex ga-1">
-                    <v-icon icon="mdi-check" color="yellow-darken-3" />
                     Acesso por 1 ano
                 </div>
                 <hr class="my-3">
