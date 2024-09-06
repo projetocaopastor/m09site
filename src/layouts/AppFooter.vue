@@ -1,16 +1,17 @@
 <script setup lang="ts">
 import LogoMatilha from '@/assets/logo-matilha.jpg'
+import { useRouter } from 'vue-router';
 // import { callWhatsApp } from '@/utils/functions'
 
 const email = "projetomatilhacaopastor@gmail.com"
-// const router = useRouter()
+const router = useRouter()
 
 function mailTo() {
   window.open(`mailto:${email}?subject=Olá, gostaria de saber mais sobre o seu curso.`)
 }
 
 function goToHome() {
-  //   router.push("/")
+  router.push("/")
 }
 
 </script>
