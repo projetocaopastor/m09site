@@ -3,12 +3,11 @@ import { useRoute } from "vue-router";
 import { modules } from "../../utils/modules-details";
 import { onMounted } from "vue";
 
-const route = useRoute()
+const route = useRoute();
 
 onMounted(() => {
-  console.log(route)
-})
-
+  console.log(route);
+});
 </script>
 
 <template>
@@ -162,13 +161,23 @@ onMounted(() => {
             em até 12x de
           </div>
           <div class="d-flex ga-1 pa-2 align-end text-uppercase">
-            <div class="text-yellow-darken-3 text-h3 font-weight-bold">R$</div>
-            <div class="text-h1 font-weight-black">1000,00</div>
+            <div class="text-yellow-darken-3 text-md-h3 text-h4 font-weight-bold">R$</div>
+            <div class="text-md-h1 text-h2 font-weight-black">1000,00</div>
           </div>
-          <div class="text-h5 d-flex ga-1">à vista com desconto por <div class="text-yellow-darken-3">R$ 400,00</div></div>
-          <div style="width: 100%;" class="mt-4">
-            <v-btn block color="yellow-darken-4" height="42px" style="box-shadow: 0 0 6px #f9a825" size="x-large">
-                MATRICULAR AGORA
+          <div class="text-md-h5 text-h6 d-flex ga-2">
+            ou à vista por
+            <div class="text-yellow-darken-3">R$ 400,00</div>
+          </div>
+          <div style="width: 100%" class="mt-4">
+            <v-btn
+              block
+              color="yellow-darken-4"
+              height="42px"
+              style="box-shadow: 0 0 6px #f9a825"
+              size="x-large"
+              class="font-weight-bold"
+            >
+              MATRICULAR AGORA
             </v-btn>
           </div>
         </section>
@@ -183,7 +192,7 @@ onMounted(() => {
           height="300"
         />
       </v-col>
-      <v-col md="4">
+      <v-col cols="12" md="4" class="text-md-left text-center">
         <div class="text-h4 font-weight-medium text-yellow-darken-2 pb-2">
           7 DIAS DE ZERO RISCO
         </div>

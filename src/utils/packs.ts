@@ -3,7 +3,7 @@ import { ref } from "vue";
 interface Card {
   id: string;
   title: string;
-  modules: string[];
+  modules?: string[];
   discount: string;
   originalPrice: string;
   installmentPrice: string;
