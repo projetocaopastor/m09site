@@ -1,20 +1,21 @@
 <script lang="ts" setup>
-
-import { modules } from '../../utils/modules-details';
-
+import { modules } from "../../utils/modules-details";
 </script>
 
 <template>
-  <v-container fluid class="pb-8">
+  <v-container fluid class="px-0">
     <v-row justify="center">
-      <v-col cols="12" md="7">
-        <div class="text-h4 text-center d-flex justify-center ga-2">
+      <v-col
+        cols="12"
+        md="7"
+        class="bg-grey-darken-4 px-8 mt-2"
+        style="border-radius: 4px"
+      >
+        <div class="text-h4 text-center d-flex justify-center ga-2 mb-3">
           <div class="font-weight-medium text-yellow-darken-3">Curso:</div>
           <div class="font-weight-light">Criminologia</div>
         </div>
-      </v-col>
-      <v-col cols="12" md="7">
-        <div class="d-flex justify-center">
+        <div class="d-flex justify-center mb-3">
           <iframe
             src="https://www.youtube.com/embed/mWGrt7R3MWw"
             title="YouTube video player"
@@ -28,26 +29,58 @@ import { modules } from '../../utils/modules-details';
     </v-row>
 
     <v-row justify="center">
-      <v-col cols="12" md="7" class="bg-grey-darken-4">
-        <div class="text-h5">Sobre o curso</div>
-        <div>
+      <v-col
+        cols="12"
+        md="7"
+        class="bg-grey-darken-4 px-12 mt-3"
+        style="border-radius: 4px"
+      >
+        <div class="text-h5 text-yellow-darken-3 mb-2">Sobre o curso</div>
+        <div class="mb-1">
           Um curso voltado para você entender como o crime realmente funciona.
           Pois ele dá gradativamente o tema, nossos instrutores também tratam o
           assunto com a expertise de quem testou as teorias no campo pratico.
           Esse conteúdo é indicado para todos aqueles que querem e precisam
           entender como funciona o crime, bem como a tomada de decisão de um
-          criminoso.<br /><br />
-          <strong class="text-yellow-darken-3">Módulos:</strong> Negação -
-          Criminologia e Mentalidade.
+          criminoso.
         </div>
       </v-col>
     </v-row>
 
     <v-row justify="center">
-      <v-col cols="12" md="7" class="bg-grey-darken-4">
-        <div class="text-h5">Módulos</div>
-        <div v-for="module in modules.filter(el => ['modulo-mentalidade', 'modulo-negacao'].includes(el.id))">
-            <v-row justify="center">
+      <v-col
+        cols="12"
+        md="7"
+        class="bg-grey-darken-3 px-12 mt-3"
+        style="border-radius: 4px"
+      >
+        <div class="text-h5 text-yellow-darken-3 mb-4">Módulos</div>
+        <v-expansion-panels class="mb-3">
+          <v-expansion-panel
+            v-for="module in modules"
+            :key="module.title"
+            :id="module.id"
+          >
+            <!-- @group:selected="handleGoogleAnalyticsPanelEvent($event, module.id)" -->
+            <template #title>
+              <span
+                class="text-uppercase"
+                style="font-size: 1.2rem; font-weight: 400"
+              >
+                <v-icon
+                  :icon="module.icon"
+                  class="mr-1"
+                  :color="
+                    module.title.includes('EXTRA')
+                      ? 'yellow-darken-4'
+                      : 'yellow-darken-3'
+                  "
+                ></v-icon>
+                {{ module.title }} - {{ module.text }}
+              </span>
+            </template>
+            <template #text>
+              <v-row justify="center">
                 <v-col cols="12">
                   <span class="font-weight-medium text-yellow-darken-3">
                     {{
@@ -98,6 +131,33 @@ import { modules } from '../../utils/modules-details';
                   </div>
                 </v-col>
               </v-row>
+            </template>
+          </v-expansion-panel>
+        </v-expansion-panels>
+      </v-col>
+    </v-row>
+
+    <v-row style="background-color: #161616" class="align-center mt-8">
+      <v-col md="6">
+        <v-img
+          src="/src/assets/7diasgarantia.jpg"
+          icon="mdi-check"
+          height="300"
+        />
+      </v-col>
+      <v-col md="4">
+        <div class="text-h4 font-weight-medium text-yellow-darken-3 pb-2">
+          7 DIAS DE ZERO RISCO
+        </div>
+        <div>
+          Ao adquirir um de nossos cursos, você terá 7 dias para testar o
+          material e decidir se é a escolha certa para você.
+          <br><br>
+          Se, durante esse período, perceber que o curso não atende às suas expectativas ou que
+          não é o momento certo, basta solicitar o reembolso total enviando um
+          e-mail para a nossa equipe. 
+          <br><br>
+          Sem complicações — seu dinheiro de volta caso decida!
         </div>
       </v-col>
     </v-row>
