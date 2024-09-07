@@ -23,6 +23,13 @@ import BottomNavigation from './layouts/BottomNavigation.vue';
 </template>
 
 <style>
+.v-main {
+  padding-top: 60px !important;
+  padding-bottom: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
 .sale-btn {
   position: relative;
   display: flex;

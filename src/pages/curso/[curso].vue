@@ -11,13 +11,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <v-container fluid class="">
+  <v-container fluid>
     <v-row justify="center">
       <v-col
         cols="12"
         sm="8"
         md="7"
-        class="bg-grey-darken-4 px-8 mt-2"
+        class="bg-grey-darken-4 px-md-8 mt-2"
         style="border-radius: 4px"
       >
         <div class="text-h4 text-center d-flex justify-center ga-2 mb-3">
@@ -42,7 +42,7 @@ onMounted(() => {
         cols="12"
         sm="8"
         md="7"
-        class="bg-grey-darken-4 px-12 mt-3"
+        class="bg-grey-darken-4 px-md-12 mt-3"
         style="border-radius: 4px"
       >
         <div class="text-h5 text-yellow-darken-3 mb-2">Sobre o curso</div>
@@ -62,7 +62,7 @@ onMounted(() => {
         cols="12"
         sm="8"
         md="7"
-        class="bg-grey-darken-3 px-12 mt-3"
+        class="bg-grey-darken-3 px-md-12 mt-3"
         style="border-radius: 4px"
       >
         <div class="text-h5 text-yellow-darken-3 mb-4">Módulos</div>
@@ -152,7 +152,7 @@ onMounted(() => {
       <v-col cols="12" md="6" lg="4" sm="8" class="px-0">
         <section
           class="bg-grey-darken-3 d-flex flex-column justify-center align-center pa-8 pt-6 open-sans-font"
-          style="border-radius: 12px; border: 1px solid #f9a82580"
+          style="border-radius: 12px; border: 1px solid #f9a82590"
         >
           <div
             class="pa-2 text-uppercase text-h6"
