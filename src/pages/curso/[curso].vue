@@ -34,7 +34,7 @@ onMounted(() => {
         class="bg-grey-darken-4 px-md-8 mt-2"
         style="border-radius: 4px"
       >
-        <div class="text-h4 text-center d-flex justify-center ga-2 mb-3">
+        <div class="text-h4 text-center d-md-flex justify-center ga-2 mb-3">
           <div class="font-weight-medium text-yellow-darken-3">Curso:</div>
           <div class="font-weight-medium">{{ pack.courseName }}</div>
         </div>
