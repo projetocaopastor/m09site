@@ -137,6 +137,32 @@ import { modules } from "../../utils/modules-details";
       </v-col>
     </v-row>
 
+    <v-row justify="center">
+      <v-col cols="4">
+        <section
+          class="bg-grey-darken-3 d-flex flex-column justify-center align-center pa-5 open-sans-font"
+          style="border-radius: 12px; border: 1px solid #f9a82580"
+        >
+          <div
+            class="pa-2 text-uppercase text-h6"
+            style="border: 2px solid #ababab; border-radius: 8px"
+          >
+            12x sem juros de
+          </div>
+          <div class="d-flex ga-1 pa-2 align-end text-uppercase">
+            <div class="text-yellow-darken-3 text-h3 font-weight-bold">R$</div>
+            <div class="text-h1 font-weight-black">1000,00</div>
+          </div>
+          <div class="text-h5 d-flex ga-1">à vista com desconto por <div class="text-yellow-darken-3">R$ 400,00</div></div>
+          <div style="width: 100%;" class="mt-4">
+            <v-btn block color="yellow-darken-4" height="42px" style="box-shadow: 0 0 10px #f9a825" size="x-large">
+                MATRICULAR AGORA
+            </v-btn>
+          </div>
+        </section>
+      </v-col>
+    </v-row>
+
     <v-row style="background-color: #161616" class="align-center mt-8">
       <v-col md="6">
         <v-img
@@ -152,11 +178,11 @@ import { modules } from "../../utils/modules-details";
         <div>
           Ao adquirir um de nossos cursos, você terá 7 dias para testar o
           material e decidir se é a escolha certa para você.
-          <br><br>
-          Se, durante esse período, perceber que o curso não atende às suas expectativas ou que
-          não é o momento certo, basta solicitar o reembolso total enviando um
-          e-mail para a nossa equipe. 
-          <br><br>
+          <br /><br />
+          Se, durante esse período, perceber que o curso não atende às suas
+          expectativas ou que não é o momento certo, basta solicitar o reembolso
+          total enviando um e-mail para a nossa equipe.
+          <br /><br />
           Sem complicações — seu dinheiro de volta caso decida!
         </div>
       </v-col>
@@ -174,5 +200,13 @@ import { modules } from "../../utils/modules-details";
   .youtube-frame {
     height: 200px;
   }
+}
+
+.open-sans-font {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 </style>

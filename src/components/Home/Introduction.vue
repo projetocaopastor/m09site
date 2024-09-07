@@ -132,7 +132,7 @@ export default {
             style="box-shadow: 0 0 15px #f9a825"
           >
             <span class="text-white text-md-h5 text-h6 font-weight-bold">
-              QUERO ME MATIRCULAR AGORA
+              QUERO ME MATRICULAR AGORA
             </span>
           </v-btn>
         </div>
