@@ -138,9 +138,9 @@ import { modules } from "../../utils/modules-details";
     </v-row>
 
     <v-row justify="center">
-      <v-col cols="4">
+      <v-col cols="12" md="6" lg="4" sm="8">
         <section
-          class="bg-grey-darken-3 d-flex flex-column justify-center align-center pa-5 open-sans-font"
+          class="bg-grey-darken-3 d-flex flex-column justify-center align-center pa-8 pt-6 open-sans-font"
           style="border-radius: 12px; border: 1px solid #f9a82580"
         >
           <div
@@ -155,7 +155,7 @@ import { modules } from "../../utils/modules-details";
           </div>
           <div class="text-h5 d-flex ga-1">à vista com desconto por <div class="text-yellow-darken-3">R$ 400,00</div></div>
           <div style="width: 100%;" class="mt-4">
-            <v-btn block color="yellow-darken-4" height="42px" style="box-shadow: 0 0 10px #f9a825" size="x-large">
+            <v-btn block color="yellow-darken-4" height="42px" style="box-shadow: 0 0 6px #f9a825" size="x-large">
                 MATRICULAR AGORA
             </v-btn>
           </div>
