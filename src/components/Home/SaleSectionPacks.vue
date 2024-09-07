@@ -48,7 +48,7 @@ onMounted(() => {
                 class="mb-1"
                 target="_blank"
                 :to="{
-                  name: '/saiba-mais/[curso]',
+                  name: '/curso/[curso]',
                   params: { curso: card.id },
                 }"
                 :id="`${card.id}-saiba-mais-btn`"

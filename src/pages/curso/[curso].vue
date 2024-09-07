@@ -1,12 +1,17 @@
 <script lang="ts" setup>
 import { useRoute } from "vue-router";
 import { modules } from "../../utils/modules-details";
-import { onMounted } from "vue";
+import { onMounted, ref } from "vue";
+import { cards, Pack } from "../../utils/packs";
+import { el } from "vuetify/locale";
 
 const route = useRoute();
+const courseModules = ref([]);
+const pack = ref<Pack>({} as Pack);
 
 onMounted(() => {
-  console.log(route);
+  var cursoTag = route.params.curso;
+  pack.value = <Pack>cards.find((el: Pack) => el.routeParam === cursoTag);
 });
 </script>
 
@@ -22,11 +27,11 @@ onMounted(() => {
       >
         <div class="text-h4 text-center d-flex justify-center ga-2 mb-3">
           <div class="font-weight-medium text-yellow-darken-3">Curso:</div>
-          <div class="font-weight-light">Criminologia</div>
+          <div class="font-weight-light">{{ pack.courseName }}</div>
         </div>
         <div class="d-flex justify-center mb-3">
           <iframe
-            src="https://www.youtube.com/embed/mWGrt7R3MWw"
+            :src="pack.youtubeIntro"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -47,12 +52,7 @@ onMounted(() => {
       >
         <div class="text-h5 text-yellow-darken-3 mb-2">Sobre o curso</div>
         <div class="mb-1">
-          Um curso voltado para você entender como o crime realmente funciona.
-          Pois ele dá gradativamente o tema, nossos instrutores também tratam o
-          assunto com a expertise de quem testou as teorias no campo pratico.
-          Esse conteúdo é indicado para todos aqueles que querem e precisam
-          entender como funciona o crime, bem como a tomada de decisão de um
-          criminoso.
+          {{ pack.description }}
         </div>
       </v-col>
     </v-row>
@@ -68,7 +68,9 @@ onMounted(() => {
         <div class="text-h5 text-yellow-darken-3 mb-4">Módulos</div>
         <v-expansion-panels class="mb-3">
           <v-expansion-panel
-            v-for="module in modules"
+            v-for="module in modules?.filter((el) =>
+              pack.modules?.includes(el.id)
+            )"
             :key="module.title"
             :id="module.id"
           >
@@ -87,7 +89,7 @@ onMounted(() => {
                       : 'yellow-darken-3'
                   "
                 ></v-icon>
-                {{ module.title }} - {{ module.text }}
+                {{ module.text }}
               </span>
             </template>
             <template #text>
@@ -161,12 +163,18 @@ onMounted(() => {
             em até 12x de
           </div>
           <div class="d-flex ga-1 pa-2 align-end text-uppercase">
-            <div class="text-yellow-darken-3 text-md-h3 text-h4 font-weight-bold">R$</div>
-            <div class="text-md-h1 text-h2 font-weight-black">1000,00</div>
+            <div
+              class="text-yellow-darken-3 text-md-h3 text-h4 font-weight-bold"
+            >
+              R$
+            </div>
+            <div class="text-md-h1 text-h2 font-weight-black">
+              {{ pack.installmentPrice?.replace("R$ ", "") }}
+            </div>
           </div>
           <div class="text-md-h5 text-h6 d-flex ga-2">
             ou à vista por
-            <div class="text-yellow-darken-3">R$ 400,00</div>
+            <div class="text-yellow-darken-3">{{ pack.fullPrice }}</div>
           </div>
           <div style="width: 100%" class="mt-4">
             <v-btn
@@ -176,6 +184,8 @@ onMounted(() => {
               style="box-shadow: 0 0 6px #f9a825"
               size="x-large"
               class="font-weight-bold"
+              :href="pack.link"
+              target="_blank"
             >
               MATRICULAR AGORA
             </v-btn>

@@ -20,7 +20,7 @@ import { mainPack } from "../../utils/packs";
           variant="outlined"
           class="mb-1"
           target="_blank"
-          :to="{ name: '/saiba-mais/[curso]', params: { curso: mainPack.id } }"
+          :to="{ name: '/curso/[curso]', params: { curso: mainPack.id } }"
           id="curso-cao-pastor-saiba-mais-btn"
         ></v-btn>
       </div>

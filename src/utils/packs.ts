@@ -1,8 +1,11 @@
 import { ref } from "vue";
 
-interface Card {
+export interface Pack {
   id: string;
   title: string;
+  routeParam?: string;
+  courseName?: string;
+  youtubeIntro?: string;
   modules?: string[];
   discount: string;
   originalPrice: string;
@@ -16,16 +19,19 @@ interface Card {
   redirect: string;
 }
 
-export const cards = ref<Card[]>([
+export const cards = <Pack[]>([
   {
     id: "curso-criminologia",
+    routeParam: "criminologia",
     modules: ["modulo-mentalidade", "modulo-negacao"],
+    courseName: "Criminologia",
     title: "Pacote 1 - Criminologia",
     icon: "mdi-security",
     discount: "10% de desconto por tempo limitado",
     originalPrice: "R$ 249,00",
     installmentPrice: "R$ 13,97",
     fullPrice: "R$ 140,00",
+    youtubeIntro: "https://www.youtube.com/embed/mWGrt7R3MWw",
     benefits: [
       "Garantia de 7 dias",
       "Assista pelo celular e computador",
@@ -35,7 +41,7 @@ export const cards = ref<Card[]>([
       "Acesso aos módulos Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.",
     link: "https://pay.hotmart.com/X94711258W",
     redirect: "https://projetocaopastor.github.io/criminologia.pdf",
-    description: `Um curso voltado para você entender como o crime realmente funciona. Pois ele dá gradativamente o tema, nossos instrutores também tratam o assunto com a expertise de quem testou as teorias no campo pratico. Esse conteúdo é indicado para todos aqueles que querem e precisam entender como funciona o crime, bem como a tomada de decisão de um criminoso.<br><br> <strong class="text-yellow-darken-3">Módulos:</strong> Negação - Criminologia e Mentalidade.`,
+    description: `Um curso voltado para você entender como o crime realmente funciona. Pois ele dá gradativamente o tema, nossos instrutores também tratam o assunto com a expertise de quem testou as teorias no campo pratico. Esse conteúdo é indicado para todos aqueles que querem e precisam entender como funciona o crime, bem como a tomada de decisão de um criminoso.`,
   },
   {
     id: "curso-anatomia-do-combate",
