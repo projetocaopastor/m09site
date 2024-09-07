@@ -2,16 +2,25 @@
 import { useRoute } from "vue-router";
 import { modules } from "../../utils/modules-details";
 import { onMounted, ref } from "vue";
-import { cards, Pack } from "../../utils/packs";
+import { cards, mainPack, Pack } from "../../utils/packs";
 import { el } from "vuetify/locale";
 
 const route = useRoute();
-const courseModules = ref([]);
+const courseModules = ref<any[]>([]);
 const pack = ref<Pack>({} as Pack);
 
 onMounted(() => {
   var cursoTag = route.params.curso;
-  pack.value = <Pack>cards.find((el: Pack) => el.routeParam === cursoTag);
+
+  if (cursoTag === "cao-pastor") {
+    pack.value = mainPack;
+    courseModules.value = modules.value;
+  } else {
+    pack.value = <Pack>cards.find((el: Pack) => el.routeParam === cursoTag);
+    courseModules.value = modules.value?.filter((el) =>
+      pack.value.modules?.includes(el.id)
+    );
+  }
 });
 </script>
 
@@ -27,7 +36,7 @@ onMounted(() => {
       >
         <div class="text-h4 text-center d-flex justify-center ga-2 mb-3">
           <div class="font-weight-medium text-yellow-darken-3">Curso:</div>
-          <div class="font-weight-light">{{ pack.courseName }}</div>
+          <div class="font-weight-medium">{{ pack.courseName }}</div>
         </div>
         <div class="d-flex justify-center mb-3">
           <iframe
@@ -68,9 +77,7 @@ onMounted(() => {
         <div class="text-h5 text-yellow-darken-3 mb-4">Módulos</div>
         <v-expansion-panels class="mb-3">
           <v-expansion-panel
-            v-for="module in modules?.filter((el) =>
-              pack.modules?.includes(el.id)
-            )"
+            v-for="module in courseModules"
             :key="module.title"
             :id="module.id"
           >

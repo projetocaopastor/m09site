@@ -49,7 +49,7 @@ onMounted(() => {
                 target="_blank"
                 :to="{
                   name: '/curso/[curso]',
-                  params: { curso: card.id },
+                  params: { curso: card.routeParam },
                 }"
                 :id="`${card.id}-saiba-mais-btn`"
               ></v-btn>
