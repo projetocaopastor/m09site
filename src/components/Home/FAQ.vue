@@ -40,7 +40,7 @@ const tabs = ref([
     questions: [
       {
         title: "Onde tiro minhas dúvidas?",
-        text: "Pode ser no nosso grupo de WhatsApp ou è só mandar um e mail para projetomatilhacaopasto@gmail.com",
+        text: "Pode ser no nosso grupo de WhatsApp ou è só mandar um e mail para projetomatilhacaopastor@gmail.com",
       },
       {
         title:

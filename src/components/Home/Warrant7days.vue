@@ -17,7 +17,7 @@
         <br /><br />
         Se, durante esse período, perceber que o curso não atende às suas
         expectativas ou que não é o momento certo, basta solicitar o reembolso
-        total enviando um e-mail para a nossa equipe.
+        total.
         <br /><br />
         Sem complicações — seu dinheiro de volta, caso decida!
       </div>
