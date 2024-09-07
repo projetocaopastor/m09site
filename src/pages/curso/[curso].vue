@@ -63,6 +63,13 @@ onMounted(() => {
         <div class="mb-1">
           {{ pack.description }}
         </div>
+        <div class="d-flex flex-md-row flex-column ga-2 ga-md-0 justify-space-between mt-2 flex-wrap">
+          <div v-for="benefit in pack.benefits" style="flex: 0 0 50%;">
+            <v-icon v-if="benefit == 'Grupo exclusivo para alunos'" icon="mdi-star" color="yellow-darken-3" />
+            <v-icon v-else icon="mdi-check" color="yellow-darken-3" />
+            {{ benefit }}
+          </div>
+        </div>
       </v-col>
     </v-row>
 
@@ -225,6 +232,13 @@ onMounted(() => {
         </div>
       </v-col>
     </v-row>
+
+    <v-row>
+      <v-col cols="12" class="pa-0">
+        <Depositions />
+      </v-col>
+    </v-row>
+
   </v-container>
 </template>
 
