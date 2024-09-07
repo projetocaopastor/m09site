@@ -7,6 +7,7 @@
     <CourseContentExpansion />
     <SaleSectionPacks />
     <SaleSection />
+    <Warrant7days />
     <Depositions />
     <FAQ />
   </div>
@@ -22,5 +23,6 @@ import CourseContent from '../components/Home/CourseContent.vue';
 import SaleSection from '../components/Home/SaleSection.vue';
 import CourseContentExpansion from '../components/Home/CourseContentExpansion.vue';
 import SaleSectionPacks from '../components/Home/SaleSectionPacks.vue';
+import Warrant7days from '../components/Home/Warrant7days.vue';
 
 </script>
