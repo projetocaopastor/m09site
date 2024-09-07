@@ -1,12 +1,22 @@
 <script lang="ts" setup>
+import { useRoute } from "vue-router";
 import { modules } from "../../utils/modules-details";
+import { onMounted } from "vue";
+
+const route = useRoute()
+
+onMounted(() => {
+  console.log(route)
+})
+
 </script>
 
 <template>
-  <v-container fluid class="px-0">
+  <v-container fluid class="">
     <v-row justify="center">
       <v-col
         cols="12"
+        sm="8"
         md="7"
         class="bg-grey-darken-4 px-8 mt-2"
         style="border-radius: 4px"
@@ -31,6 +41,7 @@ import { modules } from "../../utils/modules-details";
     <v-row justify="center">
       <v-col
         cols="12"
+        sm="8"
         md="7"
         class="bg-grey-darken-4 px-12 mt-3"
         style="border-radius: 4px"
@@ -50,6 +61,7 @@ import { modules } from "../../utils/modules-details";
     <v-row justify="center">
       <v-col
         cols="12"
+        sm="8"
         md="7"
         class="bg-grey-darken-3 px-12 mt-3"
         style="border-radius: 4px"
@@ -138,7 +150,7 @@ import { modules } from "../../utils/modules-details";
     </v-row>
 
     <v-row justify="center">
-      <v-col cols="12" md="6" lg="4" sm="8">
+      <v-col cols="12" md="6" lg="4" sm="8" class="px-0">
         <section
           class="bg-grey-darken-3 d-flex flex-column justify-center align-center pa-8 pt-6 open-sans-font"
           style="border-radius: 12px; border: 1px solid #f9a82580"
@@ -147,7 +159,7 @@ import { modules } from "../../utils/modules-details";
             class="pa-2 text-uppercase text-h6"
             style="border: 2px solid #ababab; border-radius: 8px"
           >
-            12x sem juros de
+            em até 12x de
           </div>
           <div class="d-flex ga-1 pa-2 align-end text-uppercase">
             <div class="text-yellow-darken-3 text-h3 font-weight-bold">R$</div>
@@ -172,7 +184,7 @@ import { modules } from "../../utils/modules-details";
         />
       </v-col>
       <v-col md="4">
-        <div class="text-h4 font-weight-medium text-yellow-darken-3 pb-2">
+        <div class="text-h4 font-weight-medium text-yellow-darken-2 pb-2">
           7 DIAS DE ZERO RISCO
         </div>
         <div>
@@ -183,7 +195,7 @@ import { modules } from "../../utils/modules-details";
           expectativas ou que não é o momento certo, basta solicitar o reembolso
           total enviando um e-mail para a nossa equipe.
           <br /><br />
-          Sem complicações — seu dinheiro de volta caso decida!
+          Sem complicações — seu dinheiro de volta, caso decida!
         </div>
       </v-col>
     </v-row>

@@ -1,11 +1,14 @@
 <template>
   <v-app-bar :elevation="2" scroll-behavior="hide" scroll-threshold="1">
     <template v-slot:prepend>
-      <img
-        src="@/assets/logo-matilha.jpg"
-        height="40"
-        style="border-radius: 50%"
-      />
+      <v-btn icon :to="{ path: '/' }">
+        <v-img
+          src="@/assets/logo-matilha.jpg"
+          height="40"
+          width="40"
+          style="border-radius: 50%"
+        />
+      </v-btn>
     </template>
 
     <v-app-bar-title>
