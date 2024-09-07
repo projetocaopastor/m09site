@@ -3,6 +3,7 @@ import { ref } from "vue";
 interface Card {
   id: string;
   title: string;
+  modules: string[];
   discount: string;
   originalPrice: string;
   installmentPrice: string;
@@ -18,6 +19,7 @@ interface Card {
 export const cards = ref<Card[]>([
   {
     id: "curso-criminologia",
+    modules: ["modulo-mentalidade", "modulo-negacao"],
     title: "Pacote 1 - Criminologia",
     icon: "mdi-security",
     discount: "10% de desconto por tempo limitado",
