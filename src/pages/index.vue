@@ -5,9 +5,9 @@
     <MaterialContent />
     <!-- <CourseContent /> -->
     <CourseContentExpansion />
-    <Depositions />
     <SaleSectionPacks />
     <SaleSection />
+    <Depositions />
     <FAQ />
   </div>
 </template>
