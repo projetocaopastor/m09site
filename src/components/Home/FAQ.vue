@@ -98,7 +98,7 @@ const tabs = ref([
 
 <template>
   <v-row justify="center" class="py-16 ma-0 faq-content">
-    <v-col cols="12" md="4" class="pt-0">
+    <v-col cols="12" lg="5" md="4" class="pt-0">
       <v-container class="py-0">
         <h2 class="urbanist-2 text-red-darken-1">Perguntas frequentes</h2>
         <h2 class="urbanist-1 text-red-darken-1 d-none d-md-block">F.A.Q</h2>
