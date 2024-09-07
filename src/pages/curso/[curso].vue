@@ -234,7 +234,7 @@ onMounted(() => {
     </v-row>
 
     <v-row>
-      <v-col cols="12" class="pa-0">
+      <v-col cols="12" class="px-0 pb-0">
         <Depositions />
       </v-col>
     </v-row>
