@@ -89,19 +89,6 @@ export default {
         </h1>
       </v-col>
 
-      <v-col cols="12" md="6" class="px-0">
-        <div class="d-flex justify-center">
-          <iframe
-            src="https://www.youtube.com/embed/YwKw8UwT1CQ"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            class="youtube-frame"
-          ></iframe>
-        </div>
-      </v-col>
-
       <v-col cols="12" md="6" class="my-4 py-4 alert-courses">
         <div
           class="text-center d-md-flex justify-center align-center text-lg-h4 text-h5"
@@ -118,6 +105,19 @@ export default {
             R$ 13,97
           </span>
           por mês.
+        </div>
+      </v-col>
+
+      <v-col cols="12" md="6" class="px-0">
+        <div class="d-flex justify-center">
+          <iframe
+            src="https://www.youtube.com/embed/YwKw8UwT1CQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="youtube-frame"
+          ></iframe>
         </div>
       </v-col>
 
@@ -204,7 +204,7 @@ export default {
   width: 100%;
 }
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
   .youtube-frame {
     height: 200px;
   }
