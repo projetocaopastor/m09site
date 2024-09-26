@@ -1,0 +1,97 @@
+<template>
+  <v-container fluid class="pa-0">
+    <v-row no-gutters>
+      <v-col
+        cols="12"
+        class="d-flex justify-center flex-column align-center ga-2 text-h6 font-weight-light intro-header"
+      >
+        <div>AS INSCRIÇÕES ABREM NO DIA</div>
+        <div><v-icon icon="mdi-calendar" /> 10/10</div>
+      </v-col>
+    </v-row>
+
+    <section class="intro-section">
+      <div class="intro-alert">
+        <span class="text-h5 font-weight-medium">
+          VOCÊ É O MEU CONVIDADO PARA
+        </span>
+
+        <span
+          class="text-h3"
+          style="text-shadow: 0vw 0vw 1.39vw #f9a82580; color: #f9a825"
+        >
+          A AULA INAUGURAL DO CURSO DE MENTALIDADE
+        </span>
+
+        <span class="font-weight-light" style="font-size: 1.1rem">
+          DESCRIÇÃO DESCRIÇÃO DESCRIÇÃO DESCRIÇÃO DESCRIÇÃO DESCRIÇÃO DESCRIÇÃO
+        </span>
+
+        <v-btn
+          color="yellow-darken-4"
+          size="x-large"
+          style="box-shadow: 0 0 20px #F57F17"
+          class="mt-9"
+        >
+          GARANTIR MINHA VAGA
+        </v-btn>
+      </div>
+
+      <div class="intro-video">
+        <iframe
+          src="https://www.youtube.com/embed/mWGrt7R3MWw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          class="youtube-frame"
+        ></iframe>
+      </div>
+    </section>
+  </v-container>
+</template>
+
+<style lang="scss">
+.v-toolbar {
+  display: none;
+}
+
+.v-main {
+  padding-top: 0px !important;
+}
+
+$intro-header-height: 80px;
+
+.intro-header {
+  background-image: linear-gradient(#f57c00, #e65100);
+  height: $intro-header-height;
+}
+
+.intro-section {
+  min-height: calc(100vh - $intro-header-height);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+
+  .intro-alert {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%;
+    padding-left: 90px;
+    gap: 12px;
+  }
+
+  .intro-video {
+    flex: 1 1 55%;
+    padding: 0 64px;
+
+    .youtube-frame {
+      height: 380px;
+      width: 100%;
+      border-radius: 10px;
+      border-bottom: 10px solid #f57c00;
+    }
+  }
+}
+</style>
