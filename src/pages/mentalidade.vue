@@ -6,7 +6,7 @@
         class="d-flex justify-center flex-column align-center ga-2 text-h6 font-weight-light intro-header"
       >
         <div>AS INSCRIÇÕES ABREM NO DIA</div>
-        <div><v-icon icon="mdi-calendar" /> 10/10</div>
+        <div class="text-h5"><v-icon icon="mdi-calendar" /> 10/10</div>
       </v-col>
     </v-row>
 
@@ -27,14 +27,7 @@
           DESCRIÇÃO DESCRIÇÃO DESCRIÇÃO DESCRIÇÃO DESCRIÇÃO DESCRIÇÃO DESCRIÇÃO
         </span>
 
-        <v-btn
-          color="yellow-darken-4"
-          size="x-large"
-          style="box-shadow: 0 0 20px #F57F17"
-          class="mt-9"
-        >
-          GARANTIR MINHA VAGA
-        </v-btn>
+        <class-mentality-form />
       </div>
 
       <div class="intro-video">
