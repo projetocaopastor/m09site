@@ -29,7 +29,7 @@
           A AULA INAUGURAL DO CURSO DE MENTALIDADE
         </span>
 
-        <span class="font-weight-light mb-4 text-md-h5 text-subtitle-1">
+        <span class="font-weight-light mb-4 text-md-h5 text-h6">
           Aprenda a construir um plano de ação prático para redefinir sua vida,
           superar barreiras e alcançar metas que pareciam impossíveis.
         </span>
@@ -110,6 +110,8 @@ $intro-header-height: 80px;
     align-items: center;
     justify-content: center;
     padding: 16px;
+    min-height: 100vh;
+    padding-top: 32px;
 
     .intro-alert {
       text-align: center;
