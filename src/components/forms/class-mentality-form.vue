@@ -102,6 +102,7 @@ const submitForm = async () => {
               block
               class="mb-4"
               type="submit"
+              disabled
             >
               GARANTIR MINHA VAGA
             </v-btn>
