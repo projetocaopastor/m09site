@@ -121,13 +121,13 @@ $intro-header-height: 80px;
     .intro-video {
       padding: 0;
       width: 100%;
-      margin-top: 28px;
+      margin-top: 16px;
 
       .youtube-frame {
         height: 300px;
         width: 100% !important;
         border-radius: 10px;
-        border-bottom: 4px solid #f57c00;
+        border-bottom: 3px solid #f57c00;
       }
     }
   }
