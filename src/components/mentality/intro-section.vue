@@ -105,12 +105,11 @@ $intro-header-height: 80px;
   }
 
   .intro-section {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     padding: 16px;
-    min-height: 100vh;
+    min-height: auto;
+    height: auto;
     padding-top: 32px;
 
     .intro-alert {
@@ -124,7 +123,7 @@ $intro-header-height: 80px;
       margin-top: 16px;
 
       .youtube-frame {
-        height: 190px;
+        height: 300px;
         width: 100% !important;
         border-radius: 10px;
         border-bottom: 2px solid #f57c00;
