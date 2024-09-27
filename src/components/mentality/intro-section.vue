@@ -124,10 +124,10 @@ $intro-header-height: 80px;
       margin-top: 16px;
 
       .youtube-frame {
-        height: 300px;
+        height: 190px;
         width: 100% !important;
         border-radius: 10px;
-        border-bottom: 3px solid #f57c00;
+        border-bottom: 2px solid #f57c00;
       }
     }
   }
