@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import axios from "axios";
 import { ref } from "vue";
 import { VForm } from "vuetify/components/VForm";
 
@@ -59,7 +60,7 @@ const submitForm = async () => {
         size="x-large"
         style="box-shadow: 0 0 20px #f57f17"
       >
-        GARANTIR MINHA VAGA
+        ENTRAR NA LISTA DE ESPERA
       </v-btn>
     </template>
 
