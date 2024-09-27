@@ -12,12 +12,12 @@
 
     <section class="intro-section">
       <div class="intro-alert">
-        <span class="text-h5 font-weight-medium">
+        <span class="text-md-h5 text-h6 font-weight-medium">
           VOCÊ É O MEU CONVIDADO PARA
         </span>
 
         <span
-          class="text-h3"
+          class="text-h4 text-md-h3"
           style="text-shadow: 0vw 0vw 1.39vw #f9a82580; color: #f9a825"
         >
           A AULA INAUGURAL DO CURSO DE MENTALIDADE
@@ -83,7 +83,35 @@ $intro-header-height: 80px;
       height: 380px;
       width: 100%;
       border-radius: 10px;
-      border-bottom: 10px solid #f57c00;
+      border-bottom: 8px solid #f57c00;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+
+    .intro-alert {
+      text-align: center;
+      padding: 0;
+    }
+
+    .intro-video {
+      padding: 0;
+      width: 100%;
+      margin-top: 28px;
+
+      .youtube-frame {
+        height: 300px;
+        width: 100% !important;
+        border-radius: 10px;
+        border-bottom: 4px solid #f57c00;
+      }
     }
   }
 }

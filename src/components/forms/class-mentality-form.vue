@@ -25,6 +25,29 @@ const emailValidator = (val: string) => {
   }
   return true;
 };
+
+const submitForm = async () => {
+  const formUrl = "https://docs.google.com/spreadsheets/d/SUA_PLANILHA_ID/edit"; // Substitua pela URL do seu Google Apps Script
+
+  try {
+    const response = await axios.post(formUrl, {
+      name: state.value.name,
+      email: state.value.email,
+      phone: state.value.phone,
+    });
+
+    if (response.data.result === "success") {
+      alert("Formulário enviado com sucesso!");
+      // Limpar os campos do formulário
+      state.value.name = null;
+      state.value.email = null;
+      state.value.phone = null;
+    }
+  } catch (error) {
+    alert("Houve um erro ao enviar o formulário.");
+    console.error(error);
+  }
+};
 </script>
 
 <template>
@@ -35,7 +58,6 @@ const emailValidator = (val: string) => {
         color="yellow-darken-4"
         size="x-large"
         style="box-shadow: 0 0 20px #f57f17"
-        class="mt-9"
       >
         GARANTIR MINHA VAGA
       </v-btn>
