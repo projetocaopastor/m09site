@@ -1,10 +1,6 @@
 <template>
-  <v-container
-    fluid
-    class="pa-0 bg-surface"
-    style="border-bottom-left-radius: 200px"
-  >
-    <v-row no-gutters>
+  <v-container fluid class="pa-0 intro-section-container">
+    <v-row no-gutters class="d-md-flex d-none">
       <v-col
         cols="12"
         class="d-flex justify-center flex-column align-center ga-2 text-h6 font-weight-light intro-header"
@@ -33,7 +29,7 @@
           A AULA INAUGURAL DO CURSO DE MENTALIDADE
         </span>
 
-        <span class="font-weight-light mb-4" style="font-size: 1.5rem">
+        <span class="font-weight-light mb-4 text-md-h5 text-subtitle-1">
           Aprenda a construir um plano de ação prático para redefinir sua vida,
           superar barreiras e alcançar metas que pareciam impossíveis.
         </span>
@@ -56,6 +52,10 @@
 </template>
 
 <style lang="scss">
+.intro-section-container {
+  border-bottom-left-radius: 200px;
+}
+
 .v-toolbar {
   display: none;
 }
@@ -100,6 +100,10 @@ $intro-header-height: 80px;
 }
 
 @media (max-width: 960px) {
+  .intro-section-container {
+    border-bottom-left-radius: 0;
+  }
+
   .intro-section {
     display: flex;
     flex-direction: column;

@@ -5,6 +5,6 @@
 <template>
   <intro-section />
   <intro-professor />
-  <depositions />
+  <depositions maxCards="3" />
   <intro-call />
 </template>

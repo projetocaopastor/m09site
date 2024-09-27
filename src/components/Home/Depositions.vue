@@ -1,7 +1,9 @@
-<script setup>
-import { ref } from "vue";
-
-const isHovering = ref(false);
+<script setup lang="ts">
+withDefaults(defineProps<{
+  maxCards?: number;
+}>(), {
+  maxCards: 6
+});
 
 const depositions = [
   {
@@ -93,44 +95,46 @@ const depositions = [
     <v-col cols="12">
       <v-container grow>
         <v-row no-gutters>
-          <v-col v-for="deposition, index in depositions" :key="index" cols="12" md="6" lg="4">
-            <div class="sale-card">
-              <v-row>
-                <v-col style="height: 60px">
-                  <div class="d-flex align-center ga-2">
-                    <v-avatar size="45px">
-                      <v-img alt="Avatar" :src="deposition.image"></v-img>
-                    </v-avatar>
-                    <div class="d-flex flex-column text-grey-lighten-5">
-                      <span>
-                        <v-icon icon="mdi-account" size="small" />
-                        {{ deposition.name }}
-                      </span>
-                      <span>
-                        <v-icon icon="mdi-instagram" size="small" />
-                        @{{ deposition.instagram }}
-                      </span>
+          <template v-for="(deposition, index) in depositions" :key="index">
+            <v-col cols="12" md="6" lg="4" v-if="index < maxCards">
+              <div class="sale-card">
+                <v-row>
+                  <v-col style="height: 60px">
+                    <div class="d-flex align-center ga-2">
+                      <v-avatar size="45px">
+                        <v-img alt="Avatar" :src="deposition.image"></v-img>
+                      </v-avatar>
+                      <div class="d-flex flex-column text-grey-lighten-5">
+                        <span>
+                          <v-icon icon="mdi-account" size="small" />
+                          {{ deposition.name }}
+                        </span>
+                        <span>
+                          <v-icon icon="mdi-instagram" size="small" />
+                          @{{ deposition.instagram }}
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </v-col>
-                <v-col cols="12" class="py-0" style="height: 150px">
-                  <span class="text-grey-lighten-5">
-                    {{ deposition.deposition }}
-                  </span>
-                </v-col>
-                <v-col cols="12" style="height: 40px">
-                  <a
-                    class="text-yellow-darken-3 text-decoration-underline"
-                    href="https://www.instagram.com/p/C8pB5jzMnqf/"
-                    target="_blank"
-                    id="ver-mais-depoimentos-card-anchor"
-                  >
-                    Ver depoimentos completos no instagram
-                  </a>
-                </v-col>
-              </v-row>
-            </div>
-          </v-col>
+                  </v-col>
+                  <v-col cols="12" class="py-0" style="height: 150px">
+                    <span class="text-grey-lighten-5">
+                      {{ deposition.deposition }}
+                    </span>
+                  </v-col>
+                  <v-col cols="12" style="height: 40px">
+                    <a
+                      class="text-yellow-darken-3 text-decoration-underline"
+                      href="https://www.instagram.com/p/C8pB5jzMnqf/"
+                      target="_blank"
+                      id="ver-mais-depoimentos-card-anchor"
+                    >
+                      Ver depoimentos completos no instagram
+                    </a>
+                  </v-col>
+                </v-row>
+              </div>
+            </v-col>
+          </template>
         </v-row>
       </v-container>
     </v-col>

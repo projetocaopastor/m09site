@@ -5,7 +5,7 @@
     <v-row>
       <v-col cols="12">
         <div
-          class="d-flex justify-center align-center intro-call flex-column mt-3 ga-2"
+          class="d-flex justify-center align-center intro-call flex-column mt-3 ga-2 text-center px-md-0 px-4"
         >
           <div class="text-h4">
             Não perca essa
@@ -13,10 +13,10 @@
               >oportunidade!</span
             >
           </div>
-          <div class="text-h5 mb-2 font-weight-light">
+          <div class="text-md-h5 text-h6 mb-2 font-weight-light">
             Se está disposto a mudar, vamos lhe apresentar um caminho.
           </div>
-          <div class="text-h5 mb-2 font-weight-light">
+          <div class="text-md-h5 text-h6 mb-2 font-weight-light">
             Clique no botão abaixo e se
             <span style="text-shadow: 0vw 0vw 1.39vw #f9a82580; color: #f9a825">
               inscreva
