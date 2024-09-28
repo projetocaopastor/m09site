@@ -9,6 +9,9 @@ const state = ref({
   phone: null,
 });
 
+const formSended = ref(false);
+const dialogIsVisible = ref(false);
+
 const requiredValidator = (val: any) => {
   if (val === null) {
     return "Este campo é obrigatório.";
@@ -28,7 +31,8 @@ const emailValidator = (val: string) => {
 };
 
 const submitForm = async () => {
-  const formUrl = "https://w8mw3p740l.execute-api.us-east-1.amazonaws.com/StageAula/CMAula"; 
+  const formUrl =
+    "https://w8mw3p740l.execute-api.us-east-1.amazonaws.com/StageAula/CMAula";
 
   try {
     const response = await axios.post(formUrl, {
@@ -38,20 +42,23 @@ const submitForm = async () => {
     });
 
     if (response.data.result === "success") {
-      alert("Formulário enviado com sucesso!");
       state.value.name = null;
       state.value.email = null;
       state.value.phone = null;
+      formSended.value = true;
+
+      window.location.href = "https://chat.whatsapp.com/GBxoxS9VVfY728NXjkXiM4";
     }
   } catch (error) {
     alert("Houve um erro ao enviar o formulário.");
     console.error(error);
   }
+  dialogIsVisible.value = false;
 };
 </script>
 
 <template>
-  <v-dialog max-width="500">
+  <v-dialog max-width="500" v-model="dialogIsVisible">
     <template v-slot:activator="{ props: activatorProps }">
       <v-btn
         v-bind="activatorProps"
@@ -69,7 +76,7 @@ const submitForm = async () => {
         style="border: 1px solid #f57f1780; border-radius: 12px"
       >
         <v-card-text>
-          <VForm @submit.prevent>
+          <VForm @submit.prevent v-if="!formSended">
             <v-text-field
               v-model="state.name"
               label="Nome completo"
@@ -106,6 +113,24 @@ const submitForm = async () => {
               GARANTIR MINHA VAGA
             </v-btn>
           </VForm>
+          <div v-else class="d-flex w-100 align-center flex-column">
+            <v-icon
+              icon="mdi-check-circle-outline"
+              size="150"
+              color="success"
+            />
+            <span class="font-weight-light" style="font-size: 1rem"
+              >Cadastrado realizado com sucesso</span
+            >
+            <v-btn
+              @click="dialogIsVisible = false"
+              class="mt-4"
+              block
+              color="yellow-darken-4"
+              variant="outlined"
+              >Fechar</v-btn
+            >
+          </div>
         </v-card-text>
       </v-card>
     </template>
