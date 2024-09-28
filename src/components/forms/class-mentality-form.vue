@@ -35,11 +35,20 @@ const submitForm = async () => {
     "https://w8mw3p740l.execute-api.us-east-1.amazonaws.com/StageAula/CMAula";
 
   try {
-    const response = await axios.post(formUrl, {
-      name: state.value.name,
-      email: state.value.email,
-      phone: state.value.phone,
-    });
+    const response = await axios.post(
+      formUrl,
+      {
+        name: state.value.name,
+        email: state.value.email,
+        phone: state.value.phone,
+      },
+      {
+        headers: {
+          "Content-Type": "application/json", 
+          Origin: "https://www.projetocaopastor.com.br", 
+        },
+      }
+    );
 
     if (response.data.result === "success") {
       state.value.name = null;
