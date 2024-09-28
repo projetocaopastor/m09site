@@ -99,6 +99,7 @@ const submitForm = async () => {
 
             <v-text-field
               v-model="state.email"
+              type="email"
               label="E-mail"
               class="mb-1"
               :rules="[requiredValidator, emailValidator]"
@@ -111,6 +112,8 @@ const submitForm = async () => {
               v-mask="'(##) # ####-####'"
               class="mb-2"
               :rules="[requiredValidator]"
+              inputmode="numeric"
+              pattern="[0-9]*"
             ></v-text-field>
 
             <v-btn
