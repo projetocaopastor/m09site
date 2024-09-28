@@ -3,7 +3,7 @@
     <v-row>
       <v-col cols="12" md="6">
         <div class="intro-professor">
-          <div class="text-md-h3 text-h4 font-weight-bold text-white mb-3 text-center text-md-start">
+          <div class="text-md-h3 text-h4 font-weight-bold text-white mb-3">
             Quem é <span class="text-orange-darken-2">Cadar?</span>
           </div>
           <div class="intro-professor-description mb-3">

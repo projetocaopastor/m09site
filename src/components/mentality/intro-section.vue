@@ -107,9 +107,9 @@ $intro-header-height: 80px;
   .intro-section {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 16px;
-    min-height: auto;
-    height: auto;
+    min-height: 100vh;
     padding-top: 32px;
 
     .intro-alert {
