@@ -12,6 +12,7 @@ const state = ref({
 const formSended = ref(false);
 const dialogIsVisible = ref(false);
 const loading = ref(false);
+const form = ref<VForm>();
 
 const requiredValidator = (val: any) => {
   if (val === null) {
@@ -32,27 +33,32 @@ const emailValidator = (val: string) => {
 };
 
 const submitForm = async () => {
+  const formStatus = await form.value?.validate();
+
+  if (!formStatus?.valid) {
+    return;
+  }
+
   const formUrl =
     "https://w8mw3p740l.execute-api.us-east-1.amazonaws.com/StageAula/CMAula";
   loading.value = true;
 
   try {
-    const response = await axios.post(
-      formUrl,
-      {
-        name: state.value.name,
-        email: state.value.email,
-        phone: state.value.phone,
-      },
-      {
-        headers: {
-          "Content-Type": "application/json",
-          Origin: "https://www.projetocaopastor.com.br",
+    if (state.value.name && state.value.email && state.value.phone) {
+      axios.post(
+        formUrl,
+        {
+          name: state.value.name,
+          email: state.value.email,
+          phone: state.value.phone,
         },
-      }
-    );
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
-    if (response.data.result === "success") {
       state.value.name = null;
       state.value.email = null;
       state.value.phone = null;
@@ -88,7 +94,7 @@ const submitForm = async () => {
         style="border: 1px solid #f57f1780; border-radius: 12px"
       >
         <v-card-text>
-          <VForm @submit.prevent v-if="!formSended">
+          <VForm ref="form" @submit.prevent v-if="!formSended">
             <v-text-field
               v-model="state.name"
               label="Nome completo"
