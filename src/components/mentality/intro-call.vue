@@ -14,13 +14,13 @@
             >
           </div>
           <div class="text-md-h5 text-h6 mb-2 font-weight-light">
-            Se está disposto a mudar, vamos lhe apresentar um caminho.
+            Se está disposto a construir seu plano, vamos lhe apresentar um caminho.
           </div>
           <div class="text-md-h5 text-h6 mb-2 font-weight-light">
             Clique no botão abaixo e se
             <span style="text-shadow: 0vw 0vw 1.39vw #f9a82580; color: #f9a825">
-              inscreva
-            </span>!
+              inscreva!
+            </span>
           </div>
           <class-mentality-form />
         </div>
