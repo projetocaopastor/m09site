@@ -11,6 +11,7 @@ const state = ref({
 
 const formSended = ref(false);
 const dialogIsVisible = ref(false);
+const loading = ref(false);
 
 const requiredValidator = (val: any) => {
   if (val === null) {
@@ -33,6 +34,7 @@ const emailValidator = (val: string) => {
 const submitForm = async () => {
   const formUrl =
     "https://w8mw3p740l.execute-api.us-east-1.amazonaws.com/StageAula/CMAula";
+  loading.value = true;
 
   try {
     const response = await axios.post(
@@ -44,8 +46,8 @@ const submitForm = async () => {
       },
       {
         headers: {
-          "Content-Type": "application/json", 
-          Origin: "https://www.projetocaopastor.com.br", 
+          "Content-Type": "application/json",
+          Origin: "https://www.projetocaopastor.com.br",
         },
       }
     );
@@ -62,6 +64,7 @@ const submitForm = async () => {
     alert("Houve um erro ao enviar o formulário.");
     console.error(error);
   }
+  loading.value = false;
   dialogIsVisible.value = false;
 };
 </script>
@@ -118,6 +121,7 @@ const submitForm = async () => {
               class="mb-4"
               type="submit"
               @click="submitForm()"
+              :loading="loading"
             >
               GARANTIR MINHA VAGA
             </v-btn>
