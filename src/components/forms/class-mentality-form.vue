@@ -28,7 +28,7 @@ const emailValidator = (val: string) => {
 };
 
 const submitForm = async () => {
-  const formUrl = "https://docs.google.com/spreadsheets/d/SUA_PLANILHA_ID/edit"; // Substitua pela URL do seu Google Apps Script
+  const formUrl = "https://w8mw3p740l.execute-api.us-east-1.amazonaws.com/StageAula/CMAula"; 
 
   try {
     const response = await axios.post(formUrl, {
@@ -39,7 +39,6 @@ const submitForm = async () => {
 
     if (response.data.result === "success") {
       alert("Formulário enviado com sucesso!");
-      // Limpar os campos do formulário
       state.value.name = null;
       state.value.email = null;
       state.value.phone = null;
@@ -102,7 +101,7 @@ const submitForm = async () => {
               block
               class="mb-4"
               type="submit"
-              disabled
+              @click="submitForm()"
             >
               GARANTIR MINHA VAGA
             </v-btn>
