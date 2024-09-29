@@ -45,18 +45,13 @@ const submitForm = async () => {
 
   try {
     if (state.value.name && state.value.email && state.value.phone) {
-      axios.post(
+      await axios.post(
         formUrl,
         {
           name: state.value.name,
           email: state.value.email,
           phone: state.value.phone,
         },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
       );
 
       state.value.name = null;
