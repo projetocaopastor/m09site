@@ -4,7 +4,7 @@
       <v-col cols="12" md="6">
         <div class="intro-professor">
           <div class="text-md-h3 text-h4 font-weight-bold text-white mb-3">
-            Quem é <span class="text-orange-darken-2">Cadar?</span>
+            Quem é o seu <span class="text-orange-darken-2">professor?</span>
           </div>
           <div class="intro-professor-description mb-3">
             Um texto aqui descrevendo quem é o professor, etc. Um dos fundadores
@@ -19,9 +19,9 @@
         </div>
       </v-col>
       <v-col cols="12" md="6">
-        <div class="intro-professor-image-container">
+        <!-- <div class="intro-professor-image-container">
           <v-img src="@/assets/cadar-aula1.png" class="intro-professor-image" />
-        </div>
+        </div> -->
       </v-col>
     </v-row>
   </v-container>

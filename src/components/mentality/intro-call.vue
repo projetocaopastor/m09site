@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <v-container>
+  <v-container class="my-10">
     <v-row>
       <v-col cols="12">
         <div

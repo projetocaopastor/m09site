@@ -5,7 +5,7 @@
         cols="12"
         class="d-flex justify-center flex-column align-center ga-2 text-h6 font-weight-light intro-header"
       >
-        <div>AULA INAUGURAL NO DIA</div>
+        <div>AULA ABERTA NO DIA</div>
         <div class="text-h5"><v-icon icon="mdi-calendar" /> 10/10</div>
       </v-col>
     </v-row>
@@ -26,7 +26,7 @@
           class="text-h4 text-md-h3"
           style="text-shadow: 0vw 0vw 1.39vw #f9a82580; color: #f9a825"
         >
-          A AULA INAUGURAL DO CURSO DE MENTALIDADE
+          AULA ABERTA DO CURSO DE MENTALIDADE
         </span>
 
         <span class="font-weight-light mb-4 text-md-h5 text-h6">

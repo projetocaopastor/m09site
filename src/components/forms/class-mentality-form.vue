@@ -59,7 +59,7 @@ const submitForm = async () => {
       state.value.phone = null;
       formSended.value = true;
 
-      window.location.href = "https://chat.whatsapp.com/GBxoxS9VVfY728NXjkXiM4";
+      window.location.href = "https://chat.whatsapp.com/K9PBlNrNdOnJFGvufJSJkt";
     }
   } catch (error) {
     alert("Houve um erro ao enviar o formulário.");
@@ -92,7 +92,7 @@ const submitForm = async () => {
           <VForm ref="form" @submit.prevent v-if="!formSended">
             <v-text-field
               v-model="state.name"
-              label="Nome completo"
+              label="Nome"
               maxlength="50"
               :rules="[requiredValidator]"
               class="mb-1"

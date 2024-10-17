@@ -15,6 +15,7 @@ declare module 'vue' {
     FAQ: typeof import('./src/components/Home/FAQ.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IntroCall: typeof import('./src/components/mentality/intro-call.vue')['default']
+    IntroContents: typeof import('./src/components/mentality/intro-contents.vue')['default']
     Introduction: typeof import('./src/components/Home/Introduction.vue')['default']
     IntroProfessor: typeof import('./src/components/mentality/intro-professor.vue')['default']
     IntroSection: typeof import('./src/components/mentality/intro-section.vue')['default']
