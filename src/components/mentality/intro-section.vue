@@ -17,7 +17,7 @@
           <span
             class="text-md-h4"
             style="text-shadow: 0vw 0vw 1.39vw #f9a82580; color: #f9a825"
-            >10/10</span
+            >10/11</span
           >
           DA
         </span>
@@ -26,7 +26,7 @@
           class="text-h4 text-md-h3"
           style="text-shadow: 0vw 0vw 1.39vw #f9a82580; color: #f9a825"
         >
-          AULA ABERTA DO CURSO DE MENTALIDADE
+          2ª TURMA DO CURSO DE MENTALIDADE CÃO PASTOR
         </span>
 
         <span class="font-weight-light mb-4 text-md-h5 text-h6">

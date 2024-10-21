@@ -11,11 +11,11 @@
             do instituto cão pastor.
             descriçãodescriçãodescriçãodescriçãodescrição
           </div>
-          <div class="intro-professor-description">
+          <!-- <div class="intro-professor-description">
             Um texto aqui descrevendo quem é o professor, etc. Um dos fundadores
             do instituto cão pastor.
             descriçãodescriçãodescriçãodescriçãodescrição
-          </div>
+          </div> -->
         </div>
       </v-col>
       <v-col cols="12" md="6">
@@ -58,6 +58,7 @@
     display: block;
     margin-left: 0;
     word-wrap: break-word;
+    margin: 12px 24px;
   }
 
   .intro-professor-image-container {
