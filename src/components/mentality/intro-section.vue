@@ -37,7 +37,9 @@
         <class-mentality-form />
       </div>
 
-      <div class="intro-video">
+      <v-img src="/src/assets/images/mentalidade-capa.jpeg" width="100%" />
+
+      <!-- <div class="intro-video">
         <iframe
           src="https://www.youtube.com/embed/mWGrt7R3MWw"
           title="YouTube video player"
@@ -46,7 +48,7 @@
           allowfullscreen
           class="youtube-frame"
         ></iframe>
-      </div>
+      </div> -->
     </section>
   </v-container>
 </template>
