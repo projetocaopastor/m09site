@@ -148,7 +148,7 @@ const socialLinks = [
           class="text-subtitle-1 text-yellow-darken-3 text-md-left text-center"
         >
           "Se quer ir longe, fortaleça o corpo. Se quer ir a qualquer lugar,
-          forje a mente."
+          forje a mente." - Cadar, R.
         </div>
       </v-col>
     </v-row>
