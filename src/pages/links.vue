@@ -11,7 +11,7 @@ const socialLinks = [
     name: "Tiktok",
     icon: null,
     url: "https://tiktok.com/@cadarcav",
-    imageSrc: "/src/assets/icons/tiktok.svg",
+    imageSrc: "@/assets/icons/tiktok.svg",
   },
   {
     name: "Instagram",
