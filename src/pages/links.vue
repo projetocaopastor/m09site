@@ -62,6 +62,16 @@ const socialLinks = [
     },
   },
   {
+    name: "Apoia se",
+    url: "https://apoia.se/matilha09",
+    icon: "mdi-heart-outline",
+    style: {
+      background: "linear-gradient(45deg, #ED5544, #D84E3E, #C14434)",
+      "-webkit-background-clip": "text",
+      "-webkit-text-fill-color": "transparent",
+    },
+  },
+  {
     name: "SOBRE O INSTRUTOR",
     url: "sobre-nos",
     icon: "mdi-human-male-board",
@@ -87,7 +97,7 @@ const socialLinks = [
           <v-img src="@/assets/LogoCoPastorCompacta.png" width="120" cover />
         </div>
         <div style="font-size: 1.4rem; font-weight: 400">@caveiracadar09</div>
-        <div class="mt-2">
+        <div class="mt-2 text-md-left text-center">
           Este projeto é um convite para a evolução. Se você deseja estar à
           frente, tanto no pensamento quanto na ação, chegou o momento de dar o
           próximo passo rumo ao seu melhor.
@@ -134,7 +144,9 @@ const socialLinks = [
       </v-col>
 
       <v-col cols="12" md="8" lg="4" class="text-left">
-        <div class="text-subtitle-1 text-yellow-darken-3">
+        <div
+          class="text-subtitle-1 text-yellow-darken-3 text-md-left text-center"
+        >
           "Se quer ir longe, fortaleça o corpo. Se quer ir a qualquer lugar,
           forje a mente."
         </div>
