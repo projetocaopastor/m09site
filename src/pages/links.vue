@@ -35,7 +35,7 @@ const socialLinks = [
     url: "https://chat.whatsapp.com/K9PBlNrNdOnJFGvufJSJkt",
     imageSrc: null,
     style: {
-      background: "linear-gradient(45deg, #25D366, #128C7E, #075E54)", 
+      background: "linear-gradient(45deg, #25D366, #128C7E, #075E54)",
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
     },
@@ -56,7 +56,7 @@ const socialLinks = [
     url: "/mentalidade",
     icon: "mdi-brain",
     style: {
-      background: "linear-gradient(45deg, #F8C8D8, #F1D0C7, #F5B7B1)", 
+      background: "linear-gradient(45deg, #F8C8D8, #F1D0C7, #F5B7B1)",
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
     },
@@ -67,7 +67,7 @@ const socialLinks = [
     icon: "mdi-human-male-board",
     imageSrc: null,
     style: {
-      background: "linear-gradient(45deg, #F9A825, #FFB300, #FF8F00)", 
+      background: "linear-gradient(45deg, #F9A825, #FFB300, #FF8F00)",
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
     },
@@ -133,7 +133,7 @@ const socialLinks = [
         </v-btn>
       </v-col>
 
-      <v-col cols="4" class="text-left">
+      <v-col cols="12" md="8" lg="4" class="text-left">
         <div class="text-subtitle-1 text-yellow-darken-3">
           "Se quer ir longe, fortaleça o corpo. Se quer ir a qualquer lugar,
           forje a mente."
