@@ -2,7 +2,6 @@
   <div class="pdf-container">
     <object
       data="src/assets/matilha09instrutor.pdf"
-      type="application/pdf"
       width="100%"
       height="100%"
     >

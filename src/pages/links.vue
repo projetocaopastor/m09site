@@ -11,7 +11,7 @@ const socialLinks = [
     name: "Tiktok",
     icon: null,
     url: "https://tiktok.com/@cadarcav",
-    imageSrc: "@/assets/icons/tiktok.svg",
+    imageSrc: "src/assets/icons/tiktok.svg",
   },
   {
     name: "Instagram",
@@ -26,12 +26,6 @@ const socialLinks = [
     },
   },
   {
-    name: "SOBRE O INSTRUTOR",
-    url: "sobre-nos",
-    icon: "mdi-human-male-board",
-    imageSrc: null,
-  },
-  {
     name: "Curso Mentalidade",
     url: "/mentalidade",
     icon: "mdi-brain",
@@ -42,19 +36,27 @@ const socialLinks = [
     icon: "mdi-skull",
     imageSrc: null,
   },
+  {
+    name: "SOBRE O INSTRUTOR",
+    url: "sobre-nos",
+    icon: "mdi-human-male-board",
+    imageSrc: null,
+  },
 ];
 </script>
 
 <template>
   <v-container fluid>
-    <v-row justify="center">
-      <v-col cols="12" md="6" class="d-flex justify-center flex-column align-center">
+    <v-row justify="center" class="flex-md-column align-md-center">
+      <v-col
+        cols="12"
+        md="8"
+        class="d-flex justify-center flex-column align-center"
+      >
         <div>
           <v-img src="@/assets/LogoCoPastorCompacta.png" width="120" cover />
         </div>
-        <div class="text-h6 mt-2">
-            @caveiracadar09
-        </div>
+        <div class="text-h6 mt-2">@caveiracadar09</div>
       </v-col>
 
       <!-- Botões sociais gerados dinamicamente -->
@@ -62,7 +64,8 @@ const socialLinks = [
         v-for="(social, index) in socialLinks"
         :key="index"
         cols="12"
-        md="4"
+        md="8"
+        lg="4"
       >
         <v-btn
           block
@@ -71,14 +74,17 @@ const socialLinks = [
           :href="social.url"
           height="50"
         >
-          <v-img
-            v-if="social.imageSrc"
-            :src="social.imageSrc"
-            class="social-btn-icon-img"
-            width="24px"
-            height="24px"
-            :style="social.style"
-          />
+          <div>
+            <v-img
+              v-if="social.imageSrc"
+              :src="social.imageSrc"
+              class="social-btn-icon-img"
+              width="24px"
+              height="24px"
+              cover
+              :style="social.style"
+            />
+          </div>
 
           <v-icon
             v-if="social.icon"
