@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar :elevation="2" scroll-behavior="hide" scroll-threshold="1">
+  <v-app-bar :elevation="2" scroll-behavior="hide" scroll-threshold="1" class="header">
     <template v-slot:prepend>
       <v-btn icon :to="{ path: '/' }">
         <v-img

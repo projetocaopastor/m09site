@@ -17,6 +17,7 @@ declare module 'vue' {
     IntroCall: typeof import('./src/components/mentality/intro-call.vue')['default']
     IntroContents: typeof import('./src/components/mentality/intro-contents.vue')['default']
     Introduction: typeof import('./src/components/Home/Introduction.vue')['default']
+    IntroductionDraft: typeof import('./src/components/drafts/IntroductionDraft.vue')['default']
     IntroProfessor: typeof import('./src/components/mentality/intro-professor.vue')['default']
     IntroSection: typeof import('./src/components/mentality/intro-section.vue')['default']
     MaterialContent: typeof import('./src/components/Home/MaterialContent.vue')['default']
