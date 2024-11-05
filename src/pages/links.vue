@@ -53,7 +53,7 @@ const socialLinks = [
   },
   {
     name: "Curso Mentalidade",
-    url: "/mentalidade",
+    url: "https://pay.hotmart.com/M95660570J?of",
     icon: "mdi-brain",
     style: {
       background: "linear-gradient(45deg, #F8C8D8, #F1D0C7, #F5B7B1)",
