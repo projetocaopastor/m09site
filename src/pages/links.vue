@@ -11,7 +11,7 @@ const socialLinks = [
     name: "Tiktok",
     icon: null,
     url: "https://tiktok.com/@cadarcav",
-    imageSrc: "@/assets/icons/tiktok.svg",
+    type: "tiktok",
   },
   {
     name: "Instagram",
@@ -56,11 +56,11 @@ const socialLinks = [
         <div>
           <v-img src="@/assets/LogoCoPastorCompacta.png" width="120" cover />
         </div>
-        <div style="font-size: 1.2rem;">
-            @caveiracadar09
-        </div>
+        <div style="font-size: 1.2rem">@caveiracadar09</div>
         <div class="mt-2">
-            Este projeto é um convite para a evolução. Se você deseja estar à frente, tanto no pensamento quanto na ação, chegou o momento de dar o próximo passo rumo ao seu melhor.
+          Este projeto é um convite para a evolução. Se você deseja estar à
+          frente, tanto no pensamento quanto na ação, chegou o momento de dar o
+          próximo passo rumo ao seu melhor.
         </div>
       </v-col>
 
@@ -79,10 +79,9 @@ const socialLinks = [
           :href="social.url"
           height="50"
         >
-          <div>
-            <img
-              v-if="social.imageSrc"
-              :src="social.imageSrc"
+          <div v-if="social.type === 'tiktok'">
+            <v-img
+              src="@/assets/icons/tiktok.svg"
               class="social-btn-icon-img"
               width="24px"
               height="24px"
@@ -93,7 +92,7 @@ const socialLinks = [
           </div>
 
           <v-icon
-            v-if="social.icon"
+            v-else-if="social.icon"
             :icon="social.icon"
             class="social-btn-icon"
             size="x-large"
@@ -106,7 +105,8 @@ const socialLinks = [
 
       <v-col cols="4" class="text-left">
         <div class="text-subtitle-1 text-yellow-darken-3">
-            "Se quer ir longe, fortaleça o corpo. Se quer ir a qualquer lugar, forje a mente."
+          "Se quer ir longe, fortaleça o corpo. Se quer ir a qualquer lugar,
+          forje a mente."
         </div>
       </v-col>
     </v-row>
