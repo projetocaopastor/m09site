@@ -11,7 +11,7 @@ const socialLinks = [
     name: "Tiktok",
     icon: null,
     url: "https://tiktok.com/@cadarcav",
-    imageSrc: "@/assets/icons/tiktok.svg",
+    imageSrc: "src/assets/icons/tiktok.svg",
   },
   {
     name: "Instagram",
@@ -80,7 +80,7 @@ const socialLinks = [
           height="50"
         >
           <div>
-            <v-img
+            <img
               v-if="social.imageSrc"
               :src="social.imageSrc"
               class="social-btn-icon-img"
@@ -88,6 +88,7 @@ const socialLinks = [
               height="24px"
               cover
               :style="social.style"
+              tag=""
             />
           </div>
 
