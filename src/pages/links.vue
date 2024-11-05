@@ -50,13 +50,18 @@ const socialLinks = [
     <v-row justify="center" class="flex-md-column align-md-center">
       <v-col
         cols="12"
-        md="8"
-        class="d-flex justify-center flex-column align-center"
+        md="4"
+        class="d-flex justify-center flex-column align-center ga-2"
       >
         <div>
           <v-img src="@/assets/LogoCoPastorCompacta.png" width="120" cover />
         </div>
-        <div class="text-h6 mt-2">@caveiracadar09</div>
+        <div style="font-size: 1.2rem;">
+            @caveiracadar09
+        </div>
+        <div class="mt-2">
+            Este projeto é um convite para a evolução. Se você deseja estar à frente, tanto no pensamento quanto na ação, chegou o momento de dar o próximo passo rumo ao seu melhor.
+        </div>
       </v-col>
 
       <!-- Botões sociais gerados dinamicamente -->
@@ -96,6 +101,12 @@ const socialLinks = [
 
           {{ social.name }}
         </v-btn>
+      </v-col>
+
+      <v-col cols="4" class="text-left">
+        <div class="text-subtitle-1 text-yellow-darken-3">
+            "Se quer ir longe, fortaleça o corpo. Se quer ir a qualquer lugar, forje a mente."
+        </div>
       </v-col>
     </v-row>
   </v-container>
