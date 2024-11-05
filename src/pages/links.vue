@@ -35,17 +35,7 @@ const socialLinks = [
     url: "https://chat.whatsapp.com/K9PBlNrNdOnJFGvufJSJkt",
     imageSrc: null,
     style: {
-      background: "linear-gradient(45deg, #25D366, #128C7E, #075E54)", // Gradiente do WhatsApp
-      "-webkit-background-clip": "text",
-      "-webkit-text-fill-color": "transparent",
-    },
-  },
-  {
-    name: "Curso Mentalidade",
-    url: "/mentalidade",
-    icon: "mdi-brain",
-    style: {
-      background: "linear-gradient(45deg, #F8C8D8, #F1D0C7, #F5B7B1)", // Gradiente rosa pele
+      background: "linear-gradient(45deg, #25D366, #128C7E, #075E54)", 
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
     },
@@ -56,11 +46,20 @@ const socialLinks = [
     icon: "mdi-skull",
     imageSrc: null,
     style: {
-  background: "linear-gradient(45deg, #C0C0C0, #B0B0B0, #808080)", // Gradiente prateado
-  "-webkit-background-clip": "text",
-  "-webkit-text-fill-color": "transparent",
-}
-
+      background: "linear-gradient(45deg, #C0C0C0, #B0B0B0, #808080)",
+      "-webkit-background-clip": "text",
+      "-webkit-text-fill-color": "transparent",
+    },
+  },
+  {
+    name: "Curso Mentalidade",
+    url: "/mentalidade",
+    icon: "mdi-brain",
+    style: {
+      background: "linear-gradient(45deg, #F8C8D8, #F1D0C7, #F5B7B1)", 
+      "-webkit-background-clip": "text",
+      "-webkit-text-fill-color": "transparent",
+    },
   },
   {
     name: "SOBRE O INSTRUTOR",
@@ -68,12 +67,10 @@ const socialLinks = [
     icon: "mdi-human-male-board",
     imageSrc: null,
     style: {
-  background: "linear-gradient(45deg, #F9A825, #FFB300, #FF8F00)", // Gradiente com #F9A825
-  "-webkit-background-clip": "text",
-  "-webkit-text-fill-color": "transparent",
-}
-
-
+      background: "linear-gradient(45deg, #F9A825, #FFB300, #FF8F00)", 
+      "-webkit-background-clip": "text",
+      "-webkit-text-fill-color": "transparent",
+    },
   },
 ];
 </script>
