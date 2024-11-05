@@ -1,35 +1,24 @@
 <template>
-  <div class="pdf-container">
-    <object
-      data="src/assets/matilha09instrutor.pdf"
-      width="100%"
-      height="100%"
-    >
-      <p>
-        Seu navegador não suporta visualização de PDFs.
-        <a href="src/assets/matilha09instrutor.pdf" target="_blank"
-          >Clique aqui para abrir o PDF em uma nova aba.</a
-        >
-      </p>
-    </object>
-  </div>
-</template>
-
-<style>
-.pdf-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
-.footer,
-.header,
-header,
-footer {
-  display: none;
-}
-
-.v-main {
-  padding-top: 0 !important;
-}
-</style>
+    <section class="first-page">
+      <v-icon icon="mdi-progress-wrench" size="330" class="text-grey-darken-3"></v-icon>
+      <span class="text-black text-h4 font-weight-light">Página em construção... </span>
+    </section>
+  </template>
+  
+  <style scoped>
+  .first-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #CDCDCD;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+  </style>
+  
