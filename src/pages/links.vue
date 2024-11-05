@@ -5,7 +5,11 @@ const socialLinks = [
     icon: "mdi-youtube",
     url: "https://youtube.com/c/ProjetoMatilhaCãoPastor",
     imageSrc: null,
-    style: { color: "#c4302b" },
+    style: {
+      background: "linear-gradient(45deg, #FF0000, #FF4B00, #FF0000)", // Gradiente do YouTube
+      "-webkit-background-clip": "text",
+      "-webkit-text-fill-color": "transparent",
+    },
   },
   {
     name: "Tiktok",
@@ -26,21 +30,50 @@ const socialLinks = [
     },
   },
   {
+    name: "Grupo Mentalidade",
+    icon: "mdi-whatsapp",
+    url: "https://chat.whatsapp.com/K9PBlNrNdOnJFGvufJSJkt",
+    imageSrc: null,
+    style: {
+      background: "linear-gradient(45deg, #25D366, #128C7E, #075E54)", // Gradiente do WhatsApp
+      "-webkit-background-clip": "text",
+      "-webkit-text-fill-color": "transparent",
+    },
+  },
+  {
     name: "Curso Mentalidade",
     url: "/mentalidade",
     icon: "mdi-brain",
+    style: {
+      background: "linear-gradient(45deg, #F8C8D8, #F1D0C7, #F5B7B1)", // Gradiente rosa pele
+      "-webkit-background-clip": "text",
+      "-webkit-text-fill-color": "transparent",
+    },
   },
   {
     name: "Curso Cão Pastor",
     url: "/",
     icon: "mdi-skull",
     imageSrc: null,
+    style: {
+  background: "linear-gradient(45deg, #C0C0C0, #B0B0B0, #808080)", // Gradiente prateado
+  "-webkit-background-clip": "text",
+  "-webkit-text-fill-color": "transparent",
+}
+
   },
   {
     name: "SOBRE O INSTRUTOR",
     url: "sobre-nos",
     icon: "mdi-human-male-board",
     imageSrc: null,
+    style: {
+  background: "linear-gradient(45deg, #F9A825, #FFB300, #FF8F00)", // Gradiente com #F9A825
+  "-webkit-background-clip": "text",
+  "-webkit-text-fill-color": "transparent",
+}
+
+
   },
 ];
 </script>
@@ -56,7 +89,7 @@ const socialLinks = [
         <div>
           <v-img src="@/assets/LogoCoPastorCompacta.png" width="120" cover />
         </div>
-        <div style="font-size: 1.2rem">@caveiracadar09</div>
+        <div style="font-size: 1.4rem; font-weight: 400">@caveiracadar09</div>
         <div class="mt-2">
           Este projeto é um convite para a evolução. Se você deseja estar à
           frente, tanto no pensamento quanto na ação, chegou o momento de dar o
@@ -123,6 +156,7 @@ footer {
 
 .v-main {
   padding-top: 24px !important;
+  padding-bottom: 24px !important;
 }
 
 .social-btn {
