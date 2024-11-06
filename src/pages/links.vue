@@ -65,7 +65,7 @@ const socialLinks = [
   },
   {
     name: "Curso Mentalidade MCP",
-    url: "https://pay.hotmart.com/M95660570J?of",
+    url: "https://pay.hotmart.com/M95660570J",
     type: "curso",
     icon: "mdi-brain",
     style: {
