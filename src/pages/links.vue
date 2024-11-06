@@ -41,9 +41,21 @@ const socialLinks = [
     },
   },
   {
-    name: "Curso Cão Pastor",
+    name: "Nosso site",
     url: "/",
+    icon: "mdi-web",
+    imageSrc: null,
+    style: {
+      background: "linear-gradient(45deg, #BEBEBE, #8C8C8C, #6E6E6E)",
+      "-webkit-background-clip": "text",
+      "-webkit-text-fill-color": "transparent",
+    },
+  },
+  {
+    name: "Curso Cão Pastor",
+    url: "https://pay.hotmart.com/I77956669P",
     icon: "mdi-skull",
+    type: "curso",
     imageSrc: null,
     style: {
       background: "linear-gradient(45deg, #C0C0C0, #B0B0B0, #808080)",
@@ -52,8 +64,9 @@ const socialLinks = [
     },
   },
   {
-    name: "Curso Mentalidade",
+    name: "Curso Mentalidade MCP",
     url: "https://pay.hotmart.com/M95660570J?of",
+    type: "curso",
     icon: "mdi-brain",
     style: {
       background: "linear-gradient(45deg, #F8C8D8, #F1D0C7, #F5B7B1)",
@@ -118,6 +131,9 @@ const socialLinks = [
           target="_blank"
           :href="social.url"
           height="50"
+          :style="{
+            border: social.type === 'curso' ? '1px solid #F9A82530' : '',
+          }"
         >
           <div v-if="social.type === 'tiktok'">
             <v-img
