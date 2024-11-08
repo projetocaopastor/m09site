@@ -50,6 +50,8 @@ defineProps<{
         white-space: normal;
         text-overflow: ellipsis;
         display: block;
+        font-size: 0.95rem;
+        font-weight: 400;
       "
       v-html="social.name"
     >
