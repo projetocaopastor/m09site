@@ -1,7 +1,33 @@
 <script setup lang="ts">
-const socialLinks = [
+import LinksBtnGroup from "../components/linksPage/linksBtnGroup.vue";
+
+const linksStepOne = [
   {
-    name: "Youtube",
+    name: "SOBRE O INSTRUTOR",
+    url: "sobre-nos",
+    icon: "mdi-human-male-board",
+    imageSrc: null,
+    style: {
+      background: "linear-gradient(45deg, #F9A825, #FFB300, #FF8F00)",
+      "-webkit-background-clip": "text",
+      "-webkit-text-fill-color": "transparent",
+    },
+  },
+  {
+    name: "Torne-se um soldado <br> Apoie nosso projeto",
+    url: "https://apoia.se/matilha09",
+    icon: "mdi-heart-outline",
+    style: {
+      background: "linear-gradient(45deg, #ED5544, #D84E3E, #C14434)",
+      "-webkit-background-clip": "text",
+      "-webkit-text-fill-color": "transparent",
+    },
+  },
+];
+
+const linksStepTwo = [
+  {
+    name: "Canal Mente Impertubável",
     icon: "mdi-youtube",
     url: "https://youtube.com/c/ProjetoMatilhaCãoPastor",
     imageSrc: null,
@@ -29,40 +55,9 @@ const socialLinks = [
       "-webkit-text-fill-color": "transparent",
     },
   },
-  {
-    name: "Grupo Mentalidade",
-    icon: "mdi-whatsapp",
-    url: "https://chat.whatsapp.com/K9PBlNrNdOnJFGvufJSJkt",
-    imageSrc: null,
-    style: {
-      background: "linear-gradient(45deg, #25D366, #128C7E, #075E54)",
-      "-webkit-background-clip": "text",
-      "-webkit-text-fill-color": "transparent",
-    },
-  },
-  {
-    name: "Nosso site",
-    url: "/home",
-    icon: "mdi-web",
-    imageSrc: null,
-    style: {
-      background: "linear-gradient(45deg, #BEBEBE, #8C8C8C, #6E6E6E)",
-      "-webkit-background-clip": "text",
-      "-webkit-text-fill-color": "transparent",
-    },
-  },
-  {
-    name: "Curso Cão Pastor",
-    url: "https://pay.hotmart.com/I77956669P",
-    icon: "mdi-skull",
-    type: "curso",
-    imageSrc: null,
-    style: {
-      background: "linear-gradient(45deg, #C0C0C0, #B0B0B0, #808080)",
-      "-webkit-background-clip": "text",
-      "-webkit-text-fill-color": "transparent",
-    },
-  },
+];
+
+const linksStepThree = [
   {
     name: "Curso Mentalidade MCP",
     url: "https://pay.hotmart.com/M95660570J",
@@ -75,22 +70,36 @@ const socialLinks = [
     },
   },
   {
-    name: "Apoia se",
-    url: "https://apoia.se/matilha09",
-    icon: "mdi-heart-outline",
+    name: "Curso Master de <br> Proteção e Segurança",
+    // url: "https://pay.hotmart.com/I77956669P",
+    url: "/curso/cao-pastor",
+    icon: "mdi-skull",
+    type: "curso",
+    imageSrc: null,
     style: {
-      background: "linear-gradient(45deg, #ED5544, #D84E3E, #C14434)",
+      background: "linear-gradient(45deg, #C0C0C0, #B0B0B0, #808080)",
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
     },
   },
   {
-    name: "SOBRE O INSTRUTOR",
-    url: "sobre-nos",
-    icon: "mdi-human-male-board",
+    name: "Módulos Curso Cão Pastor",
+    url: "/home",
+    icon: "mdi-view-module",
     imageSrc: null,
     style: {
-      background: "linear-gradient(45deg, #F9A825, #FFB300, #FF8F00)",
+      background: "linear-gradient(45deg, #BEBEBE, #8C8C8C, #6E6E6E)",
+      "-webkit-background-clip": "text",
+      "-webkit-text-fill-color": "transparent",
+    },
+  },
+  {
+    name: "Grupo de Promoções e Avisos",
+    icon: "mdi-whatsapp",
+    url: "https://chat.whatsapp.com/K9PBlNrNdOnJFGvufJSJkt",
+    imageSrc: null,
+    style: {
+      background: "linear-gradient(45deg, #25D366, #128C7E, #075E54)",
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
     },
@@ -147,55 +156,11 @@ const socialLinks = [
         </div>
       </v-col>
 
-      <v-col cols="12" md="8" lg="4">
-        <div class="d-flex justify-center" style="position: relative;">
-          <div style="position: absolute; width: 100%; top: 12px; border: 1px solid #F9A82590;"></div>
-          <div class="bg-background" style="z-index: 1; padding: 0 8px;">
-            Siga nossas redes
-          </div>
-        </div>
-      </v-col>
+      <links-btn-group title="Matilha09" :linksBtn="linksStepOne" />
 
-      <v-col
-        v-for="(social, index) in socialLinks"
-        :key="index"
-        cols="12"
-        md="8"
-        lg="4"
-      >
-        <v-btn
-          block
-          class="social-btn"
-          target="_blank"
-          :href="social.url"
-          height="50"
-          :style="{
-            border: social.type === 'curso' ? '1px solid #F9A82530' : '',
-          }"
-        >
-          <div v-if="social.type === 'tiktok'">
-            <v-img
-              src="@/assets/icons/tiktok.svg"
-              class="social-btn-icon-img"
-              width="24px"
-              height="24px"
-              cover
-              :style="social.style"
-              tag=""
-            />
-          </div>
+      <links-btn-group title="Siga nossas redes" :linksBtn="linksStepTwo" />
 
-          <v-icon
-            v-else-if="social.icon"
-            :icon="social.icon"
-            class="social-btn-icon"
-            size="x-large"
-            :style="social.style"
-          />
-
-          {{ social.name }}
-        </v-btn>
-      </v-col>
+      <links-btn-group title="Cursos" :linksBtn="linksStepThree" />
 
       <v-col cols="12" md="8" lg="4" class="text-left">
         <div
