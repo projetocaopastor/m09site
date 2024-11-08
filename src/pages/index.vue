@@ -100,9 +100,36 @@ const socialLinks = [
 
 <template>
   <v-container fluid>
-    <h1 style="position: absolute; color: transparent; cursor: default; z-index: -5;">Projeto cão pastor</h1>
-    <h2 style="position: absolute; color: transparent; cursor: default; z-index: -5;">Mentalidade</h2>
-    <h2 style="position: absolute; color: transparent; cursor: default; z-index: -5;">Cursos</h2>
+    <h1
+      style="
+        position: absolute;
+        color: transparent;
+        cursor: default;
+        z-index: -5;
+      "
+    >
+      Projeto cão pastor
+    </h1>
+    <h2
+      style="
+        position: absolute;
+        color: transparent;
+        cursor: default;
+        z-index: -5;
+      "
+    >
+      Mentalidade
+    </h2>
+    <h2
+      style="
+        position: absolute;
+        color: transparent;
+        cursor: default;
+        z-index: -5;
+      "
+    >
+      Cursos
+    </h2>
     <v-row justify="center" class="flex-md-column align-md-center">
       <v-col
         cols="12"
@@ -120,7 +147,15 @@ const socialLinks = [
         </div>
       </v-col>
 
-      <!-- Botões sociais gerados dinamicamente -->
+      <v-col cols="12" md="8" lg="4">
+        <div class="d-flex justify-center" style="position: relative;">
+          <div style="position: absolute; width: 100%; top: 12px; border: 1px solid #F9A82590;"></div>
+          <div class="bg-background" style="z-index: 1; padding: 0 8px;">
+            Siga nossas redes
+          </div>
+        </div>
+      </v-col>
+
       <v-col
         v-for="(social, index) in socialLinks"
         :key="index"
