@@ -14,7 +14,6 @@ defineProps<{
 <template>
   <v-btn
     block
-    class="social-btn"
     target="_blank"
     :href="social.url"
     height="50"
@@ -22,39 +21,44 @@ defineProps<{
       border: social.type === 'curso' ? '1px solid #F9A82530' : '',
     }"
   >
-    <div v-if="social.type === 'tiktok'">
-      <v-img
-        src="@/assets/icons/tiktok.svg"
-        class="social-btn-icon-img"
-        width="24px"
-        height="24px"
-        cover
-        :style="social.style"
-        tag=""
-      />
-    </div>
+    <div class="w-100 d-flex align-center">
+      <div v-if="social.type === 'tiktok'">
+        <v-img
+          src="@/assets/icons/tiktok.svg"
+          width="24px"
+          height="24px"
+          cover
+          :style="social.style"
+          tag=""
+        />
+      </div>
 
-    <v-icon
-      v-else-if="social.icon"
-      :icon="social.icon"
-      class="social-btn-icon"
-      size="x-large"
-      :style="social.style"
-    />
-    <div
-      style="
-        text-align: center;
-        max-width: 280px;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        white-space: normal;
-        text-overflow: ellipsis;
-        display: block;
-        font-size: 0.95rem;
-        font-weight: 400;
-      "
-      v-html="social.name"
-    >
+      <v-icon
+        v-else-if="social.icon"
+        :icon="social.icon"
+        size="x-large"
+        :style="social.style"
+      />
+      <div
+        style="
+          width: 100%;
+          text-align: center;
+          word-wrap: break-word;
+          overflow-wrap: break-word;
+          white-space: normal;
+          text-overflow: ellipsis;
+          display: block;
+          font-size: 0.94rem;
+          font-weight: 400;
+        "
+        v-html="social.name"
+      ></div>
     </div>
   </v-btn>
 </template>
+
+<style>
+.v-btn__content {
+  width: 100%;
+}
+</style>

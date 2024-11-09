@@ -156,7 +156,7 @@ const linksStepThree = [
         </div>
       </v-col>
 
-      <links-btn-group title="Matilha09" :linksBtn="linksStepOne" />
+      <links-btn-group title="Projeto Cão Pastor" :linksBtn="linksStepOne" />
 
       <links-btn-group title="Siga nossas redes" :linksBtn="linksStepTwo" />
 
@@ -187,7 +187,7 @@ footer {
   padding-bottom: 24px !important;
 }
 
-.social-btn {
+/* .social-btn {
   position: relative;
   height: 50px;
   display: flex;
@@ -207,5 +207,5 @@ footer {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-}
+} */
 </style>
