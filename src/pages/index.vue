@@ -64,7 +64,7 @@ const linksStepThree = [
     type: "curso",
     icon: "mdi-brain",
     style: {
-      background: "linear-gradient(45deg, #F8C8D8, #F1D0C7, #F5B7B1)",
+      background: "linear-gradient(45deg, #9E5C67, #A6857D, #9E5C4E)",
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
     },
@@ -73,7 +73,7 @@ const linksStepThree = [
     name: "Curso Master de <br> Proteção e Segurança",
     // url: "https://pay.hotmart.com/I77956669P",
     url: "/curso/cao-pastor",
-    icon: "mdi-skull",
+    icon: "mdi-shield-lock-outline",
     type: "curso",
     imageSrc: null,
     style: {
@@ -148,7 +148,7 @@ const linksStepThree = [
         <div>
           <v-img src="@/assets/LogoCoPastorCompacta.png" width="120" cover />
         </div>
-        <div style="font-size: 1.4rem; font-weight: 400">@caveiracadar09</div>
+        <div style="font-size: 1.4rem; font-weight: 400" class="text-red-darken-3">@caveiracadar09</div>
         <div class="mt-2 text-md-left text-center">
           Este projeto é um convite para a evolução. Se você deseja estar à
           frente, tanto no pensamento quanto na ação, chegou o momento de dar o

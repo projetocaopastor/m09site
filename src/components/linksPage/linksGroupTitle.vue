@@ -11,11 +11,11 @@ defineProps<{ title: string }>();
           width: 100%;
           top: 12px;
           border: 1px solid;
-          border-image: linear-gradient(to right, #212121, #f9a825, #212121) 1
+          border-image: linear-gradient(to right, #212121, #F9A82570, #212121) 1
             stretch;
         "
       ></div>
-      <div class="bg-background" style="z-index: 1; padding: 0 8px">
+      <div class="bg-background" style="z-index: 1; padding: 0 8px; color: #F9A825 !important;">
         {{ title }}
       </div>
     </div>
