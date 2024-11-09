@@ -148,7 +148,7 @@ const linksStepThree = [
         <div>
           <v-img src="@/assets/LogoCoPastorCompacta.png" width="120" cover />
         </div>
-        <div style="font-size: 1.4rem; font-weight: 400" class="text-red-darken-3">@caveiracadar09</div>
+        <div style="font-size: 1.4rem; font-weight: 400" class="text-red-darken-1">@caveiracadar09</div>
         <div class="mt-2 text-md-left text-center">
           Este projeto é um convite para a evolução. Se você deseja estar à
           frente, tanto no pensamento quanto na ação, chegou o momento de dar o
