@@ -156,6 +156,42 @@ export const cards = <Pack[]>[
     redirect: "https://projetocaopastor.github.io/protetor.pdf",
     description: `Descubra como proteger você e sua família com o curso 'Conduta Defensiva'. Aprenda a desenvolver uma mentalidade de segurança, proteger sua residência e informações pessoais, e adotar uma conduta defensiva eficaz. Ideal para quem busca uma abordagem preventiva e segura para proteger o que mais importa.`,
   },
+  {
+    id: "curso-programa-de-protecao",
+    title: "Pacote 6 - Programa de Proteção",
+    modules: ["modulo-programa-de-protecao"],
+    // youtubeIntro: "https://www.youtube.com/embed/bk7r-HlbBkA",
+    courseName: "Programa de Proteção - Guia Prático de Sobrevivência Urbana",
+    routeParam: "programa-de-protecao",
+    icon: "mdi-security",
+    discount: "10% de desconto por tempo limitado",
+    originalPrice: "R$ 597,00",
+    installmentPrice: "R$ 39,62",
+    fullPrice: "R$ 397,00",
+    benefits: [
+      "Garantia de 7 dias",
+      "Assista pelo celular e computador",
+      "Acesso por 1 ano",
+    ],
+    extraBenefit:
+      "Acesso aos módulos Defesa Passiva, Mentalidade, Proteção Residencial, Proteção da Informação e Conduta Defensiva.",
+    link: "https://go.hotmart.com/E95659790K",
+    redirect: "https://projetocaopastor.github.io/protetor.pdf",
+    description: `
+    Nosso curso é um guia essencial para quem deseja se proteger e proteger sua família em situações de risco. Aplicado de forma presencial, ele foi desenvolvido com o objetivo de instruir especialmente mulheres sobre como prevenir a violência, com foco na antecipação das crises e minimização de danos. Utilizamos técnicas práticas e acessíveis para garantir que qualquer pessoa, especialmente civis desarmados e aqueles em condições de vulnerabilidade, estejam preparados para agir com eficácia.<br><br>
+
+Este curso é ideal para:<br>
+
+- Civis desarmados que buscam estratégias eficientes para evitar confrontos;<br>
+
+- Pais e familiares que desejam instruir seus entes queridos em práticas preventivas;<br>
+
+- Instrutores de defesa pessoal que procuram melhorar a qualidade de seus treinamentos com foco na prevenção;<br>
+
+- Mulheres em condição de vulnerabilidade, oferecendo-lhes ferramentas práticas e mentais para maior segurança.<br><br>
+
+Nosso conteúdo integra neurociência, segurança pessoal e estratégias preventivas baseadas em estudos comprovados, formando um currículo completo que capacita o aluno a antecipar ameaças e tomar decisões seguras antes que uma crise se instale.<br>`,
+  },
 ];
 
 export const mainPack: Pack = {
@@ -163,7 +199,7 @@ export const mainPack: Pack = {
   title: "Turma Master",
   modules: [],
   youtubeIntro: "https://www.youtube.com/embed/YwKw8UwT1CQ",
-  courseName: "Cão Pastor",
+  courseName: "Cão Pastor - Proteção e Segurança",
   routeParam: "cao-pastor",
   icon: "mdi-package-variant-closed",
   discount: "10% de desconto por tempo limitado",

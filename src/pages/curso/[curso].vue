@@ -34,9 +34,9 @@ onMounted(() => {
         class="bg-grey-darken-4 px-md-8 mt-2"
         style="border-radius: 4px"
       >
-        <div class="text-h4 text-center d-md-flex justify-center ga-2 mb-3">
-          <div class="font-weight-medium text-yellow-darken-3">Curso:</div>
-          <div class="font-weight-medium">{{ pack.courseName }}</div>
+        <div class="text-h4 text-center d-md-block d-flex ga-2 flex-column mb-3">
+          <span class="font-weight-medium text-yellow-darken-3 mr-2">Curso:</span>
+          <span class="font-weight-medium">{{ pack.courseName }}</span>
         </div>
         <div class="d-flex justify-center mb-3">
           <iframe
@@ -51,17 +51,16 @@ onMounted(() => {
       </v-col>
     </v-row>
 
-    <v-row justify="center">
+    <v-row justify="center" style="font-size: 1.2rem;">
       <v-col
         cols="12"
         sm="8"
         md="7"
         class="bg-grey-darken-4 px-md-12 mt-3"
-        style="border-radius: 4px"
+        style="border-radius: 4px;"
       >
         <div class="text-h5 text-yellow-darken-3 mb-2">Sobre o curso</div>
-        <div class="mb-1">
-          {{ pack.description }}
+        <div class="mb-1" v-html="pack.description">
         </div>
         <div class="d-flex flex-md-row flex-column ga-2 ga-md-0 justify-space-between mt-2 flex-wrap">
           <div v-for="benefit in pack.benefits" style="flex: 0 0 50%;">
@@ -79,7 +78,7 @@ onMounted(() => {
         sm="8"
         md="7"
         class="bg-grey-darken-3 px-md-12 mt-3"
-        style="border-radius: 4px"
+        style="border-radius: 4px;"
       >
         <div class="text-h5 text-yellow-darken-3 mb-4">Módulos</div>
         <v-expansion-panels class="mb-3">
@@ -92,7 +91,7 @@ onMounted(() => {
             <template #title>
               <span
                 class="text-uppercase"
-                style="font-size: 1.2rem; font-weight: 400"
+                style="font-weight: 400; font-size: 1.2rem;"
               >
                 <v-icon
                   :icon="module.icon"
@@ -107,7 +106,7 @@ onMounted(() => {
               </span>
             </template>
             <template #text>
-              <v-row justify="center">
+              <v-row justify="center" style="font-size: 1.2rem;">
                 <v-col cols="12">
                   <span class="font-weight-medium text-yellow-darken-3">
                     {{
@@ -208,7 +207,7 @@ onMounted(() => {
       </v-col>
     </v-row>
 
-    <v-row style="background-color: #161616" class="align-center mt-8">
+    <v-row style="background-color: #161616" class="align-center mt-8 py-12">
       <v-col md="6">
         <v-img
           src="/src/assets/7diasgarantia.jpg"
