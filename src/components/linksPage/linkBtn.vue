@@ -16,7 +16,7 @@ defineProps<{
     block
     target="_blank"
     :href="social.url"
-    height="50"
+    height="60"
     :style="{
       border: social.type === 'curso' ? '1px solid #F9A82530' : '',
     }"

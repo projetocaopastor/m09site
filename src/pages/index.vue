@@ -83,6 +83,19 @@ const linksStepThree = [
     },
   },
   {
+    name: "Curso Programa de Proteção <br> Guia Prático de Sobrevivência Urbana",
+    // url: "https://pay.hotmart.com/I77956669P",
+    url: "/curso/programa-de-protecao",
+    icon: "mdi-shield-link-variant-outline",
+    type: "curso",
+    imageSrc: null,
+    style: {
+      background: "linear-gradient(45deg, #FFD700, #FFCC00, #FFB800)",
+      "-webkit-background-clip": "text",
+      "-webkit-text-fill-color": "transparent",
+    },
+  },
+  {
     name: "Módulos Curso Cão Pastor",
     url: "/home",
     icon: "mdi-view-module",
