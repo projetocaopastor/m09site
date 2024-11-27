@@ -17,7 +17,7 @@
           <span
             class="text-md-h4"
             style="text-shadow: 0vw 0vw 1.39vw #f9a82580; color: #f9a825"
-            >12/10</span
+            >12/12</span
           >
           DA
         </span>
