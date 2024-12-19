@@ -59,7 +59,7 @@ const linksStepTwo = [
 
 const linksStepThree = [
   {
-    name: "Curso Mentalidade MCP",
+    name: "Curso de Mentalidade",
     url: "https://pay.hotmart.com/M95660570J",
     type: "curso",
     icon: "mdi-brain",
@@ -71,8 +71,6 @@ const linksStepThree = [
   },
   {
     name: "Curso Master de <br> Proteção e Segurança",
-    // url: "https://pay.hotmart.com/I77956669P",
-    url: "/curso/cao-pastor",
     icon: "mdi-shield-lock-outline",
     type: "curso",
     imageSrc: null,
@@ -81,30 +79,33 @@ const linksStepThree = [
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
     },
-  },
-  {
-    name: "Curso Programa de Proteção <br> Guia Prático de Sobrevivência Urbana",
-    // url: "https://pay.hotmart.com/I77956669P",
-    url: "/curso/programa-de-protecao",
-    icon: "mdi-shield-link-variant-outline",
-    type: "curso",
-    imageSrc: null,
-    style: {
-      background: "linear-gradient(45deg, #FFD700, #FFCC00, #FFB800)",
-      "-webkit-background-clip": "text",
-      "-webkit-text-fill-color": "transparent",
-    },
-  },
-  {
-    name: "Módulos Curso Cão Pastor",
-    url: "/home",
-    icon: "mdi-view-module",
-    imageSrc: null,
-    style: {
-      background: "linear-gradient(45deg, #BEBEBE, #8C8C8C, #6E6E6E)",
-      "-webkit-background-clip": "text",
-      "-webkit-text-fill-color": "transparent",
-    },
+    menu: true,
+    options: [
+      {
+        name: "Curso Completo - Turma Master",
+        url: "/curso/cao-pastor",
+        icon: "mdi-shield-account-outline",
+        imageSrc: null,
+        style: {
+          background: "linear-gradient(45deg, #FFD700, #FFCC00, #FFB800)",
+          "-webkit-background-clip": "text",
+          "-webkit-text-fill-color": "transparent",
+          "opacity": 1,
+        },
+      },
+      {
+        name: "Módulos separados do Curso",
+        url: "/home",
+        icon: "mdi-view-module",
+        imageSrc: null,
+        style: {
+          background: "linear-gradient(45deg, #BEBEBE, #8C8C8C, #6E6E6E)",
+          "-webkit-background-clip": "text",
+          "-webkit-text-fill-color": "transparent",
+          "opacity": 1,
+        },
+      },
+    ],
   },
   {
     name: "Grupo de Promoções e Avisos",
@@ -161,7 +162,12 @@ const linksStepThree = [
         <div>
           <v-img src="@/assets/LogoCoPastorCompacta.png" width="120" cover />
         </div>
-        <div style="font-size: 1.4rem; font-weight: 400" class="text-red-darken-1">@caveiracadar09</div>
+        <div
+          style="font-size: 1.4rem; font-weight: 400"
+          class="text-red-darken-1"
+        >
+          @caveiracadar09
+        </div>
         <div class="mt-2 text-md-left text-center">
           Este projeto é um convite para a evolução. Se você deseja estar à
           frente, tanto no pensamento quanto na ação, chegou o momento de dar o
