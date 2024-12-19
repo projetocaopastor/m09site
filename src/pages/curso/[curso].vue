@@ -216,7 +216,7 @@ onMounted(() => {
         />
       </v-col>
       <v-col cols="12" md="4" class="text-md-left text-center">
-        <div class="text-h4 font-weight-medium text-yellow-darken-2 pb-2">
+        <div class="text-h4 font-weight-medium text-yellow-darken-3 pb-2">
           7 DIAS DE ZERO RISCO
         </div>
         <div>

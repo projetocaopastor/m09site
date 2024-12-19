@@ -199,7 +199,7 @@ export const mainPack: Pack = {
   title: "Turma Master",
   modules: [],
   youtubeIntro: "https://www.youtube.com/embed/YwKw8UwT1CQ",
-  courseName: "Cão Pastor - Proteção e Segurança",
+  courseName: "Proteção e Segurança - Turma Master",
   routeParam: "cao-pastor",
   icon: "mdi-package-variant-closed",
   discount: "10% de desconto por tempo limitado",
