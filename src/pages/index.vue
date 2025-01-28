@@ -164,7 +164,6 @@ const linksStepThree = [
         </div>
         <div
           style="font-size: 1.4rem; font-weight: 400"
-          class="text-red-darken-1"
         >
           @caveiracadar09
         </div>
