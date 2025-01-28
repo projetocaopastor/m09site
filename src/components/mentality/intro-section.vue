@@ -17,7 +17,7 @@
           <span
             class="text-md-h4"
             style="text-shadow: 0vw 0vw 1.39vw #f9a82580; color: #f9a825"
-            >12/12</span
+            >12/02</span
           >
           DA
         </span>
@@ -26,7 +26,7 @@
           class="text-h4 text-md-h3"
           style="text-shadow: 0vw 0vw 1.39vw #f9a82580; color: #f9a825"
         >
-          3ª TURMA DO CURSO DE MENTALIDADE CÃO PASTOR
+          5ª TURMA DO CURSO DE MENTALIDADE CÃO PASTOR
         </span>
 
         <span class="font-weight-light mb-4 text-md-h5 text-h6">
