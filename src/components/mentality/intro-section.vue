@@ -37,7 +37,11 @@
         <class-mentality-form />
       </div>
 
-      <v-img src="/src/assets/images/mentalidade-capa.jpeg" width="100%" class="d-md-none" />
+      <v-img
+        src="/src/assets/images/mentalidade-capa.jpeg"
+        width="100%"
+        class="d-md-none"
+      />
 
       <!-- <div class="intro-video">
         <iframe
