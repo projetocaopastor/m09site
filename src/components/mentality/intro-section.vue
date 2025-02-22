@@ -31,7 +31,7 @@
 
         <span class="font-weight-light mb-4 text-md-h5 text-h6">
           Aprenda a construir um plano de ação prático para redefinir sua vida,
-          superar barreiras e alcançar metas que pareciam impossíveis.
+          superar barreiras e alcançar metas que pareciam impossíveis. 
         </span>
 
         <class-mentality-form />
