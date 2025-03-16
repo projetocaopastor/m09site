@@ -59,7 +59,7 @@ const submitForm = async () => {
       state.value.phone = null;
       formSended.value = true;
 
-      window.location.href = "https://chat.whatsapp.com/G4KeEVcEAC0COBGHVte7P4";
+      window.location.href = "https://chat.whatsapp.com/IixfpjtiXGTBqAVZg6DdT9";
     }
   } catch (error) {
     alert("Houve um erro ao enviar o formulário.");
