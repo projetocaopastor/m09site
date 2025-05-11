@@ -60,7 +60,7 @@ const linksStepTwo = [
 const linksStepThree = [
   {
     name: "Curso de Mentalidade",
-    url: "https://pay.hotmart.com/M95660570J",
+    url: "https://lp.projetocaopastor.com.br/",
     type: "curso",
     icon: "mdi-brain",
     style: {
