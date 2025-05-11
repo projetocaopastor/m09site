@@ -30,7 +30,7 @@ export const cards = <Pack[]>[
     icon: "mdi-security",
     discount: "10% de desconto por tempo limitado",
     originalPrice: "R$ 249,00",
-    installmentPrice: "R$ 13,97",
+    installmentPrice: "R$ 14,48",
     fullPrice: "R$ 140,00",
     benefits: [
       "Garantia de 7 dias",
@@ -56,7 +56,7 @@ export const cards = <Pack[]>[
     icon: "mdi-skull-crossbones",
     discount: "10% de desconto por tempo limitado",
     originalPrice: "R$ 799,00",
-    installmentPrice: "R$ 59,78",
+    installmentPrice: "R$ 61,95",
     fullPrice: "R$ 599,00",
     youtubeIntro: "https://www.youtube.com/embed/trSdFZ0UgXU",
     benefits: [
@@ -84,7 +84,7 @@ export const cards = <Pack[]>[
     icon: "mdi-eye-check",
     discount: "20% de desconto por tempo limitado",
     originalPrice: "R$ 699,00",
-    installmentPrice: "R$ 49,80",
+    installmentPrice: "R$ 51,61",
     fullPrice: "R$ 499,00",
     benefits: [
       "Garantia de 7 dias",
@@ -114,7 +114,7 @@ export const cards = <Pack[]>[
     icon: "mdi-target-account",
     discount: "15% de desconto por tempo limitado",
     originalPrice: "R$ 1299,00",
-    installmentPrice: "R$ 99,70",
+    installmentPrice: "R$ 103,32",
     fullPrice: "R$ 999,00",
     benefits: [
       "Garantia de 7 dias",
@@ -143,7 +143,7 @@ export const cards = <Pack[]>[
     icon: "mdi-security",
     discount: "10% de desconto por tempo limitado",
     originalPrice: "R$ 1099,00",
-    installmentPrice: "R$ 79,54",
+    installmentPrice: "R$ 82,43",
     fullPrice: "R$ 797,00",
     benefits: [
       "Garantia de 7 dias",
@@ -166,7 +166,7 @@ export const cards = <Pack[]>[
     icon: "mdi-security",
     discount: "10% de desconto por tempo limitado",
     originalPrice: "R$ 597,00",
-    installmentPrice: "R$ 39,62",
+    installmentPrice: "R$ 41,06",
     fullPrice: "R$ 397,00",
     benefits: [
       "Garantia de 7 dias",
@@ -204,7 +204,7 @@ export const mainPack: Pack = {
   icon: "mdi-package-variant-closed",
   discount: "10% de desconto por tempo limitado",
   originalPrice: "R$ 2399,00",
-  installmentPrice: "R$ 189,53",
+  installmentPrice: "R$ 196,40",
   fullPrice: "R$ 1899,00",
   benefits: [
     "Grupo exclusivo para alunos",

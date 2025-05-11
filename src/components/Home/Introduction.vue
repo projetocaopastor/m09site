@@ -102,7 +102,7 @@ export default {
               padding: 4px;
             "
           >
-            R$ 13,97
+            R$ 14,48
           </span>
           por mês.
         </div>
