@@ -110,7 +110,7 @@ const linksStepThree = [
   {
     name: "Grupo de Promoções e Avisos",
     icon: "mdi-whatsapp",
-    url: "https://chat.whatsapp.com/IixfpjtiXGTBqAVZg6DdT9",
+    url: "https://chat.whatsapp.com/DgZrU8hSjGIIijnMlsOnPQ",
     imageSrc: null,
     style: {
       background: "linear-gradient(45deg, #25D366, #128C7E, #075E54)",
